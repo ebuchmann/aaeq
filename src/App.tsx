@@ -7,7 +7,7 @@ import {
   TableHeader,
   TableRow,
 } from './components/ui/table'
-import EquipmentData from '../Equipment_Data.json'
+import EquipmentData from './data/equipment.json'
 import {
   createColumnHelper,
   flexRender,
