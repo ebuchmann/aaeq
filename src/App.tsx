@@ -29,6 +29,7 @@ import { Button } from './components/ui/button'
 import { ArrowUpDown } from 'lucide-react'
 import { paginationAtom } from './state/pagination'
 import { Fragment } from 'react/jsx-runtime'
+import { settingsAtom } from './state/settings'
 
 type Stats = {
   INT?: number
@@ -98,8 +99,10 @@ const abbreviations: Record<string, string> = {
   CAST_ABILITY: 'CST',
   ATTACK_SPEED: 'ASPD',
 }
+
 function formatObjectToString(obj: Stats): string {
   const filters = useAtomValue(filtersAtom).stats
+  const settings = useAtomValue(settingsAtom)
 
   return Object.entries(obj)
     .sort(([keyA]) => {
@@ -107,7 +110,7 @@ function formatObjectToString(obj: Stats): string {
       return 0
     })
     .map(([key, value]) => {
-      const shortKey = abbreviations[key] || key
+      const shortKey = settings.shortNames ? abbreviations[key] || key : key
       const isFiltered = filters.includes(key)
       const noGreenKeys = [
         abbreviations.CLER_CAST_LEVEL,

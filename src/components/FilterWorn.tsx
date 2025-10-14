@@ -33,23 +33,25 @@ export const FilterWorn = () => {
       <PopoverContent className="flex flex-col gap-2">
         {wornSpots.map((spot) => (
           <div className="flex items-center space-x-2" key={spot}>
-            <Checkbox
-              key={spot}
-              id={spot}
-              defaultChecked={worn.includes(spot)}
-              onCheckedChange={(event) =>
-                event
-                  ? setFilters((prev) => ({
-                      ...prev,
-                      worn: [...prev.worn, spot],
-                    }))
-                  : setFilters((prev) => ({
-                      ...prev,
-                      worn: prev.worn.filter((s) => s !== spot),
-                    }))
-              }
-            />
-            <Label htmlFor={spot}>{spot}</Label>
+            <Label htmlFor={spot}>
+              <Checkbox
+                key={spot}
+                id={spot}
+                defaultChecked={worn.includes(spot)}
+                onCheckedChange={(event) =>
+                  event
+                    ? setFilters((prev) => ({
+                        ...prev,
+                        worn: [...prev.worn, spot],
+                      }))
+                    : setFilters((prev) => ({
+                        ...prev,
+                        worn: prev.worn.filter((s) => s !== spot),
+                      }))
+                }
+              />
+              {spot}
+            </Label>
           </div>
         ))}
       </PopoverContent>

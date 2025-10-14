@@ -17,22 +17,24 @@ export const FilterClasses = () => {
       <PopoverContent className="flex flex-col gap-2">
         {classList.map((cls) => (
           <div className="flex items-center space-x-2" key={cls}>
-            <Checkbox
-              id={cls}
-              defaultChecked={classes.includes(cls)}
-              onCheckedChange={(event) =>
-                event
-                  ? setFilters((prev) => ({
-                      ...prev,
-                      classes: [...prev.classes, cls],
-                    }))
-                  : setFilters((prev) => ({
-                      ...prev,
-                      classes: prev.classes.filter((s) => s !== cls),
-                    }))
-              }
-            />
-            <Label htmlFor={cls}>{cls}</Label>
+            <Label htmlFor={cls}>
+              <Checkbox
+                id={cls}
+                defaultChecked={classes.includes(cls)}
+                onCheckedChange={(event) =>
+                  event
+                    ? setFilters((prev) => ({
+                        ...prev,
+                        classes: [...prev.classes, cls],
+                      }))
+                    : setFilters((prev) => ({
+                        ...prev,
+                        classes: prev.classes.filter((s) => s !== cls),
+                      }))
+                }
+              />
+              {cls}
+            </Label>
           </div>
         ))}
       </PopoverContent>

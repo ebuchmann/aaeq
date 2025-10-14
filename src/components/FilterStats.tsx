@@ -46,22 +46,24 @@ export const FilterStats = () => {
       <PopoverContent className="flex flex-col gap-2">
         {statsList.map((stat) => (
           <div className="flex items-center space-x-2" key={stat}>
-            <Checkbox
-              id={stat}
-              defaultChecked={stats.includes(stat)}
-              onCheckedChange={(event) =>
-                event
-                  ? setFilters((prev) => ({
-                      ...prev,
-                      stats: [...prev.stats, stat],
-                    }))
-                  : setFilters((prev) => ({
-                      ...prev,
-                      stats: prev.stats.filter((s) => s !== stat),
-                    }))
-              }
-            />
-            <Label htmlFor={stat}>{stat}</Label>
+            <Label htmlFor={stat}>
+              <Checkbox
+                id={stat}
+                defaultChecked={stats.includes(stat)}
+                onCheckedChange={(event) =>
+                  event
+                    ? setFilters((prev) => ({
+                        ...prev,
+                        stats: [...prev.stats, stat],
+                      }))
+                    : setFilters((prev) => ({
+                        ...prev,
+                        stats: prev.stats.filter((s) => s !== stat),
+                      }))
+                }
+              />
+              {stat}
+            </Label>
           </div>
         ))}
       </PopoverContent>
