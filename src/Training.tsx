@@ -43,7 +43,7 @@ const TrainingTable: React.FC = () => {
       ? JSON.parse(savedState)
       : initialData.map((row) => row.values.map(() => false))
   })
-  const [headerState, setHeaderState] = useState<string[]>(() => {
+  const [headerState] = useState<string[]>(() => {
     const savedState = localStorage.getItem('headerState')
     return savedState ? JSON.parse(savedState) : initialHeaderState
   })
@@ -51,8 +51,6 @@ const TrainingTable: React.FC = () => {
   useEffect(() => {
     localStorage.setItem('checkedState', JSON.stringify(checkedState))
   }, [checkedState])
-
-  const handleHeaderChange = (colIndex: number) => {}
 
   const handleCheckboxChange = (rowIndex: number, colIndex: number) => {
     setCheckedState((prevState) => {
