@@ -1,6 +1,9 @@
-import { useSetAtom } from 'jotai'
+import { useAtomValue, useSetAtom } from 'jotai'
 import { Checkbox } from './ui/checkbox'
 import { filtersAtom } from '@/state/filters'
+import { Popover, PopoverContent } from './ui/popover'
+import { PopoverTrigger } from '@radix-ui/react-popover'
+import { Label } from './ui/label'
 
 const wornSpots = [
   'HEAD',
@@ -16,35 +19,40 @@ const wornSpots = [
   'FEET',
   'HELD',
   'SHIELD',
-  '1_WIELD',
-  '2_WIELD',
+  '1-WIELD',
+  '2-WIELD',
 ]
 
 export const FilterWorn = () => {
   const setFilters = useSetAtom(filtersAtom)
+  const { worn } = useAtomValue(filtersAtom)
 
   return (
-    <>
-      {wornSpots.map((worn) => (
-        <>
-          <Checkbox
-            key={worn}
-            id={worn}
-            onCheckedChange={(event) =>
-              event
-                ? setFilters((prev) => ({
-                    ...prev,
-                    worn: [...prev.worn, worn],
-                  }))
-                : setFilters((prev) => ({
-                    ...prev,
-                    worn: prev.worn.filter((s) => s !== worn),
-                  }))
-            }
-          />
-          <label htmlFor={worn}>{worn}</label>
-        </>
-      ))}
-    </>
+    <Popover>
+      <PopoverTrigger>Worn</PopoverTrigger>
+      <PopoverContent className="flex flex-col gap-2">
+        {wornSpots.map((spot) => (
+          <div className="flex items-center space-x-2" key={spot}>
+            <Checkbox
+              key={spot}
+              id={spot}
+              defaultChecked={worn.includes(spot)}
+              onCheckedChange={(event) =>
+                event
+                  ? setFilters((prev) => ({
+                      ...prev,
+                      worn: [...prev.worn, spot],
+                    }))
+                  : setFilters((prev) => ({
+                      ...prev,
+                      worn: prev.worn.filter((s) => s !== spot),
+                    }))
+              }
+            />
+            <Label htmlFor={spot}>{spot}</Label>
+          </div>
+        ))}
+      </PopoverContent>
+    </Popover>
   )
 }

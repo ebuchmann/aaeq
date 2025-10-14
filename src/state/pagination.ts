@@ -7,5 +7,5 @@ type PaginationAtom = {
 
 export const paginationAtom = atom<PaginationAtom>({
   pageIndex: 0,
-  pageSize: 50,
+  pageSize: 100,
 })

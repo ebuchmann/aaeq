@@ -3,7 +3,7 @@ import * as path from 'path'
 
 const filePath = path.resolve(__dirname, 'Equipment_Log.txt')
 
-let equipmentLog: string
+let equipmentLog: string = ''
 
 try {
   equipmentLog = fs.readFileSync(filePath, 'utf-8')
@@ -101,7 +101,7 @@ const parseEquipmentLog = (log: string): Record<string, any>[] => {
       }
 
       const flagsMatch = line.match(
-        /(?<flags>FLOATING|ARTIFACT|GLOW|RARE|JUNK|QUEST_ITEM)/gi
+        /(?<flags>FLOATING|ARTIFACT|GLOW|RARE|JUNK|QUEST_ITEM)/g
       )
       if (flagsMatch) {
         equipmentItem.flags = flagsMatch
@@ -115,12 +115,17 @@ const parseEquipmentLog = (log: string): Record<string, any>[] => {
       }
 
       const statMatchRegex =
-        /(?<statKey>LUCK|STR|DEX|CON|WIS|INT|CHR|CAST_ABILITY|DAMROLL|HITROLL|ARMOR|PARRY|DODGE|AGE|MANA|MANA_REGEN|HP_REGEN|MOVE|MOV_REGEN|CLER_CAST_LEVEL|DRUID_CAST_LEVEL|THIEF_SKILL_LEVEL|MAGE_CAST_LEVEL|NECR_CAST_LEVEL|WARR_SKILL_LEVEL|ABSORB_FIRE|ABSORB_ICE|ABSORB_ZAP|ABSORB_MAGIC)\s+by\s+(?<statValue>-?\d+)/gi
+        /(?<statKey>LUCK|STR|DEX|CON|WIS|INT|CHR|CAST_ABILITY|ATTACK_SPEED|DAMROLL|HITROLL|ARMOR|PARRY|DODGE|AGE|MANA|MANA_REGEN|HP_REGEN|MOVE|MOV_REGEN|CLER_CAST_LEVEL|DRUID_CAST_LEVEL|THIEF_SKILL_LEVEL|MAGE_CAST_LEVEL|NECR_CAST_LEVEL|WARR_SKILL_LEVEL|ABSORB_FIRE|ABSORB_ICE|ABSORB_ZAP|ABSORB_MAGIC)\s+by\s+(?:minus\s+)?(?<statValue>-?\d+)/gi
       const statsMatch = line.match(statMatchRegex)
       if (statsMatch) {
         statsMatch.forEach((stat) => {
           const statParts = stat.split(/\s+by\s+/)
-          equipmentItem.stats[statParts[0]] = parseInt(statParts[1], 10)
+          const statKey = statParts[0].trim()
+          const statValue = statParts[1].replace('minus', '').trim()
+          const statNumber =
+            parseInt(statValue, 10) * (statParts[1].includes('minus') ? -1 : 1)
+          equipmentItem.stats[statKey] = statNumber
+          equipmentItem.stats[statParts[0]] = statNumber
         })
       }
 
@@ -131,9 +136,101 @@ const parseEquipmentLog = (log: string): Record<string, any>[] => {
   return equipmentData
 }
 
-const equipmentData = parseEquipmentLog(equipmentLog)
+const equipmentData = [] // parseEquipmentLog(equipmentLog)
 
 const outputFilePath = path.resolve(__dirname, 'Equipment_Data.json')
+
+const parseThiefFile = (filePath: string): Record<string, any>[] => {
+  const thiefData: Record<string, any>[] = []
+  try {
+    const fileContent = fs.readFileSync(filePath, 'utf-8')
+    const parsedData: any[][] = JSON.parse(JSON.parse(fileContent))
+
+    parsedData.forEach((entry) => {
+      const [classes, worn, name, level1, level2, flags, weight, ac, ...stats] =
+        entry
+      if (
+        equipmentData.find(
+          (item) => item.name.toLowerCase() === name.toLowerCase()
+        )
+      ) {
+        return // Skip if the item already exists in the equipmentItems array
+      }
+      const equipmentItem: Record<string, any> = {
+        name: name.trim(),
+        classLevel: parseInt(level1, 10),
+        totalLevel: parseInt(level2, 10),
+        level: Math.max(parseInt(level1, 10), parseInt(level2, 10)),
+        stats: {},
+      }
+
+      if (classes) {
+        equipmentItem.classes = classes.split(',').map((cls) => cls.trim())
+      }
+
+      if (worn) {
+        equipmentItem.worn = worn.split(',').map((slot) => slot.trim())
+      }
+
+      if (flags) {
+        equipmentItem.flags = flags.split(',').map((flag) => flag.trim())
+      }
+
+      if (weight) {
+        const weightMatch = weight.match(/Weight:\s*(\d+)/i)
+        if (weightMatch && weightMatch[1]) {
+          equipmentItem.weight = parseInt(weightMatch[1], 10)
+        }
+      }
+
+      if (ac) {
+        equipmentItem.ac = parseInt(ac, 10)
+      }
+
+      stats.forEach((stat) => {
+        const [statKey, statValue] = stat.split(' by ')
+        if (statKey && statValue) {
+          const cleanValue = statValue.replace('minus', '').trim()
+          equipmentItem.stats[statKey.trim()] =
+            parseInt(cleanValue, 10) * (statValue.includes('minus') ? -1 : 1)
+        }
+      })
+
+      const dropSourceMatch = stats.filter((stat) =>
+        /^(quest reward|mob|room|container)/i.test(stat)
+      )
+      if (dropSourceMatch.length > 0) {
+        equipmentItem.dropSources = dropSourceMatch
+          .flatMap((source) =>
+            source.match(/(?:quest reward|mob|room|container).*/gi)
+          )
+          .map((source) => source.trim())
+          .filter((source) => source.length > 0)
+      }
+
+      thiefData.push(equipmentItem)
+    })
+  } catch (error) {
+    console.error('Error reading or parsing thief.txt:', error)
+  }
+
+  return thiefData
+}
+
+const dataFiles = [
+  'data/cleric.txt',
+  'data/druid.txt',
+  'data/thief.txt',
+  'data/mage.txt',
+  'data/necro.txt',
+  'data/warrior.txt',
+]
+
+dataFiles.forEach((file) => {
+  const filePath = path.resolve(__dirname, file)
+  const data = parseThiefFile(filePath)
+  equipmentData.push(...data)
+})
 
 try {
   fs.writeFileSync(
