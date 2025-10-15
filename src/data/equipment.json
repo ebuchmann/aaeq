@@ -298,6 +298,32 @@
     "ac": null
   },
   {
+    "name": "an unholy symbol of Mnenoth",
+    "classLevel": 0,
+    "totalLevel": 119,
+    "level": 119,
+    "stats": {
+      "CLER_CAST_LEVEL": 1,
+      "THIEF_SKILL_LEVEL": 1,
+      "MANA": 11,
+      "MOVE": 11
+    },
+    "classes": [
+      "CLERIC THIEF"
+    ],
+    "worn": [
+      "NECK"
+    ],
+    "flags": [
+      "ARTIFACT ANTI_GOOD"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: a goblin shaman in Dwarven Underhalls in Moria"
+    ]
+  },
+  {
     "name": "A cloak woven from the beards of shellfish",
     "classLevel": 0,
     "totalLevel": 121,
@@ -342,6 +368,29 @@
     "dropSources": [
       "Mob: Seranik in The Rose Cathedral"
     ]
+  },
+  {
+    "name": "The White Knight Badge of Valor",
+    "classLevel": 0,
+    "totalLevel": 122,
+    "level": 122,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1,
+      "CLER_CAST_LEVEL": 1,
+      "MANA_REGEN": 1,
+      "MOV_REGEN": 1
+    },
+    "classes": [
+      "WARRIOR CLERIC"
+    ],
+    "worn": [
+      "HELD"
+    ],
+    "flags": [
+      "GOOD ARTIFACT"
+    ],
+    "weight": 1,
+    "ac": null
   },
   {
     "name": "a devotional scapular",
@@ -565,6 +614,32 @@
     ]
   },
   {
+    "name": "A platinum belt",
+    "classLevel": 0,
+    "totalLevel": 144,
+    "level": 144,
+    "stats": {
+      "MANA_REGEN": 4,
+      "CLER_CAST_LEVEL": 1,
+      "MANA": 8,
+      "CHR": 1
+    },
+    "classes": [
+      "CLERIC"
+    ],
+    "worn": [
+      "WAIST"
+    ],
+    "flags": [
+      "GOOD ARTIFACT"
+    ],
+    "weight": 12,
+    "ac": null,
+    "dropSources": [
+      "Container: A chest in the same room as Dr'Majj Tal in Elemental plane of darkness, core"
+    ]
+  },
+  {
     "name": "Heavens boon",
     "classLevel": 0,
     "totalLevel": 146,
@@ -590,6 +665,32 @@
     "ac": null,
     "dropSources": [
       "Quest reward in Jo'Kerin - Lake of Blood."
+    ]
+  },
+  {
+    "name": "a ruby-studded iron necklace",
+    "classLevel": 0,
+    "totalLevel": 146,
+    "level": 146,
+    "stats": {
+      "CLER_CAST_LEVEL": 1,
+      "SAVING_FIRE": 10,
+      "WIS": 1,
+      "CHR": 1
+    },
+    "classes": [
+      "CLERIC"
+    ],
+    "worn": [
+      "NECK"
+    ],
+    "flags": [
+      "GLOW ANTI_GOOD"
+    ],
+    "weight": 3,
+    "ac": null,
+    "dropSources": [
+      "Mob: A naga lieutenant in  The city of Behr'zok"
     ]
   },
   {
@@ -699,6 +800,30 @@
     "dropSources": [
       "Quest Reward:, Passed the test of the Elements in The Challenge of Elements"
     ]
+  },
+  {
+    "name": "a dragon bone wand",
+    "classLevel": 0,
+    "totalLevel": 153,
+    "level": 153,
+    "stats": {
+      "CLER_CAST_LEVEL": 1,
+      "CHR": 2,
+      "WIS": 2,
+      "MANA": 5,
+      "Built from dragon neck bone": null
+    },
+    "classes": [
+      "CLERIC"
+    ],
+    "worn": [
+      "1-WIELD"
+    ],
+    "flags": [
+      "GLOW"
+    ],
+    "weight": 4,
+    "ac": null
   },
   {
     "name": "an iridium bracer",
@@ -869,6 +994,81 @@
     ]
   },
   {
+    "name": "The Feet of Holiness",
+    "classLevel": 0,
+    "totalLevel": 168,
+    "level": 168,
+    "stats": {
+      "CLER_CAST_LEVEL": 1,
+      "MANA": 23,
+      "WIS": 1
+    },
+    "classes": [
+      "CLERIC"
+    ],
+    "worn": [
+      "FEET"
+    ],
+    "flags": [
+      "GOOD ARTIFACT GLOW"
+    ],
+    "weight": 6,
+    "ac": null,
+    "dropSources": [
+      "Mob: Lahlia the Damned in Elemental plane of darkness, echo"
+    ]
+  },
+  {
+    "name": "The Hands of Holiness",
+    "classLevel": 0,
+    "totalLevel": 168,
+    "level": 168,
+    "stats": {
+      "CLER_CAST_LEVEL": 1,
+      "MANA": 28,
+      "WIS": 1
+    },
+    "classes": [
+      "CLERIC"
+    ],
+    "worn": [
+      "HANDS"
+    ],
+    "flags": [
+      "GOOD RARE GLOW"
+    ],
+    "weight": 8,
+    "ac": null,
+    "dropSources": [
+      "Mob: Lahlia the Damned in Elemental plane of darkness, echo"
+    ]
+  },
+  {
+    "name": "A shining white kilt",
+    "classLevel": 0,
+    "totalLevel": 168,
+    "level": 168,
+    "stats": {
+      "CLER_CAST_LEVEL": 1,
+      "MANA": 22,
+      "WIS": 1
+    },
+    "classes": [
+      "CLERIC"
+    ],
+    "worn": [
+      "LEGS"
+    ],
+    "flags": [
+      "GOOD GLOW"
+    ],
+    "weight": 10,
+    "ac": null,
+    "dropSources": [
+      "Mob: Lahlia the Damned in Elemental plane of darkness, echo"
+    ]
+  },
+  {
     "name": "The Finger of Reorx",
     "classLevel": 0,
     "totalLevel": 169,
@@ -892,6 +1092,31 @@
     "ac": null,
     "dropSources": [
       "Room: The Chamber of Remembrance in The Apiarch Hive, Crepuscula"
+    ]
+  },
+  {
+    "name": "an obsidian doom-ring",
+    "classLevel": 0,
+    "totalLevel": 170,
+    "level": 170,
+    "stats": {
+      "CLER_CAST_LEVEL": 1,
+      "NECR_CAST_LEVEL": 1,
+      "MANA_REGEN": 3
+    },
+    "classes": [
+      "CLERIC NECRO"
+    ],
+    "worn": [
+      "FINGERS"
+    ],
+    "flags": [
+      "EVIL ANTI_NEUTRAL ANTI_GOOD HUM"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: Zghr'kiin'kiin the Tolo'trid in  Elemental plane of darkness, core"
     ]
   },
   {
@@ -1414,6 +1639,55 @@
     "ac": null,
     "dropSources": [
       "Room: A small chamber in The Haunted Crypts"
+    ]
+  },
+  {
+    "name": "a priest's red shawl",
+    "classLevel": 15,
+    "totalLevel": 0,
+    "level": 15,
+    "stats": {
+      "CLER_CAST_LEVEL": 1,
+      "MANA": 5
+    },
+    "classes": [
+      "CLERIC"
+    ],
+    "worn": [
+      "ARMS"
+    ],
+    "flags": [
+      "GLOW ANTI_EVIL CLERIC"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: The hunting horror in Thalos graveyard catacombs"
+    ]
+  },
+  {
+    "name": "a platinum ring",
+    "classLevel": 15,
+    "totalLevel": 0,
+    "level": 15,
+    "stats": {
+      "CLER_CAST_LEVEL": 1,
+      "MANA_REGEN": 0,
+      "MANA": 5
+    },
+    "classes": [
+      "CLERIC"
+    ],
+    "worn": [
+      "FINGERS"
+    ],
+    "flags": [
+      "GLOW ANTI_EVIL HUM CLERIC"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Container: a deep pit in the floor in Thalos graveyard catacombs"
     ]
   },
   {
@@ -3037,6 +3311,32 @@
     ]
   },
   {
+    "name": "a finger of Shift",
+    "classLevel": 29,
+    "totalLevel": 115,
+    "level": 115,
+    "stats": {
+      "CLER_CAST_LEVEL": 1,
+      "THIEF_SKILL_LEVEL": 1,
+      "HITROLL": 5,
+      "DAMROLL": 6
+    },
+    "classes": [
+      "CLERIC THIEF"
+    ],
+    "worn": [
+      "1-WIELD"
+    ],
+    "flags": [
+      "CLERIC"
+    ],
+    "weight": 16,
+    "ac": null,
+    "dropSources": [
+      "Mob: a dwarven priest of Shift in The Ralnoth Fen"
+    ]
+  },
+  {
     "name": "A diamond tiara",
     "classLevel": 30,
     "totalLevel": 0,
@@ -3107,6 +3407,30 @@
     "ac": null,
     "dropSources": [
       "Mob: A giant black figure in The griffin infested peak"
+    ]
+  },
+  {
+    "name": "the Robe of the Order of Leah",
+    "classLevel": 30,
+    "totalLevel": 0,
+    "level": 30,
+    "stats": {
+      "CLER_CAST_LEVEL": 1,
+      "MANA": 19
+    },
+    "classes": [
+      "CLERIC"
+    ],
+    "worn": [
+      "ABOUT_BODY"
+    ],
+    "flags": [
+      "GLOW ANTI_EVIL CLERIC"
+    ],
+    "weight": 5,
+    "ac": null,
+    "dropSources": [
+      "Mob: The High Priest of Leah in Mount Zendular"
     ]
   },
   {
@@ -3463,6 +3787,32 @@
     "ac": null,
     "dropSources": [
       "Mob: an orcish warpriest in Green River Valley"
+    ]
+  },
+  {
+    "name": "a pair of spectacles",
+    "classLevel": 32,
+    "totalLevel": 0,
+    "level": 32,
+    "stats": {
+      "CLER_CAST_LEVEL": 1,
+      "WIS": 2,
+      "CHR": 2,
+      "AGE": 15
+    },
+    "classes": [
+      "CLERIC"
+    ],
+    "worn": [
+      "HEAD"
+    ],
+    "flags": [
+      "RARE GLOW CLERIC"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: the town treasurer in The Town of Orton"
     ]
   },
   {
@@ -3877,6 +4227,32 @@
     "ac": null,
     "dropSources": [
       "Mob: Journeyman Healer Er'zul in The City of Hartmur"
+    ]
+  },
+  {
+    "name": "silky black robes",
+    "classLevel": 33,
+    "totalLevel": 0,
+    "level": 33,
+    "stats": {
+      "INT": 1,
+      "MANA": 5,
+      "CLER_CAST_LEVEL": 1,
+      "CAST_ABILITY": 2
+    },
+    "classes": [
+      "CLERIC"
+    ],
+    "worn": [
+      "ABOUT_BODY"
+    ],
+    "flags": [
+      "CLERIC"
+    ],
+    "weight": 5,
+    "ac": null,
+    "dropSources": [
+      "Mob: Serdwyn the Dark Sorceress in Castle Avalon"
     ]
   },
   {
@@ -4406,6 +4782,33 @@
     ]
   },
   {
+    "name": "A shroud of daylight",
+    "classLevel": 34,
+    "totalLevel": 146,
+    "level": 146,
+    "stats": {
+      "CLER_CAST_LEVEL": 1,
+      "WIS": 1,
+      "INT": 1,
+      "MANA_REGEN": 5,
+      "MANA": 8
+    },
+    "classes": [
+      "CLERIC"
+    ],
+    "worn": [
+      "ABOUT_BODY"
+    ],
+    "flags": [
+      "RARE LIGHT ANTI_EVIL ANTI_NEUTRAL CLERIC"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Container: A chest in the same room as Dr'Majj Tal in Elemental plane of darkness, core"
+    ]
+  },
+  {
     "name": "A Circlet of the Silver Throne",
     "classLevel": 35,
     "totalLevel": 0,
@@ -4581,6 +4984,30 @@
     "ac": null,
     "dropSources": [
       "Mob: King Alspacus in Halite Caverns beneath the salt flats"
+    ]
+  },
+  {
+    "name": "a dark kosode",
+    "classLevel": 35,
+    "totalLevel": 0,
+    "level": 35,
+    "stats": {
+      "NECR_CAST_LEVEL": 1,
+      "CLER_CAST_LEVEL": 1
+    },
+    "classes": [
+      "NECRO CLERIC"
+    ],
+    "worn": [
+      "ABOUT_BODY"
+    ],
+    "flags": [
+      "EVIL"
+    ],
+    "weight": 16,
+    "ac": null,
+    "dropSources": [
+      "Mob: The Kuei Spirit in The Jade Lake"
     ]
   },
   {
@@ -5062,6 +5489,32 @@
     "ac": null,
     "dropSources": [
       "Mob: Kerg, High Priest of the frost giants, Frost giant stronghold"
+    ]
+  },
+  {
+    "name": "blood stained white robes",
+    "classLevel": 36,
+    "totalLevel": 153,
+    "level": 153,
+    "stats": {
+      "MANA": 12,
+      "MANA_REGEN": 3,
+      "CLER_CAST_LEVEL": 1,
+      "CHR": 1
+    },
+    "classes": [
+      "CLERIC"
+    ],
+    "worn": [
+      "ABOUT_BODY"
+    ],
+    "flags": [
+      "GOOD ANTI_EVIL CLERIC"
+    ],
+    "weight": 8,
+    "ac": null,
+    "dropSources": [
+      "Mob: a rotting priest in Subterranean ruins, inner sanctum"
     ]
   },
   {
@@ -6085,6 +6538,34 @@
     "ac": null
   },
   {
+    "name": "An enchanted silk screen",
+    "classLevel": 37,
+    "totalLevel": 163,
+    "level": 163,
+    "stats": {
+      "CLER_CAST_LEVEL": 1,
+      "SAVING_BREATH": 25,
+      "MANA": 24,
+      "WIS": 1,
+      "INT": 1,
+      "CHR": 1
+    },
+    "classes": [
+      "CLERIC"
+    ],
+    "worn": [
+      "SHIELD"
+    ],
+    "flags": [
+      "ARTIFACT GLOW CLERIC"
+    ],
+    "weight": 5,
+    "ac": null,
+    "dropSources": [
+      "Mob: Buzgrel the high orc shaman in The mountain fortress of Erom Bhooj"
+    ]
+  },
+  {
     "name": "a blue moon talisman",
     "classLevel": 37,
     "totalLevel": 164,
@@ -6561,6 +7042,31 @@
     ]
   },
   {
+    "name": "An Unholy Symbol of Ils",
+    "classLevel": 38,
+    "totalLevel": 165,
+    "level": 165,
+    "stats": {
+      "NECR_CAST_LEVEL": 1,
+      "CLER_CAST_LEVEL": 1,
+      "MANA_REGEN": 5
+    },
+    "classes": [
+      "NECRO CLERIC"
+    ],
+    "worn": [
+      "NECK"
+    ],
+    "flags": [
+      "EVIL ARTIFACT ANTI_GOOD CLERIC"
+    ],
+    "weight": 4,
+    "ac": null,
+    "dropSources": [
+      "Container: A ramin wood chest in The Shiroi Sora Monastery."
+    ]
+  },
+  {
     "name": "A circlet of silver flames",
     "classLevel": 38,
     "totalLevel": 166,
@@ -6828,6 +7334,56 @@
     ]
   },
   {
+    "name": "A set of plain white linen leggings",
+    "classLevel": 38,
+    "totalLevel": 166,
+    "level": 166,
+    "stats": {
+      "CLER_CAST_LEVEL": 1,
+      "MANA_REGEN": 5,
+      "MANA": 7
+    },
+    "classes": [
+      "CLERIC"
+    ],
+    "worn": [
+      "LEGS"
+    ],
+    "flags": [
+      "GLOW ANTI_GOOD CLERIC"
+    ],
+    "weight": 2,
+    "ac": null,
+    "dropSources": [
+      "Mob: the giant mummy of some ancient royal in The Tombs of the Forgotten"
+    ]
+  },
+  {
+    "name": "An elegant black robe with silver trim",
+    "classLevel": 38,
+    "totalLevel": 166,
+    "level": 166,
+    "stats": {
+      "CLER_CAST_LEVEL": 1,
+      "MANA_REGEN": 5,
+      "MANA": 5
+    },
+    "classes": [
+      "CLERIC"
+    ],
+    "worn": [
+      "ON_BODY"
+    ],
+    "flags": [
+      "GLOW ANTI_EVIL CLERIC"
+    ],
+    "weight": 2,
+    "ac": null,
+    "dropSources": [
+      "Mob: Halipso the First King in The Tombs of the Forgotten"
+    ]
+  },
+  {
     "name": "A bangle of polished white bone",
     "classLevel": 38,
     "totalLevel": 167,
@@ -6852,6 +7408,32 @@
     "ac": null,
     "dropSources": [
       "Quest reward in The Island of Morjah"
+    ]
+  },
+  {
+    "name": "The helm of the High Paladin",
+    "classLevel": 38,
+    "totalLevel": 170,
+    "level": 170,
+    "stats": {
+      "CLER_CAST_LEVEL": 1,
+      "WARR_SKILL_LEVEL": 1,
+      "WIS": 1,
+      "MANA_REGEN": 5
+    },
+    "classes": [
+      "CLERIC WARRIOR"
+    ],
+    "worn": [
+      "HEAD"
+    ],
+    "flags": [
+      "ARTIFACT ANTI_EVIL ANTI_NEUTRAL CLERIC WARRIOR"
+    ],
+    "weight": 28,
+    "ac": null,
+    "dropSources": [
+      "Mob: Lahlia the Damned in Elemental plane of darkness, echo"
     ]
   },
   {
@@ -7120,6 +7702,30 @@
     "ac": null
   },
   {
+    "name": "the bracelet of the blessed moons",
+    "classLevel": 39,
+    "totalLevel": 174,
+    "level": 174,
+    "stats": {
+      "CLER_CAST_LEVEL": 1,
+      "CAST_ABILITY": 5
+    },
+    "classes": [
+      "CLERIC"
+    ],
+    "worn": [
+      "WRISTS"
+    ],
+    "flags": [
+      "CLERIC"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: Vansu in The Rubiac Plain."
+    ]
+  },
+  {
     "name": "The Bident of Hades",
     "classLevel": 39,
     "totalLevel": 175,
@@ -7143,6 +7749,31 @@
     "ac": null,
     "dropSources": [
       "Container: A Vault of Hades (2nd) in The Realm of Hades, Asphodel Meadow"
+    ]
+  },
+  {
+    "name": "a small platinum ring 2",
+    "classLevel": 39,
+    "totalLevel": 175,
+    "level": 175,
+    "stats": {
+      "CLER_CAST_LEVEL": 1,
+      "MANA_REGEN": 5,
+      "MANA": 15
+    },
+    "classes": [
+      "CLERIC"
+    ],
+    "worn": [
+      "FINGERS"
+    ],
+    "flags": [
+      "RARE GLOW ANTI_EVIL CLERIC"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Container: A small iron chest in Demiplane near Grae Keep"
     ]
   },
   {
@@ -7814,6 +8445,31 @@
     ]
   },
   {
+    "name": "a pair of green cotton gloves embroidered in ivy",
+    "classLevel": 9,
+    "totalLevel": 20,
+    "level": 20,
+    "stats": {
+      "DRUID_CAST_LEVEL": 1,
+      "MANA_REGEN": 0,
+      "MANA": 2
+    },
+    "classes": [
+      "DRUID"
+    ],
+    "worn": [
+      "HANDS"
+    ],
+    "flags": [
+      "GLOW ANTI_EVIL DRUID"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Container: a bloody corpse in A chamber of corpses in The Old Indira Ruins"
+    ]
+  },
+  {
     "name": "A druid's robe",
     "classLevel": 11,
     "totalLevel": 0,
@@ -8076,13 +8732,13 @@
     ]
   },
   {
-    "name": "A pair of magical mittens",
+    "name": "a pair of magical mittens",
     "classLevel": 13,
     "totalLevel": 0,
     "level": 13,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA": 6
+      "MANA": 5
     },
     "classes": [
       "DRUID"
@@ -8684,64 +9340,14 @@
     ]
   },
   {
-    "name": "A pair of twilight grey boots",
+    "name": "a twilight grey robe",
     "classLevel": 20,
     "totalLevel": 0,
     "level": 20,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
       "MANA_REGEN": 0,
-      "MANA": 4
-    },
-    "classes": [
-      "DRUID"
-    ],
-    "worn": [
-      "FEET"
-    ],
-    "flags": [
-      "DRUID"
-    ],
-    "weight": 2,
-    "ac": null,
-    "dropSources": [
-      "Mob: Nulien the druidess in Tainted forest north of Smuggler's Cove"
-    ]
-  },
-  {
-    "name": "A twilight grey cap",
-    "classLevel": 20,
-    "totalLevel": 0,
-    "level": 20,
-    "stats": {
-      "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 0,
-      "MANA": 6
-    },
-    "classes": [
-      "DRUID"
-    ],
-    "worn": [
-      "HEAD"
-    ],
-    "flags": [
-      "DRUID"
-    ],
-    "weight": 1,
-    "ac": null,
-    "dropSources": [
-      "Mob: The researcher Endolf in Tainted forest north of Smuggler's Cove Mob: The researcher Jaral in Tainted forest north of Smuggler's Cove"
-    ]
-  },
-  {
-    "name": "A twilight grey robe",
-    "classLevel": 20,
-    "totalLevel": 0,
-    "level": 20,
-    "stats": {
-      "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 0,
-      "MANA": 6
+      "INT": 1
     },
     "classes": [
       "DRUID"
@@ -8750,12 +9356,62 @@
       "ON_BODY"
     ],
     "flags": [
-      "DRUID"
+      "GLOW DRUID"
     ],
     "weight": 3,
     "ac": null,
     "dropSources": [
       "Mob: multiple druid mobs in Tainted forest north of Smuggler's Cove."
+    ]
+  },
+  {
+    "name": "a pair of twilight grey boots",
+    "classLevel": 20,
+    "totalLevel": 0,
+    "level": 20,
+    "stats": {
+      "DRUID_CAST_LEVEL": 1,
+      "MANA_REGEN": 0,
+      "CHR": 1
+    },
+    "classes": [
+      "DRUID"
+    ],
+    "worn": [
+      "FEET"
+    ],
+    "flags": [
+      "GLOW DRUID"
+    ],
+    "weight": 2,
+    "ac": null,
+    "dropSources": [
+      "Mob: Nulien the druidess in Tainted forest north of Smuggler's Cove"
+    ]
+  },
+  {
+    "name": "a twilight grey cap",
+    "classLevel": 20,
+    "totalLevel": 0,
+    "level": 20,
+    "stats": {
+      "DRUID_CAST_LEVEL": 1,
+      "MANA_REGEN": 0,
+      "WIS": 1
+    },
+    "classes": [
+      "DRUID"
+    ],
+    "worn": [
+      "HEAD"
+    ],
+    "flags": [
+      "GLOW DRUID"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: The researcher Endolf in Tainted forest north of Smuggler's Cove Mob: The researcher Jaral in Tainted forest north of Smuggler's Cove"
     ]
   },
   {
@@ -9537,6 +10193,34 @@
     "ac": null
   },
   {
+    "name": "an ivory moonstone bracer",
+    "classLevel": 26,
+    "totalLevel": 0,
+    "level": 26,
+    "stats": {
+      "DRUID_CAST_LEVEL": 1,
+      "MANA_REGEN": 2,
+      "MANA": 5,
+      "WIS": 1,
+      "INT": 1,
+      "CON": 1
+    },
+    "classes": [
+      "DRUID"
+    ],
+    "worn": [
+      "WRISTS"
+    ],
+    "flags": [
+      "ARTIFACT GLOW ANTI_EVIL DRUID"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob:  The druid Rugarro in Fort Ironcliff"
+    ]
+  },
+  {
     "name": "A cape of green slime",
     "classLevel": 26,
     "totalLevel": 97,
@@ -9912,6 +10596,23 @@
     ]
   },
   {
+    "name": "a bog oak shield",
+    "classLevel": 28,
+    "totalLevel": 0,
+    "level": 28,
+    "stats": {
+      "DRUID_CAST_LEVEL": 1
+    },
+    "classes": [
+      "DRUID"
+    ],
+    "worn": [
+      "SHIELD"
+    ],
+    "weight": 18,
+    "ac": null
+  },
+  {
     "name": "The Shield of the Alpha Wolf",
     "classLevel": 28,
     "totalLevel": 109,
@@ -10032,6 +10733,25 @@
     "dropSources": [
       "Mob: The wererat shaman in Old Thalos tunnels"
     ]
+  },
+  {
+    "name": "a green balmoral cap",
+    "classLevel": 29,
+    "totalLevel": 0,
+    "level": 29,
+    "stats": {
+      "DRUID_CAST_LEVEL": 1,
+      "WIS": 1,
+      "SAVING_COLD": 5
+    },
+    "classes": [
+      "DRUID"
+    ],
+    "worn": [
+      "HEAD"
+    ],
+    "weight": 4,
+    "ac": null
   },
   {
     "name": "A rune-engraved jade talisman",
@@ -10232,6 +10952,30 @@
     "dropSources": [
       "Container: an old iron bounded chest in The Western Forest"
     ]
+  },
+  {
+    "name": "a druidic totem of a planarian worm",
+    "classLevel": 30,
+    "totalLevel": 0,
+    "level": 30,
+    "stats": {
+      "DRUID_CAST_LEVEL": 1,
+      "HP_REGEN": 1,
+      "MANA_REGEN": 2,
+      "MOV_REGEN": 3,
+      "Job: Search the Vom Bog for some bog oak given": null
+    },
+    "classes": [
+      "DRUID"
+    ],
+    "worn": [
+      "HELD"
+    ],
+    "flags": [
+      "RARE DRUID"
+    ],
+    "weight": 5,
+    "ac": null
   },
   {
     "name": "An earthen brown robe",
@@ -12644,6 +13388,30 @@
     ]
   },
   {
+    "name": "a crystal snowflake pendant",
+    "classLevel": 37,
+    "totalLevel": 0,
+    "level": 37,
+    "stats": {
+      "DRUID_CAST_LEVEL": 1,
+      "ABSORB_ICE": 5
+    },
+    "classes": [
+      "DRUID"
+    ],
+    "worn": [
+      "NECK"
+    ],
+    "flags": [
+      "DRUID"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: Myridia of the Winter Court in The capital city of Naginag, Silver Palace"
+    ]
+  },
+  {
     "name": "a brilliant moonstone charm bracelet",
     "classLevel": 37,
     "totalLevel": 159,
@@ -13022,31 +13790,6 @@
     ]
   },
   {
-    "name": "A gold ring adorned with a small emerald",
-    "classLevel": 38,
-    "totalLevel": 0,
-    "level": 38,
-    "stats": {
-      "DRUID_CAST_LEVEL": 1,
-      "SAVING_SPELL": 25,
-      "MANA": 3
-    },
-    "classes": [
-      "DRUID"
-    ],
-    "worn": [
-      "FINGERS"
-    ],
-    "flags": [
-      "GLOW ANTI_EVIL ANTI_GOOD"
-    ],
-    "weight": 1,
-    "ac": null,
-    "dropSources": [
-      "Mob: the giant mummy of some ancient royal in The Tombs of the Forgotten"
-    ]
-  },
-  {
     "name": "a leaf-engraved silver anklet",
     "classLevel": 38,
     "totalLevel": 0,
@@ -13277,31 +14020,6 @@
     ]
   },
   {
-    "name": "An elegant black robe with silver trim",
-    "classLevel": 38,
-    "totalLevel": 0,
-    "level": 38,
-    "stats": {
-      "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
-      "MANA": 8
-    },
-    "classes": [
-      "DRUID"
-    ],
-    "worn": [
-      "ON_BODY"
-    ],
-    "flags": [
-      "GLOW ANTI_EVIL ANTI_NEUTRAL"
-    ],
-    "weight": 2,
-    "ac": null,
-    "dropSources": [
-      "Mob: Halipso the first king in The Tombs of the Forgotten"
-    ]
-  },
-  {
     "name": "bands of braided hemp",
     "classLevel": 38,
     "totalLevel": 0,
@@ -13401,6 +14119,96 @@
     ],
     "weight": 10,
     "ac": null
+  },
+  {
+    "name": "a green leaf-patterned hoop skirt",
+    "classLevel": 38,
+    "totalLevel": 0,
+    "level": 38,
+    "stats": {
+      "DRUID_CAST_LEVEL": 1,
+      "INT": 1,
+      "WIS": 1,
+      "MANA": 10
+    },
+    "classes": [
+      "DRUID"
+    ],
+    "worn": [
+      "LEGS"
+    ],
+    "weight": 2,
+    "ac": null,
+    "dropSources": [
+      "Mob: Hecshire, Councilor of Transportation in The capital city of Naginag, Silver Palace"
+    ]
+  },
+  {
+    "name": "a green leaf-patterned chemise",
+    "classLevel": 38,
+    "totalLevel": 0,
+    "level": 38,
+    "stats": {
+      "DRUID_CAST_LEVEL": 1,
+      "INT": 1,
+      "WIS": 1,
+      "MANA": 10
+    },
+    "classes": [
+      "DRUID"
+    ],
+    "worn": [
+      "ON_BODY"
+    ],
+    "weight": 2,
+    "ac": null,
+    "dropSources": [
+      "Mob: Hecshire, Councilor of Transportation in The capital city of Naginag, Silver Palace"
+    ]
+  },
+  {
+    "name": "leaf-green slippers",
+    "classLevel": 38,
+    "totalLevel": 0,
+    "level": 38,
+    "stats": {
+      "DRUID_CAST_LEVEL": 1,
+      "MANA_REGEN": 2
+    },
+    "classes": [
+      "DRUID"
+    ],
+    "worn": [
+      "FEET"
+    ],
+    "weight": 2,
+    "ac": null,
+    "dropSources": [
+      "Mob: Hecshire, Councilor of Transportation in The capital city of Naginag, Silver Palace"
+    ]
+  },
+  {
+    "name": "a leaf green hennin",
+    "classLevel": 38,
+    "totalLevel": 0,
+    "level": 38,
+    "stats": {
+      "DRUID_CAST_LEVEL": 1,
+      "INT": 1,
+      "WIS": 1,
+      "MANA": 10
+    },
+    "classes": [
+      "DRUID"
+    ],
+    "worn": [
+      "HEAD"
+    ],
+    "weight": 2,
+    "ac": null,
+    "dropSources": [
+      "Mob: Hecshire, Councilor of Transportation in The capital city of Naginag, Silver Palace"
+    ]
   },
   {
     "name": "A robe of earth colored crystals",
@@ -13667,6 +14475,84 @@
     "ac": null,
     "dropSources": [
       "Container: the corpse of a druid in The Sea of Despair"
+    ]
+  },
+  {
+    "name": "talisman of the wind",
+    "classLevel": 38,
+    "totalLevel": 166,
+    "level": 166,
+    "stats": {
+      "DRUID_CAST_LEVEL": 1,
+      "INT": 1,
+      "MANA": 12,
+      "SAVING_BREATH": 25
+    },
+    "classes": [
+      "DRUID"
+    ],
+    "worn": [
+      "NECK"
+    ],
+    "flags": [
+      "GLOW ANTI_GOOD HUM DRUID"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Room: Deep beneath the pyramid in Jahmeir's Golems"
+    ]
+  },
+  {
+    "name": "A gold ring adorned with a small emerald",
+    "classLevel": 38,
+    "totalLevel": 166,
+    "level": 166,
+    "stats": {
+      "DRUID_CAST_LEVEL": 1,
+      "MANA_REGEN": 5,
+      "SAVING_SPELL": 5,
+      "SAVING_POISON": 5,
+      "MANA": 4
+    },
+    "classes": [
+      "DRUID"
+    ],
+    "worn": [
+      "FINGERS"
+    ],
+    "flags": [
+      "GLOW ANTI_EVIL ANTI_GOOD DRUID"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: the giant mummy of some ancient royal in The Tombs of the Forgotten"
+    ]
+  },
+  {
+    "name": "A topaz charm on a leather cord",
+    "classLevel": 38,
+    "totalLevel": 166,
+    "level": 166,
+    "stats": {
+      "DRUID_CAST_LEVEL": 1,
+      "MANA": 16,
+      "SAVING_ZAP": 25
+    },
+    "classes": [
+      "DRUID"
+    ],
+    "worn": [
+      "NECK"
+    ],
+    "flags": [
+      "RARE GLOW DRUID"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Container: a shimmering black sphere in Wizard's Tomb"
     ]
   },
   {
@@ -14000,6 +14886,31 @@
     ]
   },
   {
+    "name": "A long black duster",
+    "classLevel": 0,
+    "totalLevel": 90,
+    "level": 90,
+    "stats": {
+      "THIEF_SKILL_LEVEL": 1,
+      "HIDE": 2,
+      "ATTACK_SPEED": 1
+    },
+    "classes": [
+      "THIEF"
+    ],
+    "worn": [
+      "ABOUT_BODY"
+    ],
+    "flags": [
+      "ARTIFACT"
+    ],
+    "weight": 6,
+    "ac": null,
+    "dropSources": [
+      "Mob: Dylan in some no-name village"
+    ]
+  },
+  {
     "name": "A black cummerbund",
     "classLevel": 0,
     "totalLevel": 94,
@@ -14196,6 +15107,32 @@
     "ac": null,
     "dropSources": [
       "Quest reward in Colony of Nueva Granada"
+    ]
+  },
+  {
+    "name": "the Scepter of Shadows",
+    "classLevel": 0,
+    "totalLevel": 117,
+    "level": 117,
+    "stats": {
+      "THIEF_SKILL_LEVEL": 2,
+      "DAMROLL": 3,
+      "MANA": 9,
+      "MOVE": 14
+    },
+    "classes": [
+      "THIEF"
+    ],
+    "worn": [
+      "1-WIELD"
+    ],
+    "flags": [
+      "ARTIFACT RELIC"
+    ],
+    "weight": 9,
+    "ac": null,
+    "dropSources": [
+      "Mob: A Sak'trid in Avalon Hill"
     ]
   },
   {
@@ -14510,6 +15447,31 @@
     ]
   },
   {
+    "name": "Black stone boots",
+    "classLevel": 0,
+    "totalLevel": 147,
+    "level": 147,
+    "stats": {
+      "THIEF_SKILL_LEVEL": 1,
+      "DAMROLL": 5,
+      "SNEAK": 1
+    },
+    "classes": [
+      "THIEF"
+    ],
+    "worn": [
+      "FEET"
+    ],
+    "flags": [
+      "ARTIFACT ANTI_NEUTRAL ANTI_GOOD"
+    ],
+    "weight": 2,
+    "ac": null,
+    "dropSources": [
+      "Room: A chamber of ice in Western Mengaw Forest"
+    ]
+  },
+  {
     "name": "A silvery white fur belt",
     "classLevel": 0,
     "totalLevel": 151,
@@ -14555,6 +15517,84 @@
     "ac": null,
     "dropSources": [
       "Mob: Baron Jagerson of Eisdorf in The Village of Eisdorf"
+    ]
+  },
+  {
+    "name": "a ring of shadowmancy",
+    "classLevel": 0,
+    "totalLevel": 158,
+    "level": 158,
+    "stats": {
+      "NECR_CAST_LEVEL": 1,
+      "THIEF_SKILL_LEVEL": 1,
+      "MANA_REGEN": 0,
+      "MOV_REGEN": 1
+    },
+    "classes": [
+      "NECRO THIEF"
+    ],
+    "worn": [
+      "FINGERS"
+    ],
+    "flags": [
+      "EVIL"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: a fell aalf necromancer in The Gauntlet, western Dunn Hurr"
+    ]
+  },
+  {
+    "name": "an amulet of shadowmancy",
+    "classLevel": 0,
+    "totalLevel": 158,
+    "level": 158,
+    "stats": {
+      "NECR_CAST_LEVEL": 1,
+      "THIEF_SKILL_LEVEL": 1,
+      "MANA_REGEN": 0,
+      "MOV_REGEN": 1
+    },
+    "classes": [
+      "NECRO THIEF"
+    ],
+    "worn": [
+      "NECK"
+    ],
+    "flags": [
+      "EVIL"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: a fell aalf necromancer in The Gauntlet, western Dunn Hurr"
+    ]
+  },
+  {
+    "name": "an amulet of shadowmancy",
+    "classLevel": 0,
+    "totalLevel": 158,
+    "level": 158,
+    "stats": {
+      "NECR_CAST_LEVEL": 1,
+      "THIEF_SKILL_LEVEL": 1,
+      "MANA_REGEN": 0,
+      "MOV_REGEN": 1
+    },
+    "classes": [
+      "NECRO THIEF"
+    ],
+    "worn": [
+      "NECK"
+    ],
+    "flags": [
+      "EVIL"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: a fell aalf necromancer in The Gauntlet, western Dunn Hurr"
     ]
   },
   {
@@ -14743,6 +15783,24 @@
       "LEGS"
     ],
     "weight": 2,
+    "ac": null
+  },
+  {
+    "name": "Hairy bili ape-skin sleeves",
+    "classLevel": 0,
+    "totalLevel": 166,
+    "level": 166,
+    "stats": {
+      "THIEF_SKILL_LEVEL": 1,
+      "DAMROLL": 3
+    },
+    "classes": [
+      "THIEF"
+    ],
+    "worn": [
+      "ARMS"
+    ],
+    "weight": 4,
     "ac": null
   },
   {
@@ -15860,15 +16918,15 @@
     ]
   },
   {
-    "name": "A rat shaped medallion",
+    "name": "a rat shaped medallion",
     "classLevel": 19,
     "totalLevel": 0,
     "level": 19,
     "stats": {
       "THIEF_SKILL_LEVEL": 1,
-      "DAMROLL": 1,
+      "DAMROLL": 2,
       "HITROLL": 1,
-      "DEX": 1
+      "CAST_ABILITY": -1
     },
     "classes": [
       "THIEF"
@@ -15877,39 +16935,12 @@
       "NECK"
     ],
     "flags": [
-      "ARTIFACT THIEF"
+      "ARTIFACT ANTI_GOOD THIEF"
     ],
     "weight": 1,
     "ac": null,
     "dropSources": [
       "Mob: Rataga the assassin in The northern Pleiad islands"
-    ]
-  },
-  {
-    "name": "A shadowy black ring",
-    "classLevel": 19,
-    "totalLevel": 0,
-    "level": 19,
-    "stats": {
-      "THIEF_SKILL_LEVEL": 1,
-      "DEX": 1,
-      "CHR": 2,
-      "MOV_REGEN": 3,
-      "MOVE": 5
-    },
-    "classes": [
-      "THIEF"
-    ],
-    "worn": [
-      "FINGERS"
-    ],
-    "flags": [
-      "RARE THIEF"
-    ],
-    "weight": 1,
-    "ac": null,
-    "dropSources": [
-      "Mob: Mia'Chian in Castle Kraftrager"
     ]
   },
   {
@@ -16455,6 +17486,60 @@
     "ac": null,
     "dropSources": [
       "Mob: A rogue hunter in Rogue Settlement"
+    ]
+  },
+  {
+    "name": "a set of Barbed armplates",
+    "classLevel": 21,
+    "totalLevel": 0,
+    "level": 21,
+    "stats": {
+      "THIEF_SKILL_LEVEL": 1,
+      "DAMROLL": 1,
+      "HITROLL": 1,
+      "HP_REGEN": -2
+    },
+    "classes": [
+      "THIEF"
+    ],
+    "worn": [
+      "ARMS"
+    ],
+    "flags": [
+      "RARE ANTI_EVIL THIEF"
+    ],
+    "weight": 2,
+    "ac": null,
+    "dropSources": [
+      "Container: a runed chest in Castle Kraftrager"
+    ]
+  },
+  {
+    "name": "a shadowy black ring",
+    "classLevel": 21,
+    "totalLevel": 0,
+    "level": 21,
+    "stats": {
+      "THIEF_SKILL_LEVEL": 1,
+      "DEX": 1,
+      "STR": 1,
+      "CHR": 1,
+      "MOVE": 5,
+      "MOV_REGEN": 5
+    },
+    "classes": [
+      "THIEF"
+    ],
+    "worn": [
+      "FINGERS"
+    ],
+    "flags": [
+      "RARE THIEF"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: Mia'Chian in Castle Kraftrager"
     ]
   },
   {
@@ -18057,6 +19142,31 @@
     ]
   },
   {
+    "name": "darkened boots",
+    "classLevel": 29,
+    "totalLevel": 113,
+    "level": 113,
+    "stats": {
+      "THIEF_SKILL_LEVEL": 1,
+      "DAMROLL": 2,
+      "SNEAK": 1
+    },
+    "classes": [
+      "THIEF"
+    ],
+    "worn": [
+      "FEET"
+    ],
+    "flags": [
+      "RARE THIEF"
+    ],
+    "weight": 5,
+    "ac": null,
+    "dropSources": [
+      "Mob: Mason, the Inn's master in Khal-Uktar, the Dwarven Marketplace"
+    ]
+  },
+  {
     "name": "A black visored scorpion-tailed helmet",
     "classLevel": 29,
     "totalLevel": 114,
@@ -18342,6 +19452,33 @@
     "ac": null,
     "dropSources": [
       "Mob: the ancient guardian of the forest in L the Magnificent's Magical Topiary Garden"
+    ]
+  },
+  {
+    "name": "a silver longsword",
+    "classLevel": 30,
+    "totalLevel": 0,
+    "level": 30,
+    "stats": {
+      "HITROLL": 4,
+      "DAMROLL": 4,
+      "THIEF_SKILL_LEVEL": 1,
+      "DEX": 1,
+      "CON": 1
+    },
+    "classes": [
+      "THIEF"
+    ],
+    "worn": [
+      "1-WIELD"
+    ],
+    "flags": [
+      "ANTI_GOOD THIEF"
+    ],
+    "weight": 8,
+    "ac": null,
+    "dropSources": [
+      "Mob: A drow warrior in The drow outpost."
     ]
   },
   {
@@ -18667,6 +19804,57 @@
     ]
   },
   {
+    "name": "A Sabat-hide kilt",
+    "classLevel": 31,
+    "totalLevel": 0,
+    "level": 31,
+    "stats": {
+      "THIEF_SKILL_LEVEL": 1,
+      "DAMROLL": 1,
+      "DEX": 1,
+      "SNEAK": 1
+    },
+    "classes": [
+      "THIEF"
+    ],
+    "worn": [
+      "WAIST"
+    ],
+    "flags": [
+      "EVIL THIEF"
+    ],
+    "weight": 2,
+    "ac": null,
+    "dropSources": [
+      "Mob: A Cauldron Born in Elemental plane of darkness, core"
+    ]
+  },
+  {
+    "name": "Wings of the Pegasus",
+    "classLevel": 31,
+    "totalLevel": 0,
+    "level": 31,
+    "stats": {
+      "THIEF_SKILL_LEVEL": 1,
+      "SNEAK": 2,
+      "MOV_REGEN": 10
+    },
+    "classes": [
+      "THIEF"
+    ],
+    "worn": [
+      "ABOUT_BODY"
+    ],
+    "flags": [
+      "ARTIFACT"
+    ],
+    "weight": 2,
+    "ac": null,
+    "dropSources": [
+      "Mob: Pegasus in Olympus"
+    ]
+  },
+  {
     "name": "A black kimono",
     "classLevel": 31,
     "totalLevel": 127,
@@ -18763,6 +19951,59 @@
     "ac": null,
     "dropSources": [
       "Container: a shadowy chest in Village of Inari, secret lair"
+    ]
+  },
+  {
+    "name": "a cloak of elvenkind",
+    "classLevel": 31,
+    "totalLevel": 127,
+    "level": 127,
+    "stats": {
+      "THIEF_SKILL_LEVEL": 1,
+      "DAMROLL": 3,
+      "SNEAK": 1,
+      "HIDE": 1
+    },
+    "classes": [
+      "THIEF"
+    ],
+    "worn": [
+      "ABOUT_BODY"
+    ],
+    "flags": [
+      "ANTI_EVIL ANTI_NEUTRAL THIEF"
+    ],
+    "weight": 10,
+    "ac": null,
+    "dropSources": [
+      "Mob: The Captain of the royal guard in Castle Avalon"
+    ]
+  },
+  {
+    "name": "A sleek leather belt",
+    "classLevel": 31,
+    "totalLevel": 128,
+    "level": 128,
+    "stats": {
+      "THIEF_SKILL_LEVEL": 1,
+      "DAMROLL": 3,
+      "CON": 1,
+      "SNEAK": 1,
+      "MANA": -3
+    },
+    "classes": [
+      "THIEF"
+    ],
+    "worn": [
+      "WAIST"
+    ],
+    "flags": [
+      "RARE THIEF"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: Theron, the guildmaster of thieves in The City of Dreahul"
     ]
   },
   {
@@ -18995,6 +20236,30 @@
     ]
   },
   {
+    "name": "a double strand of black seeds",
+    "classLevel": 32,
+    "totalLevel": 0,
+    "level": 32,
+    "stats": {
+      "THIEF_SKILL_LEVEL": 1,
+      "ATTACK_SPEED": 2
+    },
+    "classes": [
+      "THIEF"
+    ],
+    "worn": [
+      "WRISTS"
+    ],
+    "flags": [
+      "THIEF"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: A murlock cityguard in The city of Behr'zok"
+    ]
+  },
+  {
     "name": "A shadow demon crown",
     "classLevel": 32,
     "totalLevel": 129,
@@ -19195,33 +20460,6 @@
     "ac": null,
     "dropSources": [
       "Container: a massive crystalline chest, A secret vault, The everlit depths of Thuoduhr"
-    ]
-  },
-  {
-    "name": "A sleek leather belt",
-    "classLevel": 32,
-    "totalLevel": 134,
-    "level": 134,
-    "stats": {
-      "THIEF_SKILL_LEVEL": 1,
-      "DAMROLL": 3,
-      "CON": 1,
-      "SNEAK": 1,
-      "MANA": -3
-    },
-    "classes": [
-      "THIEF"
-    ],
-    "worn": [
-      "WAIST"
-    ],
-    "flags": [
-      "RARE THIEF"
-    ],
-    "weight": 1,
-    "ac": null,
-    "dropSources": [
-      "Mob: Theron, the guildmaster of thieves in The City of Dreahul"
     ]
   },
   {
@@ -19974,6 +21212,32 @@
     ]
   },
   {
+    "name": "a shiny dagger",
+    "classLevel": 34,
+    "totalLevel": 0,
+    "level": 34,
+    "stats": {
+      "THIEF_SKILL_LEVEL": 2,
+      "DAMROLL": 4,
+      "DEX": 3,
+      "SAVING_POISON": 5
+    },
+    "classes": [
+      "THIEF"
+    ],
+    "worn": [
+      "1-WIELD"
+    ],
+    "flags": [
+      "ARTIFACT ANTI_GOOD THIEF RELIC"
+    ],
+    "weight": 4,
+    "ac": null,
+    "dropSources": [
+      "Mob: A wanted man in The Adarin Desert"
+    ]
+  },
+  {
     "name": "an Order of the Viper tunic",
     "classLevel": 34,
     "totalLevel": 142,
@@ -20710,6 +21974,57 @@
     ]
   },
   {
+    "name": "Misty leg plates",
+    "classLevel": 36,
+    "totalLevel": 0,
+    "level": 36,
+    "stats": {
+      "THIEF_SKILL_LEVEL": 1,
+      "DAMROLL": 3,
+      "SAVING_FIRE": -5
+    },
+    "classes": [
+      "THIEF"
+    ],
+    "worn": [
+      "LEGS"
+    ],
+    "flags": [
+      "RARE FLOATING"
+    ],
+    "weight": 11,
+    "ac": null,
+    "dropSources": [
+      "Mob: Mistborn in Jo'Kerin - Lake of Blood"
+    ]
+  },
+  {
+    "name": "a bladed red cloak",
+    "classLevel": 36,
+    "totalLevel": 0,
+    "level": 36,
+    "stats": {
+      "THIEF_SKILL_LEVEL": 1,
+      "HITROLL": 1,
+      "DAMROLL": 1,
+      "DEX": 1
+    },
+    "classes": [
+      "THIEF"
+    ],
+    "worn": [
+      "ABOUT_BODY"
+    ],
+    "flags": [
+      "THIEF"
+    ],
+    "weight": 4,
+    "ac": null,
+    "dropSources": [
+      "Mob: a naga commander in  The city of Behr'zok"
+    ]
+  },
+  {
     "name": "A House Azgalor Signet Ring",
     "classLevel": 36,
     "totalLevel": 153,
@@ -20755,6 +22070,32 @@
     "ac": null
   },
   {
+    "name": "A scorpion brocade tunic",
+    "classLevel": 36,
+    "totalLevel": 154,
+    "level": 154,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1,
+      "THIEF_SKILL_LEVEL": 1,
+      "DAMROLL": 2,
+      "DEX": 1
+    },
+    "classes": [
+      "WARRIOR THIEF"
+    ],
+    "worn": [
+      "ON_BODY"
+    ],
+    "flags": [
+      "RARE THIEF WARRIOR"
+    ],
+    "weight": 5,
+    "ac": null,
+    "dropSources": [
+      "Mob: General Gaia the Master Monk in The Shiroi Sora Monastery"
+    ]
+  },
+  {
     "name": "A meteoric iron dagger",
     "classLevel": 36,
     "totalLevel": 155,
@@ -20778,6 +22119,33 @@
     "ac": null,
     "dropSources": [
       "Room: In the center of the crater in An uncharted island"
+    ]
+  },
+  {
+    "name": "A faded Order of Harmony black belt",
+    "classLevel": 36,
+    "totalLevel": 155,
+    "level": 155,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1,
+      "THIEF_SKILL_LEVEL": 1,
+      "STR": 1,
+      "CON": 1,
+      "DEX": 1
+    },
+    "classes": [
+      "WARRIOR THIEF"
+    ],
+    "worn": [
+      "WAIST"
+    ],
+    "flags": [
+      "THIEF WARRIOR"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: Yoshinori Ikuma the Royal Warden in Palace of the Dragon Emperor, Public Halls"
     ]
   },
   {
@@ -20912,8 +22280,7 @@
       "THIEF_SKILL_LEVEL": 1,
       "DAMROLL": 3,
       "HITROLL": 2,
-      "MAGE_CAST_LEVEL": -1,
-      "INT": -1
+      "CLER_CAST_LEVEL": -1
     },
     "classes": [
       "THIEF"
@@ -21423,6 +22790,51 @@
       "ARTIFACT THIEF RELIC"
     ],
     "weight": 40,
+    "ac": null
+  },
+  {
+    "name": "a star shaped wooden buckler",
+    "classLevel": 37,
+    "totalLevel": 160,
+    "level": 160,
+    "stats": {
+      "THIEF_SKILL_LEVEL": 1,
+      "DAMROLL": 4
+    },
+    "classes": [
+      "THIEF"
+    ],
+    "worn": [
+      "SHIELD"
+    ],
+    "flags": [
+      "GLOW ANTI_EVIL ANTI_GOOD THIEF"
+    ],
+    "weight": 11,
+    "ac": null,
+    "dropSources": [
+      "Container: A chest crafted out of Ramanekean ash in Shrine of Dusk in Kithika the accursed city."
+    ]
+  },
+  {
+    "name": "wraps of black panther hide",
+    "classLevel": 37,
+    "totalLevel": 160,
+    "level": 160,
+    "stats": {
+      "THIEF_SKILL_LEVEL": 1,
+      "DAMROLL": 5
+    },
+    "classes": [
+      "THIEF"
+    ],
+    "worn": [
+      "ARMS LEGS"
+    ],
+    "flags": [
+      "ARTIFACT THIEF"
+    ],
+    "weight": 3,
     "ac": null
   },
   {
@@ -22409,6 +23821,32 @@
     ]
   },
   {
+    "name": "A pair of Sabat-hide boots",
+    "classLevel": 38,
+    "totalLevel": 165,
+    "level": 165,
+    "stats": {
+      "THIEF_SKILL_LEVEL": 1,
+      "DAMROLL": 3,
+      "DEX": 1,
+      "SNEAK": 1
+    },
+    "classes": [
+      "THIEF"
+    ],
+    "worn": [
+      "FEET"
+    ],
+    "flags": [
+      "EVIL THIEF"
+    ],
+    "weight": 6,
+    "ac": null,
+    "dropSources": [
+      "Mob: A Cauldron Born in Elemental plane of darkness, core"
+    ]
+  },
+  {
     "name": "A black panther skin belt",
     "classLevel": 38,
     "totalLevel": 166,
@@ -22724,6 +24162,86 @@
     "ac": null,
     "dropSources": [
       "Room: Deep beneath the pyramid in Jahmeir's Golems"
+    ]
+  },
+  {
+    "name": "A Sabat-hide cloak",
+    "classLevel": 38,
+    "totalLevel": 167,
+    "level": 167,
+    "stats": {
+      "THIEF_SKILL_LEVEL": 1,
+      "DAMROLL": 3,
+      "DEX": 1,
+      "SNEAK": 1
+    },
+    "classes": [
+      "THIEF"
+    ],
+    "worn": [
+      "ABOUT_BODY"
+    ],
+    "flags": [
+      "ANTI_GOOD THIEF"
+    ],
+    "weight": 15,
+    "ac": null,
+    "dropSources": [
+      "Mob: A Cauldron Born in Elemental plane of darkness, core"
+    ]
+  },
+  {
+    "name": "A nasty spiked ball",
+    "classLevel": 38,
+    "totalLevel": 167,
+    "level": 167,
+    "stats": {
+      "THIEF_SKILL_LEVEL": 1,
+      "STR": 2,
+      "MOVE": 15,
+      "CON": -1,
+      "DEX": 2,
+      "SHIELD_BLOCK": 1
+    },
+    "classes": [
+      "THIEF"
+    ],
+    "worn": [
+      "HANDS"
+    ],
+    "flags": [
+      "ANTI_GOOD THIEF NO_BACKSTAB"
+    ],
+    "weight": 4,
+    "ac": null,
+    "dropSources": [
+      "Mob: A Cauldron Born in Elemental plane of darkness, core"
+    ]
+  },
+  {
+    "name": "a mantle of spikes",
+    "classLevel": 38,
+    "totalLevel": 168,
+    "level": 168,
+    "stats": {
+      "THIEF_SKILL_LEVEL": 1,
+      "HITROLL": 1,
+      "DAMROLL": 3,
+      "CAST_ABILITY": -1
+    },
+    "classes": [
+      "THIEF"
+    ],
+    "worn": [
+      "ABOUT_BODY"
+    ],
+    "flags": [
+      "THIEF"
+    ],
+    "weight": 16,
+    "ac": null,
+    "dropSources": [
+      "Mob: A Delgarnarth in Elemental Plane of Darkness, core"
     ]
   },
   {
@@ -23429,6 +24947,34 @@
     ]
   },
   {
+    "name": "An emperal battleaxe",
+    "classLevel": 0,
+    "totalLevel": 121,
+    "level": 121,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1,
+      "MAGE_CAST_LEVEL": 1,
+      "HITROLL": 5,
+      "DAMROLL": 8,
+      "MANA_REGEN": 4,
+      "MOV_REGEN": 9
+    },
+    "classes": [
+      "WARRIOR MAGE"
+    ],
+    "worn": [
+      "2_WIELD"
+    ],
+    "flags": [
+      "ARTIFACT"
+    ],
+    "weight": 40,
+    "ac": null,
+    "dropSources": [
+      "Room: A collapsed side passage in Dwarven Underhalls in Moria"
+    ]
+  },
+  {
     "name": "a blue fluorspar rod",
     "classLevel": 0,
     "totalLevel": 122,
@@ -23525,6 +25071,29 @@
     "ac": null,
     "dropSources": [
       "Mob: A flower guard in Village of Xochitl"
+    ]
+  },
+  {
+    "name": "A silver-shod cane",
+    "classLevel": 0,
+    "totalLevel": 130,
+    "level": 130,
+    "stats": {
+      "HITROLL": 3,
+      "MAGE_CAST_LEVEL": 1,
+      "MANA": 13,
+      "SAVING_SPELL": 5
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "HITROLL by 3"
+    ],
+    "weight": 4,
+    "ac": null,
+    "dropSources": [
+      "Container: a shimmering black sphere in Wizard's Tomb"
     ]
   },
   {
@@ -24123,6 +25692,31 @@
     ]
   },
   {
+    "name": "A fiery halo",
+    "classLevel": 0,
+    "totalLevel": 162,
+    "level": 162,
+    "stats": {
+      "ABSORB_FIRE": 5,
+      "MAGE_CAST_LEVEL": 1,
+      "MANA": 7
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "HEAD"
+    ],
+    "flags": [
+      "LIGHT ANTI_EVIL"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: Ifrit in Wizard's Tomb"
+    ]
+  },
+  {
     "name": "A golden cane topped with a glittering sapphire",
     "classLevel": 0,
     "totalLevel": 165,
@@ -24428,6 +26022,32 @@
     ]
   },
   {
+    "name": "a glittering ring of silver",
+    "classLevel": 9,
+    "totalLevel": 0,
+    "level": 9,
+    "stats": {
+      "MAGE_CAST_LEVEL": 1,
+      "MANA_REGEN": 0,
+      "MANA": 5,
+      "INT": 1
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "FINGERS"
+    ],
+    "flags": [
+      "ARTIFACT GLOW"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Container: a concealed hole in the wall in An abandoned mine shaft"
+    ]
+  },
+  {
     "name": "A pair of red mage gloves",
     "classLevel": 10,
     "totalLevel": 0,
@@ -24722,6 +26342,80 @@
     "ac": null,
     "dropSources": [
       "Mob: The runed raven in The giant beanstalk"
+    ]
+  },
+  {
+    "name": "The Ethereal blade of King Crotus",
+    "classLevel": 15,
+    "totalLevel": 0,
+    "level": 15,
+    "stats": {
+      "MAGE_CAST_LEVEL": 1,
+      "INT": 1,
+      "MANA": 3
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "1-WIELD"
+    ],
+    "flags": [
+      "GLOW FLOATING ANTI_EVIL MAGE"
+    ],
+    "weight": 3,
+    "ac": null,
+    "dropSources": [
+      "Container: a stone sarcophagus in Thalos graveyard catacombs"
+    ]
+  },
+  {
+    "name": "The Ethereal crown of King Crotus",
+    "classLevel": 15,
+    "totalLevel": 0,
+    "level": 15,
+    "stats": {
+      "MAGE_CAST_LEVEL": 1,
+      "INT": 1,
+      "MANA": 3
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "HEAD"
+    ],
+    "flags": [
+      "GLOW FLOATING ANTI_EVIL MAGE"
+    ],
+    "weight": 2,
+    "ac": null,
+    "dropSources": [
+      "Container: a stone sarcophagus in Thalos graveyard catacombs"
+    ]
+  },
+  {
+    "name": "a blue crystal band",
+    "classLevel": 15,
+    "totalLevel": 0,
+    "level": 15,
+    "stats": {
+      "MAGE_CAST_LEVEL": 1,
+      "INT": 1
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "HEAD"
+    ],
+    "flags": [
+      "GLOW MAGE"
+    ],
+    "weight": 2,
+    "ac": null,
+    "dropSources": [
+      "Container: a stone box in Thalos graveyard catacombs"
     ]
   },
   {
@@ -25069,33 +26763,6 @@
     "ac": null,
     "dropSources": [
       "Mob: Mandar the wizard in The Archais Archipelago"
-    ]
-  },
-  {
-    "name": "A simple pair of grey gloves",
-    "classLevel": 19,
-    "totalLevel": 0,
-    "level": 19,
-    "stats": {
-      "MAGE_CAST_LEVEL": 1,
-      "INT": 1,
-      "WIS": 1,
-      "MANA_REGEN": 1,
-      "MANA": 4
-    },
-    "classes": [
-      "MAGE"
-    ],
-    "worn": [
-      "HANDS"
-    ],
-    "flags": [
-      "ARTIFACT GLOW"
-    ],
-    "weight": 2,
-    "ac": null,
-    "dropSources": [
-      "Container: a runed chest in Castle Kraftrager"
     ]
   },
   {
@@ -25612,6 +27279,33 @@
     ],
     "weight": 1,
     "ac": null
+  },
+  {
+    "name": "a simple pair of grey gloves",
+    "classLevel": 21,
+    "totalLevel": 0,
+    "level": 21,
+    "stats": {
+      "MAGE_CAST_LEVEL": 1,
+      "INT": 1,
+      "WIS": 1,
+      "MANA_REGEN": 2,
+      "MANA": 4
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "HANDS"
+    ],
+    "flags": [
+      "ARTIFACT GLOW MAGE"
+    ],
+    "weight": 2,
+    "ac": null,
+    "dropSources": [
+      "Container: a runed chest in Castle Kraftrager"
+    ]
   },
   {
     "name": "A small jewelled tiara",
@@ -26515,6 +28209,31 @@
     "ac": null
   },
   {
+    "name": "a Morlock medallion",
+    "classLevel": 26,
+    "totalLevel": 0,
+    "level": 26,
+    "stats": {
+      "MAGE_CAST_LEVEL": 1,
+      "WARR_SKILL_LEVEL": 1,
+      "MANA_REGEN": 2
+    },
+    "classes": [
+      "MAGE WARRIOR"
+    ],
+    "worn": [
+      "NECK"
+    ],
+    "flags": [
+      "ARTIFACT GLOW MAGE WARRIOR"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: a Morlock warrior in Mount Zendular"
+    ]
+  },
+  {
     "name": "A skirt embroidered with dark pearls",
     "classLevel": 26,
     "totalLevel": 93,
@@ -26668,6 +28387,31 @@
     ]
   },
   {
+    "name": "a red witch's robe",
+    "classLevel": 28,
+    "totalLevel": 0,
+    "level": 28,
+    "stats": {
+      "MAGE_CAST_LEVEL": 1,
+      "SAVING_FIRE": 10,
+      "MANA": 9
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "ABOUT_BODY"
+    ],
+    "flags": [
+      "ANTI_GOOD MAGE"
+    ],
+    "weight": 5,
+    "ac": null,
+    "dropSources": [
+      "Mob: a red witch in Mount Zendular"
+    ]
+  },
+  {
     "name": "an orchid ring",
     "classLevel": 28,
     "totalLevel": 106,
@@ -26817,6 +28561,32 @@
     "ac": null,
     "dropSources": [
       "Mob: Larsiel of the Twilight in East Thalenwood Forest"
+    ]
+  },
+  {
+    "name": "a platinum chessboard",
+    "classLevel": 29,
+    "totalLevel": 0,
+    "level": 29,
+    "stats": {
+      "MAGE_CAST_LEVEL": 1,
+      "INT": 1,
+      "WIS": 1,
+      "MANA": 14
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "HELD"
+    ],
+    "flags": [
+      "ARTIFACT GLOW"
+    ],
+    "weight": 10,
+    "ac": null,
+    "dropSources": [
+      "Mob: a red king in Underground Chess Tournament"
     ]
   },
   {
@@ -27218,6 +28988,32 @@
     ]
   },
   {
+    "name": "Intricate silver robes of the dragon",
+    "classLevel": 30,
+    "totalLevel": 122,
+    "level": 122,
+    "stats": {
+      "MAGE_CAST_LEVEL": 1,
+      "MANA": 20,
+      "INT": 1,
+      "AGE": 10
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "ON_BODY"
+    ],
+    "flags": [
+      "RARE GLOW MAGE"
+    ],
+    "weight": 20,
+    "ac": null,
+    "dropSources": [
+      "Mob: a dragon warrior priest in Underground Tunnels, Lufia's Folly"
+    ]
+  },
+  {
     "name": "A dark cloak",
     "classLevel": 31,
     "totalLevel": 0,
@@ -27365,6 +29161,132 @@
     "ac": null,
     "dropSources": [
       "Mob: An old sage in Castle Dragnok"
+    ]
+  },
+  {
+    "name": "the Gnarled Staff of Drow Magic",
+    "classLevel": 31,
+    "totalLevel": 0,
+    "level": 31,
+    "stats": {
+      "MAGE_CAST_LEVEL": 1,
+      "MANA_REGEN": 2,
+      "MANA": 10
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "HELD 2_WIELD"
+    ],
+    "flags": [
+      "ANTI_GOOD MAGE"
+    ],
+    "weight": 17,
+    "ac": null,
+    "dropSources": [
+      "Mob: Zorria the Dark Sorceress in The drow outpost."
+    ]
+  },
+  {
+    "name": "a star and moon patterned dark robe",
+    "classLevel": 31,
+    "totalLevel": 0,
+    "level": 31,
+    "stats": {
+      "MAGE_CAST_LEVEL": 1,
+      "MANA": 12,
+      "SAVING_COLD": 5,
+      "SAVING_FIRE": 5,
+      "SAVING_ZAP": 5,
+      "SAVING_SPELL": 5
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "ABOUT_BODY"
+    ],
+    "flags": [
+      "GLOW ANTI_GOOD MAGE"
+    ],
+    "weight": 2,
+    "ac": null,
+    "dropSources": [
+      "Mob: Zorria the Dark Sorceress in The drow outpost."
+    ]
+  },
+  {
+    "name": "the Magius Staff of Fire",
+    "classLevel": 31,
+    "totalLevel": 0,
+    "level": 31,
+    "stats": {
+      "MAGE_CAST_LEVEL": 1
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "HELD"
+    ],
+    "weight": 2,
+    "ac": null,
+    "dropSources": [
+      "Room: A Treasure Chamber in The drow outpost."
+    ]
+  },
+  {
+    "name": "a pair of star and moon patterned dark slippers",
+    "classLevel": 31,
+    "totalLevel": 0,
+    "level": 31,
+    "stats": {
+      "MAGE_CAST_LEVEL": 1,
+      "MANA": 12,
+      "SAVING_COLD": 5,
+      "SAVING_FIRE": 5,
+      "SAVING_ZAP": 5,
+      "SAVING_SPELL": 5
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "FEET"
+    ],
+    "flags": [
+      "RARE MAGE"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: Zorria the Dark Sorceress in The drow outpost"
+    ]
+  },
+  {
+    "name": "a set of black diamond hair jewels",
+    "classLevel": 31,
+    "totalLevel": 0,
+    "level": 31,
+    "stats": {
+      "MAGE_CAST_LEVEL": 1,
+      "MANA": 15,
+      "SAVING_SPELL": 15
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "HEAD"
+    ],
+    "flags": [
+      "RARE GLOW MAGE"
+    ],
+    "weight": 2,
+    "ac": null,
+    "dropSources": [
+      "Mob: Mistress Camilla in Castle Dragnok"
     ]
   },
   {
@@ -27523,6 +29445,113 @@
     "ac": null,
     "dropSources": [
       "Mob: Salamangkera, guildmaster of mages in The City of Dreahul"
+    ]
+  },
+  {
+    "name": "a cherry wood staff",
+    "classLevel": 32,
+    "totalLevel": 0,
+    "level": 32,
+    "stats": {
+      "MAGE_CAST_LEVEL": 2,
+      "MANA_REGEN": 4,
+      "MANA": 5,
+      "INT": 1,
+      "WIS": 1
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "1-WIELD"
+    ],
+    "flags": [
+      "ARTIFACT GLOW MAGE RELIC"
+    ],
+    "weight": 3,
+    "ac": null,
+    "dropSources": [
+      "Mob: Maranna the sorceress in The Town of Orton."
+    ]
+  },
+  {
+    "name": "Dr'Vajka, the Glove",
+    "classLevel": 32,
+    "totalLevel": 0,
+    "level": 32,
+    "stats": {
+      "MAGE_CAST_LEVEL": 1,
+      "NECR_CAST_LEVEL": 1,
+      "MANA_REGEN": 4,
+      "MANA": 3,
+      "CON": -2,
+      "CLER_CAST_LEVEL": -1
+    },
+    "classes": [
+      "MAGE NECRO"
+    ],
+    "worn": [
+      "HANDS"
+    ],
+    "flags": [
+      "EVIL ARTIFACT MAGE NECR"
+    ],
+    "weight": 2,
+    "ac": null,
+    "dropSources": [
+      "Mob: Dr'Majj Tal, the magician in Elemental plane of darkness, core"
+    ]
+  },
+  {
+    "name": "tattered black robes",
+    "classLevel": 32,
+    "totalLevel": 0,
+    "level": 32,
+    "stats": {
+      "MAGE_CAST_LEVEL": 1,
+      "AGE": 15,
+      "MANA": 15,
+      "CON": 1,
+      "SNEAK": -1
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "ON_BODY"
+    ],
+    "flags": [
+      "GLOW ANTI_GOOD MAGE"
+    ],
+    "weight": 2,
+    "ac": null,
+    "dropSources": [
+      "Mob: A skeletal mage in The drow outpost"
+    ]
+  },
+  {
+    "name": "a Combine issue mage's staff",
+    "classLevel": 32,
+    "totalLevel": 0,
+    "level": 32,
+    "stats": {
+      "MAGE_CAST_LEVEL": 1,
+      "MANA": 30,
+      "DAMROLL": 4
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "2_WIELD"
+    ],
+    "flags": [
+      "MAGE"
+    ],
+    "weight": 5,
+    "ac": null,
+    "dropSources": [
+      "Mob: Sergeant Mui'on'gal the Geomancer or Sergeant Bulaina in The city of Behr'zok"
     ]
   },
   {
@@ -28524,6 +30553,58 @@
     ]
   },
   {
+    "name": "Revan's war sword",
+    "classLevel": 34,
+    "totalLevel": 0,
+    "level": 34,
+    "stats": {
+      "HITROLL": 6,
+      "DAMROLL": 6,
+      "WARR_SKILL_LEVEL": 1,
+      "MAGE_CAST_LEVEL": 1
+    },
+    "classes": [
+      "WARRIOR MAGE"
+    ],
+    "worn": [
+      "1-WIELD"
+    ],
+    "flags": [
+      "RARE"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: Revan in Western Mengaw Forest"
+    ]
+  },
+  {
+    "name": "a twisted wrought-iron crown inlaid with opals",
+    "classLevel": 34,
+    "totalLevel": 0,
+    "level": 34,
+    "stats": {
+      "MAGE_CAST_LEVEL": 1,
+      "INT": 1,
+      "MANA_REGEN": 3,
+      "MANA": 7
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "HEAD"
+    ],
+    "flags": [
+      "ANTI_GOOD MAGE CLERIC"
+    ],
+    "weight": 3,
+    "ac": null,
+    "dropSources": [
+      "Mob: Janus in Plane of Chaos, castle"
+    ]
+  },
+  {
     "name": "A pair of smarty pants",
     "classLevel": 34,
     "totalLevel": 143,
@@ -28938,6 +31019,54 @@
     "ac": null,
     "dropSources": [
       "Mob: a storm giant wizard in Mount Blitzstadt"
+    ]
+  },
+  {
+    "name": "a pointed saffron cap",
+    "classLevel": 35,
+    "totalLevel": 148,
+    "level": 148,
+    "stats": {
+      "MAGE_CAST_LEVEL": 1,
+      "ABSORB_ZAP": 5
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "HEAD"
+    ],
+    "flags": [
+      "MAGE"
+    ],
+    "weight": 3,
+    "ac": null,
+    "dropSources": [
+      "Mob: the Naginag Court Magician in The capital city of Naginag, Silver Palace"
+    ]
+  },
+  {
+    "name": "a saffron sash",
+    "classLevel": 35,
+    "totalLevel": 148,
+    "level": 148,
+    "stats": {
+      "MAGE_CAST_LEVEL": 1,
+      "ABSORB_ZAP": 5
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "WAIST"
+    ],
+    "flags": [
+      "MAGE"
+    ],
+    "weight": 3,
+    "ac": null,
+    "dropSources": [
+      "Mob: the Naginag Court Magician in The capital city of Naginag, Silver Palace"
     ]
   },
   {
@@ -29443,6 +31572,30 @@
     ]
   },
   {
+    "name": "a bracelet of janni touch",
+    "classLevel": 36,
+    "totalLevel": 0,
+    "level": 36,
+    "stats": {
+      "MAGE_CAST_LEVEL": 1,
+      "CAST_ABILITY": 5
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "WRISTS"
+    ],
+    "flags": [
+      "MAGE"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: Sergeant Mui'on'gal the Geomancer or Sergeant Bulaina in The city of Behr'zok"
+    ]
+  },
+  {
     "name": "A Silver jaded bracelet",
     "classLevel": 36,
     "totalLevel": 153,
@@ -29671,14 +31824,40 @@
     ]
   },
   {
+    "name": "an azure blue dress",
+    "classLevel": 36,
+    "totalLevel": 156,
+    "level": 156,
+    "stats": {
+      "MAGE_CAST_LEVEL": 1,
+      "MANA": 25,
+      "MANA_REGEN": 1,
+      "SAVING_SPELL": 5
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "ON_BODY"
+    ],
+    "flags": [
+      "RARE GLOW MAGE"
+    ],
+    "weight": 14,
+    "ac": null,
+    "dropSources": [
+      "Mob:  the old witch Viridia in Underwater ruins, watery passages."
+    ]
+  },
+  {
     "name": "a pair of black mage's gauntlets",
     "classLevel": 36,
     "totalLevel": 157,
     "level": 157,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
-      "MANA": 9
+      "MANA_REGEN": 5,
+      "MANA": 7
     },
     "classes": [
       "MAGE"
@@ -30423,6 +32602,31 @@
     ]
   },
   {
+    "name": "A fine mithril chain",
+    "classLevel": 37,
+    "totalLevel": 164,
+    "level": 164,
+    "stats": {
+      "MAGE_CAST_LEVEL": 1,
+      "MANA_REGEN": 5,
+      "MANA": 14
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "FEET"
+    ],
+    "flags": [
+      "ARTIFACT GLOW ANTI_EVIL ANTI_NEUTRAL MAGE"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Container: a shimmering black sphere in Wizard's Tomb"
+    ]
+  },
+  {
     "name": "a black and red baldrick",
     "classLevel": 38,
     "totalLevel": 0,
@@ -30652,31 +32856,6 @@
     "ac": null,
     "dropSources": [
       "Mob: the advanced magic teacher in The City of Dorna"
-    ]
-  },
-  {
-    "name": "A thin belted shendyt",
-    "classLevel": 38,
-    "totalLevel": 0,
-    "level": 38,
-    "stats": {
-      "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
-      "MANA": 9
-    },
-    "classes": [
-      "MAGE"
-    ],
-    "worn": [
-      "LEGS"
-    ],
-    "flags": [
-      "ANTI_EVIL MAGE"
-    ],
-    "weight": 10,
-    "ac": null,
-    "dropSources": [
-      "Mob: a giant noble in The Tombs of the Forgotten"
     ]
   },
   {
@@ -31134,6 +33313,83 @@
     ]
   },
   {
+    "name": "The bracelet of the kings",
+    "classLevel": 38,
+    "totalLevel": 166,
+    "level": 166,
+    "stats": {
+      "SAVING_BREATH": 25,
+      "MAGE_CAST_LEVEL": 1,
+      "MANA": 16
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "WRISTS"
+    ],
+    "flags": [
+      "RARE GLOW MAGE"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Container: a skeleton in The Disused Fane"
+    ]
+  },
+  {
+    "name": "The belt of the kings",
+    "classLevel": 38,
+    "totalLevel": 166,
+    "level": 166,
+    "stats": {
+      "INT": 2,
+      "MAGE_CAST_LEVEL": 1,
+      "MANA": 22,
+      "AGE": 17,
+      "MANA_REGEN": 0
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "WAIST"
+    ],
+    "flags": [
+      "ARTIFACT GLOW MAGE"
+    ],
+    "weight": 5,
+    "ac": null,
+    "dropSources": [
+      "Container: a skeleton in The Disused Fane"
+    ]
+  },
+  {
+    "name": "A long gray velvet cloak",
+    "classLevel": 38,
+    "totalLevel": 166,
+    "level": 166,
+    "stats": {
+      "MAGE_CAST_LEVEL": 1,
+      "MANA_REGEN": 5,
+      "MANA": 14
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "ABOUT_BODY"
+    ],
+    "flags": [
+      "GLOW ANTI_NEUTRAL ANTI_GOOD MAGE"
+    ],
+    "weight": 8,
+    "ac": null,
+    "dropSources": [
+      "Mob: Lorak the third king in The Tombs of the Forgotten"
+    ]
+  },
+  {
     "name": "gloves of the wind",
     "classLevel": 39,
     "totalLevel": 0,
@@ -31211,6 +33467,30 @@
     "ac": null,
     "dropSources": [
       "Mob: Maquan the Tortured, The Rubiac Plain"
+    ]
+  },
+  {
+    "name": "a wristlet of totems",
+    "classLevel": 39,
+    "totalLevel": 174,
+    "level": 174,
+    "stats": {
+      "MAGE_CAST_LEVEL": 1,
+      "CAST_ABILITY": 5
+    },
+    "classes": [
+      "MAGE"
+    ],
+    "worn": [
+      "WRISTS"
+    ],
+    "flags": [
+      "MAGE"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: Vansu in The Rubiac Plain."
     ]
   },
   {
@@ -31544,6 +33824,31 @@
     ]
   },
   {
+    "name": "a headband of withered roses",
+    "classLevel": 0,
+    "totalLevel": 103,
+    "level": 103,
+    "stats": {
+      "NECR_CAST_LEVEL": 1,
+      "MANA_REGEN": 3,
+      "HIT_POINTS": -1
+    },
+    "classes": [
+      "NECRO"
+    ],
+    "worn": [
+      "HEAD"
+    ],
+    "flags": [
+      "EVIL RARE"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Container: A chest of black wood in The Blue Mound"
+    ]
+  },
+  {
     "name": "A tunic of glow worm silk",
     "classLevel": 0,
     "totalLevel": 108,
@@ -31566,6 +33871,33 @@
     "ac": null,
     "dropSources": [
       "Mob: Falnar the Shadowmancer in The Ralnoth Fen."
+    ]
+  },
+  {
+    "name": "a demonic half-mask",
+    "classLevel": 0,
+    "totalLevel": 111,
+    "level": 111,
+    "stats": {
+      "NECR_CAST_LEVEL": 1,
+      "MANA_REGEN": 2,
+      "WIS": -1,
+      "CHR": -1,
+      "ARMOR": -1
+    },
+    "classes": [
+      "NECRO"
+    ],
+    "worn": [
+      "HEAD"
+    ],
+    "flags": [
+      "ANTI_GOOD"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: a caregiver in Avalon Hill"
     ]
   },
   {
@@ -32074,6 +34406,32 @@
     "ac": null,
     "dropSources": [
       "Container: the corpse of Groo in A remnant of Drakdrol . Container: the corpse of Arawnin in A remnant of Drakdrol"
+    ]
+  },
+  {
+    "name": "a nightling cowl",
+    "classLevel": 0,
+    "totalLevel": 160,
+    "level": 160,
+    "stats": {
+      "NECR_CAST_LEVEL": 1,
+      "DAMROLL": 4,
+      "MANA": 2,
+      "SIZE": 1
+    },
+    "classes": [
+      "NECRO"
+    ],
+    "worn": [
+      "HEAD"
+    ],
+    "flags": [
+      "GOOD RARE"
+    ],
+    "weight": 16,
+    "ac": null,
+    "dropSources": [
+      "Mob: a mountain orc shaman in The Gauntlet, western Dunn Hurr"
     ]
   },
   {
@@ -32797,6 +35155,31 @@
     "ac": null,
     "dropSources": [
       "Container: a rotting coffin in The Haunted Crypts"
+    ]
+  },
+  {
+    "name": "an auburn-colored orb",
+    "classLevel": 15,
+    "totalLevel": 0,
+    "level": 15,
+    "stats": {
+      "NECR_CAST_LEVEL": 1,
+      "MANA_REGEN": 0,
+      "MANA": 3
+    },
+    "classes": [
+      "NECRO"
+    ],
+    "worn": [
+      "HELD"
+    ],
+    "flags": [
+      "GLOW NECR"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: The spectral etcher's wife in Thalos graveyard catacombs"
     ]
   },
   {
@@ -34497,6 +36880,51 @@
     ]
   },
   {
+    "name": "A bloodstone crown",
+    "classLevel": 29,
+    "totalLevel": 0,
+    "level": 29,
+    "stats": {
+      "NECR_CAST_LEVEL": 1
+    },
+    "classes": [
+      "NECRO"
+    ],
+    "worn": [
+      "HEAD"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Room: At the edge of the Foreboding Forest in North Rubicon Woods"
+    ]
+  },
+  {
+    "name": "A barbed wire bracelet",
+    "classLevel": 29,
+    "totalLevel": 0,
+    "level": 29,
+    "stats": {
+      "MANA_REGEN": 1,
+      "MANA": 7,
+      "NECR_CAST_LEVEL": 1
+    },
+    "classes": [
+      "NECRO"
+    ],
+    "worn": [
+      "WRISTS"
+    ],
+    "flags": [
+      "ANTI_GOOD"
+    ],
+    "weight": 3,
+    "ac": null,
+    "dropSources": [
+      "Mob: Lord Myrick, the Dark Knight in Castle Avalon"
+    ]
+  },
+  {
     "name": "a belt of necromantic power",
     "classLevel": 29,
     "totalLevel": 113,
@@ -35510,6 +37938,32 @@
     "ac": null,
     "dropSources": [
       "Mob: Silatris the Rock Dragon in The Great Trench"
+    ]
+  },
+  {
+    "name": "an insubstantial amulet",
+    "classLevel": 33,
+    "totalLevel": 0,
+    "level": 33,
+    "stats": {
+      "NECR_CAST_LEVEL": 1,
+      "INT": 1,
+      "WIS": 1,
+      "MANA_REGEN": 3
+    },
+    "classes": [
+      "NECRO"
+    ],
+    "worn": [
+      "NECK"
+    ],
+    "flags": [
+      "TRANSPARENT FLOATING ANTI_NEUTRAL ANTI_GOOD NECR"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: a dark dwarven shade in The Lost Catacombs of Khal-Moria"
     ]
   },
   {
@@ -37444,31 +39898,6 @@
     ]
   },
   {
-    "name": "A set of plain white linen leggings",
-    "classLevel": 38,
-    "totalLevel": 0,
-    "level": 38,
-    "stats": {
-      "NECR_CAST_LEVEL": 1,
-      "WIS": 3,
-      "MANA": 5
-    },
-    "classes": [
-      "NECRO"
-    ],
-    "worn": [
-      "LEGS"
-    ],
-    "flags": [
-      "GLOW ANTI_EVIL ANTI_GOOD"
-    ],
-    "weight": 2,
-    "ac": null,
-    "dropSources": [
-      "Mob: the giant mummy of some ancient royal in The Tombs of the Forgotten"
-    ]
-  },
-  {
     "name": "a yellow diamond bracelet",
     "classLevel": 38,
     "totalLevel": 0,
@@ -38009,6 +40438,59 @@
     ]
   },
   {
+    "name": "A thin belted shendyt",
+    "classLevel": 38,
+    "totalLevel": 166,
+    "level": 166,
+    "stats": {
+      "NECR_CAST_LEVEL": 1,
+      "MANA_REGEN": 5,
+      "MANA": 7
+    },
+    "classes": [
+      "NECRO"
+    ],
+    "worn": [
+      "LEGS"
+    ],
+    "flags": [
+      "GLOW ANTI_EVIL NECRO"
+    ],
+    "weight": 10,
+    "ac": null,
+    "dropSources": [
+      "Mob: a giant noble in The Tombs of the Forgotten"
+    ]
+  },
+  {
+    "name": "A fine arjale chain",
+    "classLevel": 38,
+    "totalLevel": 166,
+    "level": 166,
+    "stats": {
+      "NECR_CAST_LEVEL": 1,
+      "MANA_REGEN": 5,
+      "MANA": 12,
+      "SAVING_FIRE": 5,
+      "SAVING_COLD": 5,
+      "SAVING_ZAP": 5
+    },
+    "classes": [
+      "NECRO"
+    ],
+    "worn": [
+      "WRISTS"
+    ],
+    "flags": [
+      "GLOW ANTI_EVIL ANTI_NEUTRAL NECR"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Container: a shimmering black sphere in Wizard's Tomb"
+    ]
+  },
+  {
     "name": "a gem studded webbed harness",
     "classLevel": 38,
     "totalLevel": 167,
@@ -38086,6 +40568,34 @@
     "ac": null,
     "dropSources": [
       "Mob: A giant ethereal baboon in Twisted Jungle of Foreboding"
+    ]
+  },
+  {
+    "name": "The Sickle of Blessed Release",
+    "classLevel": 39,
+    "totalLevel": 172,
+    "level": 172,
+    "stats": {
+      "HITROLL": 5,
+      "NECR_CAST_LEVEL": 1,
+      "MANA_REGEN": 5,
+      "INT": 1,
+      "WIS": 1,
+      "HP_REGEN": -1
+    },
+    "classes": [
+      "NECRO"
+    ],
+    "worn": [
+      "1-WIELD"
+    ],
+    "flags": [
+      "RARE GLOW ANTI_EVIL NECR"
+    ],
+    "weight": 31,
+    "ac": null,
+    "dropSources": [
+      "Mob: Lahlia the Damned in Elemental plane of darkness, echo"
     ]
   },
   {
@@ -39016,6 +41526,32 @@
     "ac": null
   },
   {
+    "name": "A dragon's skull",
+    "classLevel": 0,
+    "totalLevel": 169,
+    "level": 169,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1,
+      "HITROLL": 3,
+      "DAMROLL": 1,
+      "CHR": 1
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "HEAD"
+    ],
+    "flags": [
+      "ARTIFACT"
+    ],
+    "weight": 38,
+    "ac": null,
+    "dropSources": [
+      "Mob: A bone dragon in Elemental plane of darkness, core"
+    ]
+  },
+  {
     "name": "The tail from an acidic buffalo",
     "classLevel": 0,
     "totalLevel": 171,
@@ -39910,6 +42446,32 @@
     ]
   },
   {
+    "name": "a fiery mace",
+    "classLevel": 20,
+    "totalLevel": 0,
+    "level": 20,
+    "stats": {
+      "DAMROLL": 6,
+      "HITROLL": 6,
+      "WARR_SKILL_LEVEL": 2,
+      "CON": 1
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "2_WIELD"
+    ],
+    "flags": [
+      "GLOW WARRIOR"
+    ],
+    "weight": 45,
+    "ac": null,
+    "dropSources": [
+      "Mob: The constable Aldrick in The Town of Northshore"
+    ]
+  },
+  {
     "name": "The Sword of Strength",
     "classLevel": 20,
     "totalLevel": 63,
@@ -40012,6 +42574,32 @@
     "ac": null,
     "dropSources": [
       "Mob: a two-headed ogre in The Archais Archipelago"
+    ]
+  },
+  {
+    "name": "a magical broadsword",
+    "classLevel": 21,
+    "totalLevel": 0,
+    "level": 21,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1,
+      "DAMROLL": 3,
+      "HITROLL": 3,
+      "PARRY": 3
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "1-WIELD"
+    ],
+    "flags": [
+      "GLOW ANTI_GOOD WARRIOR"
+    ],
+    "weight": 21,
+    "ac": null,
+    "dropSources": [
+      "Mob: Anekam the drake keeper in Castle Kraftrager"
     ]
   },
   {
@@ -40488,6 +43076,34 @@
     "ac": null,
     "dropSources": [
       "Mob: A metataur guard in Mount Jahtaras Mob: A metataur patroller in Mount Jahtaras"
+    ]
+  },
+  {
+    "name": "an acid etched mithril waraxe",
+    "classLevel": 26,
+    "totalLevel": 0,
+    "level": 26,
+    "stats": {
+      "WARR_SKILL_LEVEL": 2,
+      "DAMROLL": 8,
+      "HITROLL": 8,
+      "CON": 2,
+      "MOVE": 10,
+      "MOV_REGEN": 10
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "2_WIELD"
+    ],
+    "flags": [
+      "RARE GLOW WARRIOR"
+    ],
+    "weight": 44,
+    "ac": null,
+    "dropSources": [
+      "Mob: Belegon the noble commander in Fort Ironcliff"
     ]
   },
   {
@@ -40971,6 +43587,51 @@
     ]
   },
   {
+    "name": "the Shield of the Dwarven Defender",
+    "classLevel": 29,
+    "totalLevel": 114,
+    "level": 114,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "SHIELD"
+    ],
+    "flags": [
+      "ARTIFACT WARRIOR"
+    ],
+    "weight": 36,
+    "ac": null
+  },
+  {
+    "name": "a mithril war suit",
+    "classLevel": 29,
+    "totalLevel": 114,
+    "level": 114,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1,
+      "DAMROLL": 2,
+      "HITROLL": 2
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "ON_BODY"
+    ],
+    "flags": [
+      "ARTIFACT GLOW ANTI_EVIL WARRIOR"
+    ],
+    "weight": 14,
+    "ac": null,
+    "dropSources": [
+      "Mob: A dwarven wraith in The Dwarven Kingdom of Khal-Mindur"
+    ]
+  },
+  {
     "name": "A black-hilted katana",
     "classLevel": 29,
     "totalLevel": 115,
@@ -41099,6 +43760,30 @@
     "ac": null,
     "dropSources": [
       "Mob: The bloodthirsty manticore in Foothills west of Jo'Kerin."
+    ]
+  },
+  {
+    "name": "emerald legplates",
+    "classLevel": 29,
+    "totalLevel": 115,
+    "level": 115,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1,
+      "SAVING_SPELL": 20
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "LEGS"
+    ],
+    "flags": [
+      "MAGE WARRIOR"
+    ],
+    "weight": 10,
+    "ac": null,
+    "dropSources": [
+      "Container: a coffin in White Sands Abbey"
     ]
   },
   {
@@ -41327,6 +44012,33 @@
     "ac": null,
     "dropSources": [
       "Mob: a hill orc picket in Green River Valley"
+    ]
+  },
+  {
+    "name": "a long, feathered staff",
+    "classLevel": 30,
+    "totalLevel": 0,
+    "level": 30,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1,
+      "HITROLL": 1,
+      "DAMROLL": 1,
+      "ATTACK_SPEED": 1,
+      "DEX": -1
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "HELD 2_WIELD"
+    ],
+    "flags": [
+      "ARTIFACT"
+    ],
+    "weight": 16,
+    "ac": null,
+    "dropSources": [
+      "Mob: The centaur chieftain in Skerrit's Haven, the centaur village."
     ]
   },
   {
@@ -41750,6 +44462,84 @@
     ]
   },
   {
+    "name": "an ornate sword",
+    "classLevel": 31,
+    "totalLevel": 0,
+    "level": 31,
+    "stats": {
+      "HITROLL": 9,
+      "DAMROLL": 5,
+      "WARR_SKILL_LEVEL": 1,
+      "STR": 1,
+      "CON": 1,
+      "DEX": 1
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "1-WIELD"
+    ],
+    "flags": [
+      "RARE"
+    ],
+    "weight": 28,
+    "ac": null,
+    "dropSources": [
+      "Mob: The centaur general in Skerrit's Haven, the centaur village."
+    ]
+  },
+  {
+    "name": "a dwarven mithril helm",
+    "classLevel": 31,
+    "totalLevel": 0,
+    "level": 31,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1,
+      "DAMROLL": 1,
+      "HITROLL": 1
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "HEAD"
+    ],
+    "flags": [
+      "GLOW ANTI_EVIL WARRIOR"
+    ],
+    "weight": 5,
+    "ac": null,
+    "dropSources": [
+      "Mob: A dwarven wraith in The Dwarven Kingdom of Khal-Mindur"
+    ]
+  },
+  {
+    "name": "a dwarven mithril girth",
+    "classLevel": 31,
+    "totalLevel": 0,
+    "level": 31,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1,
+      "DAMROLL": 1,
+      "HITROLL": 1
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "WAIST"
+    ],
+    "flags": [
+      "GLOW ANTI_EVIL WARRIOR"
+    ],
+    "weight": 4,
+    "ac": null,
+    "dropSources": [
+      "Mob: A dwarven wraith in The Dwarven Kingdom of Khal-Mindur"
+    ]
+  },
+  {
     "name": "a bearhide cloak",
     "classLevel": 31,
     "totalLevel": 125,
@@ -41933,6 +44723,34 @@
     "ac": null,
     "dropSources": [
       "Mob: Sheikh Taaloom in The Alarba desert, land of legends"
+    ]
+  },
+  {
+    "name": "a luck blade",
+    "classLevel": 31,
+    "totalLevel": 127,
+    "level": 127,
+    "stats": {
+      "DAMROLL": 4,
+      "HITROLL": 4,
+      "WARR_SKILL_LEVEL": 1,
+      "CON": 3,
+      "STR": 3,
+      "LUCK": 1
+    },
+    "classes": [
+      "WARRIOR LUCK"
+    ],
+    "worn": [
+      "1-WIELD"
+    ],
+    "flags": [
+      "LIGHT ANTI_EVIL ANTI_NEUTRAL CLERIC WARRIOR"
+    ],
+    "weight": 41,
+    "ac": null,
+    "dropSources": [
+      "Mob: A paladin in Castle Avalon"
     ]
   },
   {
@@ -42188,6 +45006,139 @@
     "ac": null,
     "dropSources": [
       "Mob: a Shorn One in Village of Xochitl"
+    ]
+  },
+  {
+    "name": "Combine issue boiled leather boots",
+    "classLevel": 32,
+    "totalLevel": 0,
+    "level": 32,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "FEET"
+    ],
+    "weight": 2,
+    "ac": null,
+    "dropSources": [
+      "Mob: Sergeant Bulaina in The city of Behr'zok"
+    ]
+  },
+  {
+    "name": "a Combine issue boiled leather belt",
+    "classLevel": 32,
+    "totalLevel": 0,
+    "level": 32,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "WAIST"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: Sergeant Bulaina in The city of Behr'zok"
+    ]
+  },
+  {
+    "name": "Combine issue boiled leather leggings",
+    "classLevel": 32,
+    "totalLevel": 0,
+    "level": 32,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "LEGS"
+    ],
+    "weight": 4,
+    "ac": null,
+    "dropSources": [
+      "Mob: A catapault teamster in The city of Behr'zok"
+    ]
+  },
+  {
+    "name": "a Combine issue boiled leather bracer",
+    "classLevel": 32,
+    "totalLevel": 0,
+    "level": 32,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "WRISTS"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: Murlocks including a naga commander in  The city of Behr'zok"
+    ]
+  },
+  {
+    "name": "Sumire's rapier",
+    "classLevel": 32,
+    "totalLevel": 0,
+    "level": 32,
+    "stats": {
+      "HITROLL": 5,
+      "SIZE": 2,
+      "WARR_SKILL_LEVEL": 1,
+      "DODGE": 1,
+      "HIT_POINTS": 25,
+      "ARMOR": 10
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "1-WIELD"
+    ],
+    "flags": [
+      "RARE NO_BACKSTAB"
+    ],
+    "weight": 9,
+    "ac": null,
+    "dropSources": [
+      "Quest reward: Is a Bearer of House Sumire in Southern Aztec Jungle."
+    ]
+  },
+  {
+    "name": "A silver breastplate",
+    "classLevel": 32,
+    "totalLevel": 0,
+    "level": 32,
+    "stats": {
+      "HITROLL": 1,
+      "DAMROLL": 1,
+      "WARR_SKILL_LEVEL": 1
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "ON_BODY"
+    ],
+    "flags": [
+      "ANTI_EVIL ANTI_NEUTRAL"
+    ],
+    "weight": 45,
+    "ac": null,
+    "dropSources": [
+      "Mob: A paladin in Castle Avalon"
     ]
   },
   {
@@ -42692,6 +45643,206 @@
     ]
   },
   {
+    "name": "an etched titanium ring",
+    "classLevel": 33,
+    "totalLevel": 0,
+    "level": 33,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1,
+      "DAMROLL": 2,
+      "HITROLL": 2
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "FINGERS"
+    ],
+    "flags": [
+      "ARTIFACT GLOW ANTI_GOOD WARRIOR"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: Vesden the Conqueror in The Desert City of Linholt"
+    ]
+  },
+  {
+    "name": "a dwarf-bite battleaxe",
+    "classLevel": 33,
+    "totalLevel": 0,
+    "level": 33,
+    "stats": {
+      "HITROLL": 4,
+      "DAMROLL": 16,
+      "WARR_SKILL_LEVEL": 2,
+      "CON": 2,
+      "DEX": 2,
+      "CHR": 2
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "2_WIELD"
+    ],
+    "flags": [
+      "RARE ANTI_GOOD"
+    ],
+    "weight": 36,
+    "ac": null,
+    "dropSources": [
+      "Mob: a norker in Dwarven Underhalls in Moria"
+    ]
+  },
+  {
+    "name": "opal-clasped haidate",
+    "classLevel": 33,
+    "totalLevel": 0,
+    "level": 33,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "LEGS"
+    ],
+    "flags": [
+      "ARTIFACT WARRIOR"
+    ],
+    "weight": 18,
+    "ac": null,
+    "dropSources": [
+      "Mob: The general in Royal palace of Daigaku-Tatami"
+    ]
+  },
+  {
+    "name": "a pair of green jade inlaid tekko",
+    "classLevel": 33,
+    "totalLevel": 0,
+    "level": 33,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1,
+      "HITROLL": 2,
+      "STR": 1,
+      "DEX": 1,
+      "LUCK": 1
+    },
+    "classes": [
+      "WARRIOR LUCK"
+    ],
+    "worn": [
+      "HANDS"
+    ],
+    "flags": [
+      "ARTIFACT WARRIOR"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Mob: The general in Royal palace of Daigaku-Tatami"
+    ]
+  },
+  {
+    "name": "a pair of green jade inlaid tabi",
+    "classLevel": 33,
+    "totalLevel": 0,
+    "level": 33,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1,
+      "HITROLL": 2,
+      "DEX": 1,
+      "LUCK": 1
+    },
+    "classes": [
+      "WARRIOR LUCK"
+    ],
+    "worn": [
+      "LEGS"
+    ],
+    "flags": [
+      "RARE WARRIOR"
+    ],
+    "weight": 4,
+    "ac": null,
+    "dropSources": [
+      "Mob: The general in Royal palace of Daigaku-Tatami"
+    ]
+  },
+  {
+    "name": "a great ornamented kabuto",
+    "classLevel": 33,
+    "totalLevel": 0,
+    "level": 33,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "HEAD"
+    ],
+    "flags": [
+      "WARRIOR"
+    ],
+    "weight": 18,
+    "ac": null,
+    "dropSources": [
+      "Mob: The general in Royal palace of Daigaku-Tatami"
+    ]
+  },
+  {
+    "name": "an ancient bronze plated do-maru",
+    "classLevel": 33,
+    "totalLevel": 0,
+    "level": 33,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "ON_BODY"
+    ],
+    "flags": [
+      "RARE WARRIOR"
+    ],
+    "weight": 60,
+    "ac": null,
+    "dropSources": [
+      "Mob: The general in Royal palace of Daigaku-Tatami"
+    ]
+  },
+  {
+    "name": "a decorated tribal shield",
+    "classLevel": 33,
+    "totalLevel": 0,
+    "level": 33,
+    "stats": {
+      "HITROLL": 2,
+      "DAMROLL": 2,
+      "WARR_SKILL_LEVEL": 1
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "SHIELD"
+    ],
+    "flags": [
+      "ARTIFACT GLOW ANTI_NEUTRAL ANTI_GOOD WARRIOR"
+    ],
+    "weight": 42,
+    "ac": null,
+    "dropSources": [
+      "Mob: The Elder Witchdoctor in The Zulu Empire"
+    ]
+  },
+  {
     "name": "a thumping stick",
     "classLevel": 33,
     "totalLevel": 135,
@@ -42976,6 +46127,87 @@
     "ac": null,
     "dropSources": [
       "Mob: The Battle Master in The Lost Kingdom of Q'thelas"
+    ]
+  },
+  {
+    "name": "a Golden Dragonlance",
+    "classLevel": 33,
+    "totalLevel": 140,
+    "level": 140,
+    "stats": {
+      "DAMROLL": 7,
+      "HITROLL": 7,
+      "WARR_SKILL_LEVEL": 2,
+      "SAVING_BREATH": 20,
+      "SAVING_ZAP": 10,
+      "CON": 2
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "2_WIELD"
+    ],
+    "flags": [
+      "GLOW WARRIOR"
+    ],
+    "weight": 30,
+    "ac": null,
+    "dropSources": [
+      "Room: The Golden Hoard in The Zulu Empire"
+    ]
+  },
+  {
+    "name": "A small golden scale ring",
+    "classLevel": 33,
+    "totalLevel": 140,
+    "level": 140,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1,
+      "DODGE": 4,
+      "HITROLL": 2,
+      "MOVE": 4,
+      "MOV_REGEN": 5
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "FINGERS"
+    ],
+    "flags": [
+      "RARE GLOW ANTI_EVIL WARRIOR"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Room: The Golden Hoard in The Zulu Empire"
+    ]
+  },
+  {
+    "name": "A Golden Defender's Broadsword",
+    "classLevel": 33,
+    "totalLevel": 140,
+    "level": 140,
+    "stats": {
+      "DAMROLL": 6,
+      "HITROLL": 6,
+      "WARR_SKILL_LEVEL": 1,
+      "SAVING_BREATH": 25
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "1-WIELD"
+    ],
+    "flags": [
+      "WARRIOR"
+    ],
+    "weight": 30,
+    "ac": null,
+    "dropSources": [
+      "Mob: The Guardian of the Golden Dragon in The Zulu Empire"
     ]
   },
   {
@@ -43308,6 +46540,31 @@
     "ac": null,
     "dropSources": [
       "Container: a sarcophagus in The Kurita Graveyard"
+    ]
+  },
+  {
+    "name": "a padded saffron robe",
+    "classLevel": 34,
+    "totalLevel": 144,
+    "level": 144,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1,
+      "ATTACK_SPEED": 3,
+      "HIDE": -1
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "ABOUT_BODY"
+    ],
+    "flags": [
+      "WARRIOR"
+    ],
+    "weight": 15,
+    "ac": null,
+    "dropSources": [
+      "Mob: A Second Legionnaire in The Viscounty of Rogonia"
     ]
   },
   {
@@ -43645,6 +46902,53 @@
     "ac": null,
     "dropSources": [
       "Mob: The captain of the Shi'mon empire, Shi'mon Island"
+    ]
+  },
+  {
+    "name": "a three-pronged hand weapon",
+    "classLevel": 35,
+    "totalLevel": 0,
+    "level": 35,
+    "stats": {
+      "HITROLL": 3,
+      "DAMROLL": 1,
+      "STR": 2,
+      "WARR_SKILL_LEVEL": 1
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "1-WIELD"
+    ],
+    "weight": 5,
+    "ac": null
+  },
+  {
+    "name": "a mace of disruption",
+    "classLevel": 35,
+    "totalLevel": 0,
+    "level": 35,
+    "stats": {
+      "DAMROLL": 5,
+      "HITROLL": 5,
+      "WARR_SKILL_LEVEL": 1,
+      "STR": 4,
+      "CHR": 4
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "1-WIELD"
+    ],
+    "flags": [
+      "GLOW ANTI_EVIL ANTI_NEUTRAL CLERIC WARRIOR"
+    ],
+    "weight": 35,
+    "ac": null,
+    "dropSources": [
+      "Mob: The warrior monk in Plane of Chaos, castle"
     ]
   },
   {
@@ -44201,6 +47505,31 @@
     "ac": null,
     "dropSources": [
       "Room: In a cave in K'tin Lake"
+    ]
+  },
+  {
+    "name": "the Buster Blade",
+    "classLevel": 36,
+    "totalLevel": 0,
+    "level": 36,
+    "stats": {
+      "HITROLL": 3,
+      "WARR_SKILL_LEVEL": 2,
+      "MOVE": 120
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "2_WIELD"
+    ],
+    "flags": [
+      "ARTIFACT"
+    ],
+    "weight": 1,
+    "ac": null,
+    "dropSources": [
+      "Quest Reward: Attained the fabled El Dorado from the realm of Huitzilopochtli in Colony of Nueva Granada"
     ]
   },
   {
@@ -44960,6 +48289,81 @@
     ]
   },
   {
+    "name": "a tricon cap festooned with ribbons",
+    "classLevel": 37,
+    "totalLevel": 0,
+    "level": 37,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1,
+      "CHR": 4
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "HEAD"
+    ],
+    "weight": 2,
+    "ac": null,
+    "dropSources": [
+      "Mob: Ambassador Dathin  in The capital city of Naginag, Silver Palace"
+    ]
+  },
+  {
+    "name": "a black metal circlet",
+    "classLevel": 37,
+    "totalLevel": 159,
+    "level": 159,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1,
+      "DAMROLL": 4,
+      "HITROLL": 2,
+      "CLER_CAST_LEVEL": -1
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "HEAD"
+    ],
+    "flags": [
+      "ANTI_NEUTRAL ANTI_GOOD WARRIOR"
+    ],
+    "weight": 8,
+    "ac": null,
+    "dropSources": [
+      "Mob: A Balor in Subterranean ruins, inner sanctum"
+    ]
+  },
+  {
+    "name": "a cruel, jagged sword",
+    "classLevel": 37,
+    "totalLevel": 159,
+    "level": 159,
+    "stats": {
+      "DAMROLL": 4,
+      "HITROLL": 3,
+      "WARR_SKILL_LEVEL": 1,
+      "CON": 2,
+      "SAVING_POISON": 15,
+      "SAVING_BREATH": 15
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "1-WIELD"
+    ],
+    "flags": [
+      "ANTI_NEUTRAL ANTI_GOOD WARRIOR"
+    ],
+    "weight": 33,
+    "ac": null,
+    "dropSources": [
+      "Mob: A Balor in Subterranean ruins, inner sanctum"
+    ]
+  },
+  {
     "name": "A blackened adamantium spear",
     "classLevel": 37,
     "totalLevel": 160,
@@ -45206,6 +48610,29 @@
     ]
   },
   {
+    "name": "a gladiator's cloak",
+    "classLevel": 37,
+    "totalLevel": 160,
+    "level": 160,
+    "stats": {
+      "DAMROLL": 5,
+      "WARR_SKILL_LEVEL": 1,
+      "CON": 1,
+      "Built": null
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "ABOUT_BODY 2_WIELD"
+    ],
+    "flags": [
+      "RARE GLOW WARRIOR"
+    ],
+    "weight": 33,
+    "ac": null
+  },
+  {
     "name": "the royal sceptre of Dorna",
     "classLevel": 37,
     "totalLevel": 161,
@@ -45410,6 +48837,33 @@
     "ac": null,
     "dropSources": [
       "Container: a small iron chest in Inside a Shrine in Demiplane near Grae Keep."
+    ]
+  },
+  {
+    "name": "A smoke stained iron anklet",
+    "classLevel": 37,
+    "totalLevel": 163,
+    "level": 163,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1,
+      "DAMROLL": 4,
+      "HITROLL": 2,
+      "ALIGNMENT": -2,
+      "CLER_CAST_LEVEL": -1
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "FEET"
+    ],
+    "flags": [
+      "ANTI_NEUTRAL ANTI_GOOD WARRIOR"
+    ],
+    "weight": 2,
+    "ac": null,
+    "dropSources": [
+      "Mob: Chief Gugarm in The mountain fortress of Erom Bhooj"
     ]
   },
   {
@@ -46147,6 +49601,55 @@
     ]
   },
   {
+    "name": "a heron-marked blade",
+    "classLevel": 38,
+    "totalLevel": 0,
+    "level": 38,
+    "stats": {
+      "HITROLL": 22,
+      "WARR_SKILL_LEVEL": 1,
+      "MOV_REGEN": 25
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "1-WIELD"
+    ],
+    "weight": 10,
+    "ac": null,
+    "dropSources": [
+      "Mob: A bodyguard in The Village of Egmondville"
+    ]
+  },
+  {
+    "name": "The longsword of a forgotten paladin",
+    "classLevel": 38,
+    "totalLevel": 0,
+    "level": 38,
+    "stats": {
+      "HITROLL": 4,
+      "DAMROLL": 4,
+      "WARR_SKILL_LEVEL": 1,
+      "CON": 2,
+      "STR": 2
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "1-WIELD"
+    ],
+    "flags": [
+      "GLOW ANTI_EVIL"
+    ],
+    "weight": 44,
+    "ac": null,
+    "dropSources": [
+      "Mob: A bloodless paladin in The Tombs of the Forgotten"
+    ]
+  },
+  {
     "name": "A heavy obsidian scythe",
     "classLevel": 38,
     "totalLevel": 165,
@@ -46868,6 +50371,33 @@
     ]
   },
   {
+    "name": "An elite guardians broadsword",
+    "classLevel": 38,
+    "totalLevel": 166,
+    "level": 166,
+    "stats": {
+      "WARR_SKILL_LEVEL": 2,
+      "DAMROLL": 10,
+      "HITROLL": 6,
+      "DEX": 4,
+      "CON": 4
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "2_WIELD"
+    ],
+    "flags": [
+      "GLOW WARRIOR"
+    ],
+    "weight": 60,
+    "ac": null,
+    "dropSources": [
+      "Mob: An elite bloodless guardian in The Tombs of the Forgotten"
+    ]
+  },
+  {
     "name": "A yellow jade eagle talisman",
     "classLevel": 38,
     "totalLevel": 167,
@@ -46892,6 +50422,56 @@
     "ac": null,
     "dropSources": [
       "Quest reward in Ishi Province"
+    ]
+  },
+  {
+    "name": "A set of blood red armor plates",
+    "classLevel": 38,
+    "totalLevel": 167,
+    "level": 167,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1,
+      "HITROLL": 3,
+      "CON": 1
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "ARMS LEGS"
+    ],
+    "flags": [
+      "EVIL WARRIOR"
+    ],
+    "weight": 30,
+    "ac": null,
+    "dropSources": [
+      "Mob: A Cauldron Born in Elemental plane of darkness, core"
+    ]
+  },
+  {
+    "name": "A blood red armor plate",
+    "classLevel": 38,
+    "totalLevel": 167,
+    "level": 167,
+    "stats": {
+      "WARR_SKILL_LEVEL": 1,
+      "HITROLL": 3,
+      "CON": 1
+    },
+    "classes": [
+      "WARRIOR"
+    ],
+    "worn": [
+      "ON_BODY"
+    ],
+    "flags": [
+      "EVIL WARRIOR"
+    ],
+    "weight": 26,
+    "ac": null,
+    "dropSources": [
+      "Mob: A Cauldron Born in Elemental plane of darkness, core"
     ]
   },
   {

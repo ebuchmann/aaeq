@@ -1,12 +1,4 @@
-import './App.css'
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from './components/ui/table'
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from './components/ui/table'
 import EquipmentData from './data/equipment.json'
 import {
   createColumnHelper,
@@ -30,6 +22,7 @@ import { ArrowUpDown } from 'lucide-react'
 import { paginationAtom } from './state/pagination'
 import { Fragment } from 'react/jsx-runtime'
 import { settingsAtom } from './state/settings'
+import { FilterLevel } from './components/FilterLevel'
 
 type Stats = {
   INT?: number
@@ -93,11 +86,16 @@ const abbreviations: Record<string, string> = {
   WARR_SKILL_LEVEL: 'WSL',
   DAMROLL: 'DAM',
   HITROLL: 'HIT',
-  MANA_REGEN: 'MRG',
-  HP_REGEN: 'HRG',
+  MANA_REGEN: 'MAR',
+  HP_REGEN: 'HPR',
   MOV_REGEN: 'MVR',
   CAST_ABILITY: 'CST',
   ATTACK_SPEED: 'ASPD',
+  ALIGNMENT: 'ALGN',
+  ABSORB_FIRE: 'AFIR',
+  ABSORB_ICE: 'AICE',
+  ABSORB_ZAP: 'AZAP',
+  ABSORB_MAGIC: 'AMAG',
 }
 
 function formatObjectToString(obj: Stats): string {
@@ -120,8 +118,7 @@ function formatObjectToString(obj: Stats): string {
         abbreviations.NECR_CAST_LEVEL,
         abbreviations.WARR_SKILL_LEVEL,
       ]
-      const color =
-        isFiltered && !noGreenKeys.includes(shortKey) ? 'lime' : 'inherit'
+      const color = isFiltered && !noGreenKeys.includes(shortKey) ? 'lime' : 'inherit'
 
       if (typeof value === 'number') {
         const sign = value > 0 ? '+' : value < 0 ? '-' : ''
@@ -143,9 +140,7 @@ const columns = [
     filterFn: (row, columnId, value: string[]) => {
       if (value.length === 0) return true
 
-      return value.every(
-        (cls) => !!row.getValue<string[]>(columnId)?.includes(cls)
-      )
+      return value.every((cls) => !!row.getValue<string[]>(columnId)?.includes(cls))
     },
   }),
   columnHelper.accessor('weight', {
@@ -158,9 +153,7 @@ const columns = [
     filterFn: (row, columnId, value: string[]) => {
       if (value.length === 0) return true
 
-      return value.every(
-        (worn) => !!row.getValue<string[]>(columnId)?.includes(worn)
-      )
+      return value.every((worn) => !!row.getValue<string[]>(columnId)?.includes(worn))
     },
   }),
   columnHelper.accessor('name', {
@@ -170,10 +163,7 @@ const columns = [
   columnHelper.accessor('level', {
     header: ({ column }) => {
       return (
-        <Button
-          variant="ghost"
-          onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
-        >
+        <Button variant="ghost" onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}>
           Lv
           <ArrowUpDown />
         </Button>
@@ -202,9 +192,7 @@ const columns = [
     filterFn: (row, columnId, value: string[]) => {
       if (value.length === 0) return true
 
-      return value.every(
-        (stat) => !!row.getValue(columnId)?.hasOwnProperty(stat)
-      )
+      return value.every((stat) => !!row.getValue(columnId)?.hasOwnProperty(stat))
     },
   }),
 ]
@@ -221,6 +209,7 @@ const columnFilterAtom = atom((get) => {
 function App() {
   const columnFilters = useAtomValue(columnFilterAtom)
   const pagination = useAtomValue(paginationAtom)
+  const filters = useAtomValue(filtersAtom)
 
   const tableInstance = useReactTable<EquipmentData>({
     data: EquipmentData,
@@ -231,9 +220,21 @@ function App() {
     getPaginationRowModel: getPaginationRowModel(),
     getExpandedRowModel: getExpandedRowModel(),
     getRowCanExpand: () => true,
+    globalFilterFn: (row, _colName, filterValue) => {
+      const { classLevel, totalLevel } = row.original
+      let isValid = true
+
+      if (filterValue.minClassLevel) isValid = isValid && classLevel >= filterValue.minClassLevel
+      if (filterValue.maxClassLevel) isValid = isValid && classLevel <= filterValue.maxClassLevel
+      if (filterValue.minTotalLevel) isValid = isValid && totalLevel >= filterValue.minTotalLevel
+      if (filterValue.maxTotalLevel) isValid = isValid && totalLevel <= filterValue.maxTotalLevel
+
+      return isValid
+    },
     state: {
       columnFilters,
       pagination,
+      globalFilter: filters,
     },
   })
 
@@ -241,30 +242,19 @@ function App() {
 
   return (
     <>
-      {/* <CommandMenu /> */}
-      <Search />
-      <div className="flex-dir-col flex gap-2">
-        <div>
-          <FilterStats />
-        </div>
-        <div>
-          <FilterClasses />
-        </div>
-        <div>
-          <FilterWorn />
-        </div>
+      <div className="flex-dir-col flex gap-4">
+        <Search />
+        <FilterStats />
+        <FilterClasses />
+        <FilterWorn />
+        <FilterLevel />
       </div>
       <Table>
         <TableHeader>
           {getHeaderGroups().map((headerGroup) => (
             <TableRow key={headerGroup.id}>
               {headerGroup.headers.map((header) => (
-                <TableHead key={header.id}>
-                  {flexRender(
-                    header.column.columnDef.header,
-                    header.getContext()
-                  )}
-                </TableHead>
+                <TableHead key={header.id}>{flexRender(header.column.columnDef.header, header.getContext())}</TableHead>
               ))}
             </TableRow>
           ))}
@@ -272,22 +262,15 @@ function App() {
         <TableBody>
           {getRowModel().rows.map((row) => (
             <Fragment key={row.id}>
-              <TableRow
-                className="cursor-pointer"
-                onClick={row.getToggleExpandedHandler()}
-              >
+              <TableRow className="cursor-pointer" onClick={row.getToggleExpandedHandler()}>
                 {row.getVisibleCells().map((cell) => (
-                  <TableCell key={cell.id}>
-                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                  </TableCell>
+                  <TableCell key={cell.id}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</TableCell>
                 ))}
               </TableRow>
               {row.getIsExpanded() && (
                 <TableRow>
                   {/* 2nd row is a custom 1 cell row */}
-                  <TableCell colSpan={row.getVisibleCells().length}>
-                    {renderSubComponent({ row })}
-                  </TableCell>
+                  <TableCell colSpan={row.getVisibleCells().length}>{renderSubComponent({ row })}</TableCell>
                 </TableRow>
               )}
             </Fragment>

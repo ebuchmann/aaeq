@@ -5,24 +5,13 @@ const filePath = path.resolve(__dirname, 'Equipment_Log.txt')
 
 let equipmentLog: string = ''
 
-try {
-  equipmentLog = fs.readFileSync(filePath, 'utf-8')
-  console.log('File successfully loaded.')
-} catch (error) {
-  console.error('Error reading the file:', error)
-}
-
 const parseEquipmentLog = (log: string): Record<string, any>[] => {
   const lines = log.split('\n')
   const equipmentData: Record<string, any>[] = []
 
   lines.forEach((line) => {
-    const match = line.match(
-      /(?<name>.+?)\s+(?<levelKey>level|total levels):\s*(?<level>\d+)/i
-    )
-    const cleanName = match?.groups?.name
-      .match(/\* (?<name>.*),/)
-      ?.groups?.name.trim()
+    const match = line.match(/(?<name>.+?)\s+(?<levelKey>level|total levels):\s*(?<level>\d+)/i)
+    const cleanName = match?.groups?.name.match(/\* (?<name>.*),/)?.groups?.name.trim()
 
     const doesNotExist = !equipmentData.find((item) => item.name === cleanName)
 
@@ -43,24 +32,15 @@ const parseEquipmentLog = (log: string): Record<string, any>[] => {
         equipmentItem.speed = speedMatch.groups.speed.trim()
       }
 
-      const damageTypeMatch = line.match(
-        /Damage Type:\s*(?<damageTypes>[\w\s]+?),/i
-      )
+      const damageTypeMatch = line.match(/Damage Type:\s*(?<damageTypes>[\w\s]+?),/i)
       if (damageTypeMatch && damageTypeMatch.groups) {
-        const damageTypes = damageTypeMatch.groups.damageTypes
-          .split(' ')
-          .map((type) => type.trim())
+        const damageTypes = damageTypeMatch.groups.damageTypes.split(' ').map((type) => type.trim())
         equipmentItem.damageTypes = damageTypes
       }
 
-      const wieldStrengthMatch = line.match(
-        /(?<wieldStrength>\d+)\s+wield\s+strength/i
-      )
+      const wieldStrengthMatch = line.match(/(?<wieldStrength>\d+)\s+wield\s+strength/i)
       if (wieldStrengthMatch && wieldStrengthMatch.groups) {
-        equipmentItem.wieldStrength = parseInt(
-          wieldStrengthMatch.groups.wieldStrength,
-          10
-        )
+        equipmentItem.wieldStrength = parseInt(wieldStrengthMatch.groups.wieldStrength, 10)
       }
 
       const wornMatch = line.match(
@@ -72,20 +52,14 @@ const parseEquipmentLog = (log: string): Record<string, any>[] => {
         equipmentItem.worn = ['1_WIELD']
       }
 
-      const alignmentMatch = line.match(
-        /(?<alignments>GOOD|NEUTRAL|EVIL|ANTI_GOOD|ANTI_NEUTRAL|ANTI_EVIL)/g
-      )
+      const alignmentMatch = line.match(/(?<alignments>GOOD|NEUTRAL|EVIL|ANTI_GOOD|ANTI_NEUTRAL|ANTI_EVIL)/g)
       if (alignmentMatch) {
         equipmentItem.alignment = alignmentMatch
       }
 
-      const compositionMatch = line.match(
-        /Comp:\s*(?<composition>(?!Weight)[\w\s,]+)/i
-      )
+      const compositionMatch = line.match(/Comp:\s*(?<composition>(?!Weight)[\w\s,]+)/i)
       if (compositionMatch && compositionMatch.groups) {
-        const compositions = compositionMatch.groups.composition
-          .split(',')
-          .map((comp) => comp.trim())
+        const compositions = compositionMatch.groups.composition.split(',').map((comp) => comp.trim())
         equipmentItem.composition = compositions
       }
 
@@ -100,16 +74,12 @@ const parseEquipmentLog = (log: string): Record<string, any>[] => {
         equipmentItem.ac = parseInt(acMatch.groups.ac, 10)
       }
 
-      const flagsMatch = line.match(
-        /(?<flags>FLOATING|ARTIFACT|GLOW|RARE|JUNK|QUEST_ITEM)/g
-      )
+      const flagsMatch = line.match(/(?<flags>FLOATING|ARTIFACT|GLOW|RARE|JUNK|QUEST_ITEM)/g)
       if (flagsMatch) {
         equipmentItem.flags = flagsMatch
       }
 
-      const classMatch = line.match(
-        /(?<classes>WARRIOR(?!_)|THIEF(?!_)|CLERIC(?!_)|MAGE(?!_)|NECR(?!_)|DRUID(?!_))/g
-      )
+      const classMatch = line.match(/(?<classes>WARRIOR(?!_)|THIEF(?!_)|CLERIC(?!_)|MAGE(?!_)|NECR(?!_)|DRUID(?!_))/g)
       if (classMatch) {
         equipmentItem.classes = classMatch
       }
@@ -122,8 +92,7 @@ const parseEquipmentLog = (log: string): Record<string, any>[] => {
           const statParts = stat.split(/\s+by\s+/)
           const statKey = statParts[0].trim()
           const statValue = statParts[1].replace('minus', '').trim()
-          const statNumber =
-            parseInt(statValue, 10) * (statParts[1].includes('minus') ? -1 : 1)
+          const statNumber = parseInt(statValue, 10) * (statParts[1].includes('minus') ? -1 : 1)
           equipmentItem.stats[statKey] = statNumber
           equipmentItem.stats[statParts[0]] = statNumber
         })
@@ -138,7 +107,7 @@ const parseEquipmentLog = (log: string): Record<string, any>[] => {
 
 const equipmentData = [] // parseEquipmentLog(equipmentLog)
 
-const outputFilePath = path.resolve(__dirname, 'Equipment_Data.json')
+const outputFilePath = path.resolve(__dirname, 'src', 'data', 'equipment.json')
 
 const parseThiefFile = (filePath: string): Record<string, any>[] => {
   const thiefData: Record<string, any>[] = []
@@ -147,13 +116,8 @@ const parseThiefFile = (filePath: string): Record<string, any>[] => {
     const parsedData: any[][] = JSON.parse(JSON.parse(fileContent))
 
     parsedData.forEach((entry) => {
-      const [classes, worn, name, level1, level2, flags, weight, ac, ...stats] =
-        entry
-      if (
-        equipmentData.find(
-          (item) => item.name.toLowerCase() === name.toLowerCase()
-        )
-      ) {
+      const [classes, worn, name, level1, level2, flags, weight, ac, ...stats] = entry
+      if (equipmentData.find((item) => item.name.toLowerCase() === name.toLowerCase())) {
         return // Skip if the item already exists in the equipmentItems array
       }
       const equipmentItem: Record<string, any> = {
@@ -191,19 +155,14 @@ const parseThiefFile = (filePath: string): Record<string, any>[] => {
         const [statKey, statValue] = stat.split(' by ')
         if (statKey && statValue) {
           const cleanValue = statValue.replace('minus', '').trim()
-          equipmentItem.stats[statKey.trim()] =
-            parseInt(cleanValue, 10) * (statValue.includes('minus') ? -1 : 1)
+          equipmentItem.stats[statKey.trim()] = parseInt(cleanValue, 10) * (statValue.includes('minus') ? -1 : 1)
         }
       })
 
-      const dropSourceMatch = stats.filter((stat) =>
-        /^(quest reward|mob|room|container)/i.test(stat)
-      )
+      const dropSourceMatch = stats.filter((stat) => /^(quest reward|mob|room|container)/i.test(stat))
       if (dropSourceMatch.length > 0) {
         equipmentItem.dropSources = dropSourceMatch
-          .flatMap((source) =>
-            source.match(/(?:quest reward|mob|room|container).*/gi)
-          )
+          .flatMap((source) => source.match(/(?:quest reward|mob|room|container).*/gi))
           .map((source) => source.trim())
           .filter((source) => source.length > 0)
       }
@@ -233,14 +192,19 @@ dataFiles.forEach((file) => {
 })
 
 try {
-  fs.writeFileSync(
-    outputFilePath,
-    JSON.stringify(equipmentData, null, 2),
-    'utf-8'
-  )
+  fs.writeFileSync(outputFilePath, JSON.stringify(equipmentData, null, 2), 'utf-8')
   console.log('Equipment data successfully written to Equipment_Data.json')
 } catch (error) {
   console.error('Error writing the JSON file:', error)
 }
 
 export { equipmentLog, equipmentData }
+
+// try {
+//   equipmentLog = fs.readFileSync(filePath, 'utf-8')
+//   console.log('File successfully loaded.')
+//   const filedata = parseEquipmentLog(equipmentLog)
+//   console.log(filedata.length)
+// } catch (error) {
+//   console.error('Error reading the file:', error)
+// }
