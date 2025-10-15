@@ -16,7 +16,7 @@ export const filtersAtom = atom<FilterAtoms>({
   stats: [],
   worn: [],
   classes: [],
-  minClassLevel: 40,
+  minClassLevel: 0,
   maxClassLevel: 0,
   minTotalLevel: 0,
   maxTotalLevel: 0,
