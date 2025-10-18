@@ -377,7 +377,7 @@
     "stats": {
       "WARR_SKILL_LEVEL": 1,
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 1,
+      "MANA_REGEN": 1.5,
       "MOV_REGEN": 1
     },
     "classes": [
@@ -619,7 +619,7 @@
     "totalLevel": 144,
     "level": 144,
     "stats": {
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "CLER_CAST_LEVEL": 1,
       "MANA": 8,
       "CHR": 1
@@ -700,7 +700,7 @@
     "level": 149,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "HP_REGEN": -1,
       "MOV_REGEN": -1,
       "ATTACK_SPEED": -1
@@ -926,7 +926,7 @@
     "level": 163,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "MOV_REGEN": 2
     },
     "classes": [
@@ -1299,7 +1299,7 @@
     "level": 7,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 0
+      "MANA_REGEN": 0.5
     },
     "classes": [
       "CLERIC"
@@ -1321,7 +1321,7 @@
     "stats": {
       "CLER_CAST_LEVEL": 1,
       "WIS": 1,
-      "MANA_REGEN": 0
+      "MANA_REGEN": 0.5
     },
     "classes": [
       "CLERIC"
@@ -1370,7 +1370,7 @@
     "totalLevel": 17,
     "level": 17,
     "stats": {
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "CLER_CAST_LEVEL": 1
     },
     "classes": [
@@ -1396,7 +1396,7 @@
     "stats": {
       "CLER_CAST_LEVEL": 1,
       "MANA": 4,
-      "MANA_REGEN": 0
+      "MANA_REGEN": 0.5
     },
     "classes": [
       "CLERIC"
@@ -1446,7 +1446,7 @@
     "level": 11,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "MANA": 3
     },
     "classes": [
@@ -1525,7 +1525,7 @@
     "level": 12,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 0
+      "MANA_REGEN": 0.5
     },
     "classes": [
       "CLERIC"
@@ -1548,7 +1548,7 @@
       "CLER_CAST_LEVEL": 1,
       "CHR": 1,
       "MANA": 4,
-      "MANA_REGEN": 0
+      "MANA_REGEN": 0.5
     },
     "classes": [
       "CLERIC"
@@ -1572,7 +1572,7 @@
     "level": 14,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "CHR": 1,
       "WIS": 1,
       "MANA": 8
@@ -1623,7 +1623,7 @@
     "level": 15,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "MANA": 5
     },
     "classes": [
@@ -1672,7 +1672,7 @@
     "level": 15,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "MANA": 5
     },
     "classes": [
@@ -1889,7 +1889,7 @@
     "level": 18,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "MANA": 6
     },
     "classes": [
@@ -1965,7 +1965,7 @@
     "level": 20,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 1,
+      "MANA_REGEN": 1.5,
       "WIS": 1,
       "CHR": 1,
       "MANA": 6
@@ -2114,7 +2114,7 @@
       "CLER_CAST_LEVEL": 1,
       "NECR_CAST_LEVEL": 1,
       "MANA": 9,
-      "MANA_REGEN": 0
+      "MANA_REGEN": 0.5
     },
     "classes": [
       "CLERIC NECRO"
@@ -2218,7 +2218,7 @@
     "level": 69,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 1,
+      "MANA_REGEN": 1.5,
       "INT": 1,
       "CHR": 1
     },
@@ -2525,7 +2525,7 @@
       "CLER_CAST_LEVEL": 1,
       "WIS": 1,
       "CHR": 1,
-      "MANA_REGEN": 1,
+      "MANA_REGEN": 1.5,
       "DEX": -1,
       "HIT_POINTS": -10
     },
@@ -2602,7 +2602,7 @@
     "level": 26,
     "stats": {
       "CLER_CAST_LEVEL": 2,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "WIS": 1,
       "CHR": 1,
       "MANA": 12
@@ -2700,7 +2700,7 @@
     "level": 26,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "MANA": 6
     },
     "classes": [
@@ -2750,7 +2750,7 @@
     "level": 26,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 1,
+      "MANA_REGEN": 1.5,
       "MANA": 5
     },
     "classes": [
@@ -2827,7 +2827,7 @@
     "level": 97,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "MANA": 5
     },
     "classes": [
@@ -2969,7 +2969,7 @@
     "stats": {
       "CLER_CAST_LEVEL": 1,
       "WIS": 2,
-      "MANA_REGEN": 2
+      "MANA_REGEN": 2.5
     },
     "classes": [
       "CLERIC"
@@ -2993,7 +2993,7 @@
     "level": 108,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 1,
+      "MANA_REGEN": 1.5,
       "WIS": 1,
       "MANA": 3
     },
@@ -3098,7 +3098,7 @@
     "level": 29,
     "stats": {
       "CLER_CAST_LEVEL": 2,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "WIS": 1,
       "CHR": 1,
       "MANA": 6,
@@ -3345,7 +3345,7 @@
       "CLER_CAST_LEVEL": 1,
       "NECR_CAST_LEVEL": 1,
       "MANA": 4,
-      "MANA_REGEN": 1
+      "MANA_REGEN": 1.5
     },
     "classes": [
       "CLERIC NECRO"
@@ -3465,7 +3465,7 @@
     "level": 31,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "CAST_ABILITY": 1
     },
     "classes": [
@@ -3541,7 +3541,7 @@
     "stats": {
       "DRUID_CAST_LEVEL": 1,
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 0
+      "MANA_REGEN": 0.5
     },
     "classes": [
       "DRUID CLERIC"
@@ -3621,7 +3621,7 @@
       "WIS": 1,
       "MANA": 15,
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 1
+      "MANA_REGEN": 1.5
     },
     "classes": [
       "CLERIC"
@@ -3696,7 +3696,7 @@
     "level": 32,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 5
     },
     "classes": [
@@ -3746,7 +3746,7 @@
     "level": 32,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "MANA": 2
     },
     "classes": [
@@ -3903,7 +3903,7 @@
       "CLER_CAST_LEVEL": 1,
       "DAMROLL": 7,
       "HITROLL": 7,
-      "MANA_REGEN": 3
+      "MANA_REGEN": 3.5
     },
     "classes": [
       "WARRIOR CLERIC"
@@ -4212,7 +4212,7 @@
     "level": 33,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 2
+      "MANA_REGEN": 2.5
     },
     "classes": [
       "CLERIC"
@@ -4416,7 +4416,7 @@
     "level": 140,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 10,
       "SHIELD_BLOCK": 1
     },
@@ -4463,7 +4463,7 @@
     "level": 140,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "CHR": 2,
       "ALIGNMENT": -2
     },
@@ -4565,7 +4565,7 @@
     "level": 34,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "CHR": 1
     },
     "classes": [
@@ -4641,7 +4641,7 @@
     "level": 34,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "MANA": 5
     },
     "classes": [
@@ -4666,7 +4666,7 @@
     "level": 34,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "LUCK": 1
     },
     "classes": [
@@ -4691,7 +4691,7 @@
     "level": 34,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "WIS": 1,
       "INT": 1
     },
@@ -4717,7 +4717,7 @@
     "level": 34,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 3
+      "MANA_REGEN": 3.5
     },
     "classes": [
       "CLERIC"
@@ -4764,7 +4764,7 @@
     "stats": {
       "CLER_CAST_LEVEL": 1,
       "WIS": 1,
-      "MANA_REGEN": 4
+      "MANA_REGEN": 4.5
     },
     "classes": [
       "CLERIC"
@@ -4815,7 +4815,7 @@
     "level": 35,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "WIS": 1,
       "CHR": 1
     },
@@ -4891,7 +4891,7 @@
     "level": 35,
     "stats": {
       "CLER_CAST_LEVEL": 2,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "WIS": 1,
       "CHR": 1,
       "MANA": 14
@@ -4943,7 +4943,7 @@
     "stats": {
       "CLER_CAST_LEVEL": 1,
       "WIS": 4,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "HIDE": -2
     },
     "classes": [
@@ -4968,7 +4968,7 @@
     "level": 35,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "CHR": 1
     },
     "classes": [
@@ -5042,7 +5042,7 @@
     "level": 149,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "CHR": 1
     },
     "classes": [
@@ -5119,7 +5119,7 @@
     "level": 151,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 5
     },
     "classes": [
@@ -5169,7 +5169,7 @@
     "level": 152,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "CHR": 1
     },
     "classes": [
@@ -5194,7 +5194,7 @@
     "level": 152,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "CHR": 1
     },
     "classes": [
@@ -5219,7 +5219,7 @@
     "level": 152,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "CHR": 1
     },
     "classes": [
@@ -5244,7 +5244,7 @@
     "level": 152,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "CHR": 1
     },
     "classes": [
@@ -5269,7 +5269,7 @@
     "level": 152,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "CHR": 1
     },
     "classes": [
@@ -5294,7 +5294,7 @@
     "level": 152,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "CHR": 1
     },
     "classes": [
@@ -5319,7 +5319,7 @@
     "level": 152,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "CHR": 1
     },
     "classes": [
@@ -5344,7 +5344,7 @@
     "level": 152,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "CHR": 1
     },
     "classes": [
@@ -5421,7 +5421,7 @@
     "level": 36,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 3
+      "MANA_REGEN": 3.5
     },
     "classes": [
       "CLERIC"
@@ -5498,7 +5498,7 @@
     "level": 153,
     "stats": {
       "MANA": 12,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "CLER_CAST_LEVEL": 1,
       "CHR": 1
     },
@@ -5524,7 +5524,7 @@
     "level": 155,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "INT": 1,
       "WIS": 1,
       "MANA": 9
@@ -5578,7 +5578,7 @@
     "level": 156,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 7
     },
     "classes": [
@@ -5711,7 +5711,7 @@
       "CLER_CAST_LEVEL": 1,
       "WIS": 1,
       "CHR": 1,
-      "MANA_REGEN": 3
+      "MANA_REGEN": 3.5
     },
     "classes": [
       "CLERIC"
@@ -5735,7 +5735,7 @@
     "level": 37,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 7,
       "ALIGNMENT": -1
     },
@@ -5974,7 +5974,7 @@
     "level": 37,
     "stats": {
       "CLER_CAST_LEVEL": 2,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 18,
       "HITROLL": 3,
       "DAMROLL": 3
@@ -6073,7 +6073,7 @@
     "level": 37,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "WIS": 1,
       "CHR": 1
     },
@@ -6100,7 +6100,7 @@
     "stats": {
       "CLER_CAST_LEVEL": 1,
       "THIEF_SKILL_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "MANA": 5
     },
     "classes": [
@@ -6257,7 +6257,7 @@
     "level": 159,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "INT": 1,
       "WIS": 1,
       "MANA": 9
@@ -6572,7 +6572,7 @@
     "level": 164,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "ABSORB_MAGIC": 1
     },
     "classes": [
@@ -6719,7 +6719,7 @@
     "level": 38,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "WIS": 1,
       "CHR": 1,
       "MANA": 10
@@ -6746,7 +6746,7 @@
     "level": 38,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "CHR": 1
     },
     "classes": [
@@ -6895,7 +6895,7 @@
     "level": 38,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "SHIELD_BLOCK": 1
     },
     "classes": [
@@ -6920,7 +6920,7 @@
     "level": 38,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 6,
       "AGE": 5
     },
@@ -7126,7 +7126,7 @@
     "stats": {
       "CLER_CAST_LEVEL": 1,
       "WIS": 1,
-      "MANA_REGEN": 5,
+      "MANA_REGEN": 5.5,
       "MANA": 8,
       "CHR": 1
     },
@@ -7365,7 +7365,7 @@
     "level": 166,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 5,
+      "MANA_REGEN": 5.5,
       "MANA": 5
     },
     "classes": [
@@ -7419,7 +7419,7 @@
       "CLER_CAST_LEVEL": 1,
       "WARR_SKILL_LEVEL": 1,
       "WIS": 1,
-      "MANA_REGEN": 5
+      "MANA_REGEN": 5.5
     },
     "classes": [
       "CLERIC WARRIOR"
@@ -7578,7 +7578,7 @@
     "level": 39,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 5,
+      "MANA_REGEN": 5.5,
       "MANA": 5,
       "WIS": 1,
       "CHR": 1
@@ -7605,7 +7605,7 @@
     "level": 39,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "WIS": 1
     },
     "classes": [
@@ -7630,7 +7630,7 @@
     "level": 39,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "WIS": 1
     },
     "classes": [
@@ -7758,7 +7758,7 @@
     "level": 175,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 5,
+      "MANA_REGEN": 5.5,
       "MANA": 15
     },
     "classes": [
@@ -7808,7 +7808,7 @@
     "level": 178,
     "stats": {
       "CLER_CAST_LEVEL": 1,
-      "MANA_REGEN": 5,
+      "MANA_REGEN": 5.5,
       "MANA": 17
     },
     "classes": [
@@ -8078,7 +8078,7 @@
     "level": 139,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "HIT_POINTS": 5
     },
     "classes": [
@@ -8377,7 +8377,7 @@
     "level": 6,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "MANA": 2
     },
     "classes": [
@@ -8451,7 +8451,7 @@
     "level": 20,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "MANA": 2
     },
     "classes": [
@@ -8478,7 +8478,7 @@
       "DRUID_CAST_LEVEL": 1,
       "INT": 1,
       "WIS": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "MANA": 5
     },
     "classes": [
@@ -8503,7 +8503,7 @@
     "level": 11,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "MANA": 3
     },
     "classes": [
@@ -8619,7 +8619,7 @@
     "level": 12,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 0
+      "MANA_REGEN": 0.5
     },
     "classes": [
       "DRUID"
@@ -8993,7 +8993,7 @@
     "level": 17,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 1
+      "MANA_REGEN": 1.5
     },
     "classes": [
       "DRUID"
@@ -9066,7 +9066,7 @@
       "WIS": 1,
       "INT": 1,
       "CHR": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "MANA": 4
     },
     "classes": [
@@ -9091,7 +9091,7 @@
     "level": 46,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "WIS": 1,
       "Built": null
     },
@@ -9140,7 +9140,7 @@
     "stats": {
       "DRUID_CAST_LEVEL": 1,
       "WIS": 1,
-      "MANA_REGEN": 0
+      "MANA_REGEN": 0.5
     },
     "classes": [
       "DRUID"
@@ -9216,7 +9216,7 @@
     "level": 19,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 1,
+      "MANA_REGEN": 1.5,
       "MANA": 9
     },
     "classes": [
@@ -9268,7 +9268,7 @@
     "level": 19,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 1,
+      "MANA_REGEN": 1.5,
       "WIS": 1,
       "INT": 1,
       "MANA": 4
@@ -9346,7 +9346,7 @@
     "level": 20,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "INT": 1
     },
     "classes": [
@@ -9371,7 +9371,7 @@
     "level": 20,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "CHR": 1
     },
     "classes": [
@@ -9396,7 +9396,7 @@
     "level": 20,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "WIS": 1
     },
     "classes": [
@@ -9450,7 +9450,7 @@
       "CHR": 1,
       "WIS": 1,
       "MANA": 9,
-      "MANA_REGEN": 1
+      "MANA_REGEN": 1.5
     },
     "classes": [
       "DRUID"
@@ -9824,7 +9824,7 @@
     "stats": {
       "DRUID_CAST_LEVEL": 1,
       "MANA": 10,
-      "MANA_REGEN": 1,
+      "MANA_REGEN": 1.5,
       "MOV_REGEN": 5
     },
     "classes": [
@@ -10642,7 +10642,7 @@
     "level": 29,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "SAVING_FIRE": -5
     },
     "classes": [
@@ -10760,7 +10760,7 @@
     "level": 114,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "MANA": 2
     },
     "classes": [
@@ -10809,7 +10809,7 @@
     "level": 116,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "INT": 1,
       "WIS": 1,
       "MANA": 4,
@@ -10837,7 +10837,7 @@
     "level": 30,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "MANA": 6
     },
     "classes": [
@@ -10862,7 +10862,7 @@
     "level": 30,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "MANA": 5
     },
     "classes": [
@@ -10910,7 +10910,7 @@
       "DRUID_CAST_LEVEL": 1,
       "INT": 1,
       "WIS": 1,
-      "MANA_REGEN": 1
+      "MANA_REGEN": 1.5
     },
     "classes": [
       "DRUID"
@@ -10961,7 +10961,7 @@
     "stats": {
       "DRUID_CAST_LEVEL": 1,
       "HP_REGEN": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "MOV_REGEN": 3,
       "Job: Search the Vom Bog for some bog oak given": null
     },
@@ -11010,7 +11010,7 @@
     "level": 122,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "WIS": 1,
       "INT": 1,
       "MANA": 6
@@ -11062,7 +11062,7 @@
     "level": 31,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "CHR": 2
     },
     "classes": [
@@ -11087,7 +11087,7 @@
     "level": 31,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "MANA": 5
     },
     "classes": [
@@ -11138,7 +11138,7 @@
     "level": 31,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "HIDE": 1
     },
     "classes": [
@@ -11182,7 +11182,7 @@
     "level": 127,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 15,
       "NECR_CAST_LEVEL": -1
     },
@@ -11259,7 +11259,7 @@
     "stats": {
       "DRUID_CAST_LEVEL": 1,
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "CHR": 1
     },
     "classes": [
@@ -11565,7 +11565,7 @@
     "level": 33,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "MANA": 10
     },
     "classes": [
@@ -11590,7 +11590,7 @@
     "level": 33,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "MANA": 7,
       "WIS": 1
     },
@@ -11616,7 +11616,7 @@
     "level": 33,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "WIS": 1,
       "INT": 1
     },
@@ -11718,7 +11718,7 @@
     "level": 33,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MOV_REGEN": 1,
       "INT": 1,
       "WIS": 1,
@@ -11746,7 +11746,7 @@
     "level": 33,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 1,
+      "MANA_REGEN": 1.5,
       "WIS": 1,
       "SAVING_SPELL": 10
     },
@@ -11772,7 +11772,7 @@
     "level": 135,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 9,
       "HP_REGEN": -2
     },
@@ -11877,7 +11877,7 @@
     "level": 138,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "SAVING_ZAP": 5,
       "SAVING_COLD": 5
     },
@@ -11931,7 +11931,7 @@
     "level": 139,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 6,
       "WIS": 1,
       "THIEF_SKILL_LEVEL": -1
@@ -11958,7 +11958,7 @@
     "level": 140,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 10,
       "SHIELD_BLOCK": 1
     },
@@ -12084,7 +12084,7 @@
     "level": 145,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "WIS": 1,
       "CHR": 1
     },
@@ -12138,7 +12138,7 @@
     "level": 146,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "MOVE": 20
     },
     "classes": [
@@ -12163,7 +12163,7 @@
     "level": 35,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "MANA": 6,
       "AGE": 6
     },
@@ -12368,7 +12368,7 @@
     "stats": {
       "MANA": 17,
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "ATTACK_SPEED": -1
     },
     "classes": [
@@ -12393,7 +12393,7 @@
     "level": 149,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "ABSORB_ZAP": 1
     },
     "classes": [
@@ -12418,7 +12418,7 @@
     "level": 150,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "INT": 1,
       "WIS": 1,
       "CHR": 1
@@ -12469,7 +12469,7 @@
     "level": 150,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "ABSORB_ZAP": 1
     },
     "classes": [
@@ -12494,7 +12494,7 @@
     "level": 150,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "ABSORB_ZAP": 1
     },
     "classes": [
@@ -12519,7 +12519,7 @@
     "level": 150,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "ABSORB_ZAP": 1
     },
     "classes": [
@@ -12544,7 +12544,7 @@
     "level": 150,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "ABSORB_ZAP": 1
     },
     "classes": [
@@ -12665,7 +12665,7 @@
     "level": 151,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 11,
       "THIEF_SKILL_LEVEL": -1
     },
@@ -12691,7 +12691,7 @@
     "level": 152,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "CHR": 1
     },
     "classes": [
@@ -12816,7 +12816,7 @@
     "level": 36,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "ABSORB_MAGIC": 1,
       "MANA": 1
     },
@@ -12844,7 +12844,7 @@
       "DRUID_CAST_LEVEL": 1,
       "MANA": 20,
       "WIS": 1,
-      "MANA_REGEN": 1
+      "MANA_REGEN": 1.5
     },
     "classes": [
       "DRUID"
@@ -12943,7 +12943,7 @@
     "level": 154,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "ABSORB_ZAP": 1
     },
     "classes": [
@@ -13069,7 +13069,7 @@
     "level": 157,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 9
     },
     "classes": [
@@ -13219,7 +13219,7 @@
     "level": 37,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 12
     },
     "classes": [
@@ -13369,7 +13369,7 @@
     "level": 37,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 14
     },
     "classes": [
@@ -13665,7 +13665,7 @@
     "level": 163,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "AGE": 12,
       "MANA": 12
     },
@@ -13948,7 +13948,7 @@
     "level": 38,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 17
     },
     "classes": [
@@ -14000,7 +14000,7 @@
     "level": 38,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "WIS": 1,
       "MANA": 13
     },
@@ -14077,7 +14077,7 @@
     "level": 38,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "INT": 1,
       "HIT_POINTS": 2
     },
@@ -14245,7 +14245,7 @@
     "level": 165,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 5,
+      "MANA_REGEN": 5.5,
       "MANA": 9
     },
     "classes": [
@@ -14270,7 +14270,7 @@
     "level": 165,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 5,
+      "MANA_REGEN": 5.5,
       "MANA": 9
     },
     "classes": [
@@ -14374,7 +14374,7 @@
     "level": 166,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 5,
+      "MANA_REGEN": 5.5,
       "WIS": 1,
       "INT": 1,
       "MANA": 4,
@@ -14562,7 +14562,7 @@
     "level": 168,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 5
+      "MANA_REGEN": 5.5
     },
     "classes": [
       "DRUID"
@@ -14586,7 +14586,7 @@
     "level": 170,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 5,
+      "MANA_REGEN": 5.5,
       "MANA": 12,
       "WIS": 1,
       "CHR": 1
@@ -14663,7 +14663,7 @@
     "level": 174,
     "stats": {
       "DRUID_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 14,
       "CHR": 1
     },
@@ -14795,7 +14795,7 @@
     "level": 65,
     "stats": {
       "THIEF_SKILL_LEVEL": 1,
-      "MANA_REGEN": 1,
+      "MANA_REGEN": 1.5,
       "SNEAK": 1,
       "MANA": 5
     },
@@ -15040,7 +15040,7 @@
       "THIEF_SKILL_LEVEL": 2,
       "DEX": 1,
       "CHR": 1,
-      "MANA_REGEN": 0
+      "MANA_REGEN": -0.5
     },
     "classes": [
       "THIEF"
@@ -15527,7 +15527,7 @@
     "stats": {
       "NECR_CAST_LEVEL": 1,
       "THIEF_SKILL_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "MOV_REGEN": 1
     },
     "classes": [
@@ -15553,7 +15553,7 @@
     "stats": {
       "NECR_CAST_LEVEL": 1,
       "THIEF_SKILL_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "MOV_REGEN": 1
     },
     "classes": [
@@ -15579,7 +15579,7 @@
     "stats": {
       "NECR_CAST_LEVEL": 1,
       "THIEF_SKILL_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "MOV_REGEN": 1
     },
     "classes": [
@@ -16375,7 +16375,7 @@
       "CON": 1,
       "HIDE": 1,
       "SNEAK": 1,
-      "MANA_REGEN": 0
+      "MANA_REGEN": -0.5
     },
     "classes": [
       "THIEF"
@@ -19003,7 +19003,7 @@
       "THIEF_SKILL_LEVEL": 1,
       "NECR_CAST_LEVEL": 1,
       "DAMROLL": 1,
-      "MANA_REGEN": 0
+      "MANA_REGEN": 0.5
     },
     "classes": [
       "THIEF NECRO"
@@ -20266,7 +20266,7 @@
     "level": 129,
     "stats": {
       "THIEF_SKILL_LEVEL": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "INT": 1
     },
     "classes": [
@@ -20291,7 +20291,7 @@
     "level": 129,
     "stats": {
       "THIEF_SKILL_LEVEL": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "INT": 1
     },
     "classes": [
@@ -20316,7 +20316,7 @@
     "level": 129,
     "stats": {
       "THIEF_SKILL_LEVEL": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "INT": 1
     },
     "classes": [
@@ -24956,7 +24956,7 @@
       "MAGE_CAST_LEVEL": 1,
       "HITROLL": 5,
       "DAMROLL": 8,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MOV_REGEN": 9
     },
     "classes": [
@@ -25005,7 +25005,7 @@
     "level": 124,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "MANA": 5
     },
     "classes": [
@@ -25373,7 +25373,7 @@
     "level": 143,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 4
+      "MANA_REGEN": 4.5
     },
     "classes": [
       "MAGE"
@@ -25398,7 +25398,7 @@
     "stats": {
       "MAGE_CAST_LEVEL": 1,
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "CLER_CAST_LEVEL": -1,
       "MANA": 5,
       "Container: a stone sarcophagus guarded": null
@@ -25470,7 +25470,7 @@
     "level": 150,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 11
     },
     "classes": [
@@ -25547,7 +25547,7 @@
     "level": 159,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "MANA": 10,
       "AGE": 5,
       "INT": 1,
@@ -25910,7 +25910,7 @@
     "level": 8,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "MANA": 3
     },
     "classes": [
@@ -26028,7 +26028,7 @@
     "level": 9,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "MANA": 5,
       "INT": 1
     },
@@ -26229,7 +26229,7 @@
     "stats": {
       "MAGE_CAST_LEVEL": 1,
       "MANA": 3,
-      "MANA_REGEN": 0
+      "MANA_REGEN": 0.5
     },
     "classes": [
       "MAGE"
@@ -26722,7 +26722,7 @@
     "level": 19,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "MANA": 6
     },
     "classes": [
@@ -27052,7 +27052,7 @@
     "totalLevel": 63,
     "level": 63,
     "stats": {
-      "MANA_REGEN": 1,
+      "MANA_REGEN": 1.5,
       "MANA": 4,
       "MAGE_CAST_LEVEL": 1
     },
@@ -27314,7 +27314,7 @@
     "level": 67,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 1,
+      "MANA_REGEN": 1.5,
       "MANA": 6
     },
     "classes": [
@@ -27796,7 +27796,7 @@
     "level": 25,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "AGE": 8,
       "MANA": 8
     },
@@ -27977,7 +27977,7 @@
     "level": 26,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 2
+      "MANA_REGEN": 2.5
     },
     "classes": [
       "MAGE"
@@ -28045,7 +28045,7 @@
     "level": 26,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "MANA": 10
     },
     "classes": [
@@ -28920,7 +28920,7 @@
     "stats": {
       "MAGE_CAST_LEVEL": 1,
       "INT": 1,
-      "MANA_REGEN": 1,
+      "MANA_REGEN": 1.5,
       "MANA": 4
     },
     "classes": [
@@ -29096,7 +29096,7 @@
     "level": 31,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "MANA": 6
     },
     "classes": [
@@ -29296,7 +29296,7 @@
     "level": 126,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "MANA": 6,
       "CHR": 1
     },
@@ -29427,7 +29427,7 @@
     "level": 128,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "INT": 1,
       "MANA": 9,
       "ATTACK_SPEED": -1
@@ -29482,7 +29482,7 @@
     "stats": {
       "MAGE_CAST_LEVEL": 1,
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 3,
       "CON": -2,
       "CLER_CAST_LEVEL": -1
@@ -29640,7 +29640,7 @@
       "MAGE_CAST_LEVEL": 1,
       "INT": 1,
       "WIS": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "MANA": 5,
       "HP_REGEN": -3
     },
@@ -29666,7 +29666,7 @@
     "level": 134,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "MANA": 10
     },
     "classes": [
@@ -29816,7 +29816,7 @@
     "level": 33,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "MANA": 5,
       "CHR": 1
     },
@@ -29871,7 +29871,7 @@
     "stats": {
       "MAGE_CAST_LEVEL": 1,
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 0
+      "MANA_REGEN": 0.5
     },
     "classes": [
       "MAGE NECRO"
@@ -30000,7 +30000,7 @@
       "MAGE_CAST_LEVEL": 1,
       "NECR_CAST_LEVEL": 1,
       "INT": 1,
-      "MANA_REGEN": 0
+      "MANA_REGEN": 0.5
     },
     "classes": [
       "MAGE NECRO"
@@ -30149,7 +30149,7 @@
     "level": 137,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "MANA": 6,
       "CHR": 1
     },
@@ -30278,7 +30278,7 @@
       "MAGE_CAST_LEVEL": 2,
       "INT": 1,
       "WIS": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 9
     },
     "classes": [
@@ -30382,7 +30382,7 @@
       "MAGE_CAST_LEVEL": 1,
       "CHR": 1,
       "MANA": 8,
-      "MANA_REGEN": 3
+      "MANA_REGEN": 3.5
     },
     "classes": [
       "MAGE"
@@ -30484,7 +30484,7 @@
     "level": 34,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "MANA": 10,
       "SAVING_SPELL": 5
     },
@@ -30534,7 +30534,7 @@
     "level": 34,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 12
     },
     "classes": [
@@ -30612,7 +30612,7 @@
     "stats": {
       "MAGE_CAST_LEVEL": 1,
       "INT": 2,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "HIDE": -2
     },
     "classes": [
@@ -30667,7 +30667,7 @@
       "CON": 1,
       "DEX": 1,
       "MANA": 3,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "MAGE_CAST_LEVEL": 1
     },
     "classes": [
@@ -30741,7 +30741,7 @@
     "level": 35,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "AGE": 5,
       "MANA": 5
     },
@@ -30767,7 +30767,7 @@
     "level": 35,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "HIT_POINTS": 10
     },
     "classes": [
@@ -30792,7 +30792,7 @@
     "level": 35,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "HIT_POINTS": 10
     },
     "classes": [
@@ -30888,7 +30888,7 @@
       "MAGE_CAST_LEVEL": 1,
       "MANA": 16,
       "INT": 1,
-      "MANA_REGEN": 2
+      "MANA_REGEN": 2.5
     },
     "classes": [
       "MAGE"
@@ -31004,7 +31004,7 @@
     "level": 148,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 3
+      "MANA_REGEN": 3.5
     },
     "classes": [
       "MAGE"
@@ -31076,7 +31076,7 @@
     "level": 149,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "SAVING_SPELL": 5
     },
     "classes": [
@@ -31101,7 +31101,7 @@
     "level": 149,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "SAVING_SPELL": 5
     },
     "classes": [
@@ -31176,7 +31176,7 @@
     "level": 149,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "SAVING_SPELL": 5
     },
     "classes": [
@@ -31201,7 +31201,7 @@
     "level": 149,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "SAVING_SPELL": 5
     },
     "classes": [
@@ -31226,7 +31226,7 @@
     "level": 149,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "SAVING_SPELL": 5
     },
     "classes": [
@@ -31251,7 +31251,7 @@
     "level": 149,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "SAVING_SPELL": 5
     },
     "classes": [
@@ -31276,7 +31276,7 @@
     "level": 149,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "SAVING_SPELL": 5
     },
     "classes": [
@@ -31301,7 +31301,7 @@
     "level": 149,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "SAVING_SPELL": 5
     },
     "classes": [
@@ -31651,7 +31651,7 @@
     "level": 154,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "CHR": -1
     },
     "classes": [
@@ -31909,7 +31909,7 @@
     "level": 157,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 9,
       "AGE": 9
     },
@@ -32039,7 +32039,7 @@
     "level": 37,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 10,
       "CON": 1,
       "ABSORB_MAGIC": 1
@@ -32112,7 +32112,7 @@
     "level": 37,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 8,
       "WIS": 1,
       "CHR": 1,
@@ -32193,7 +32193,7 @@
     "level": 37,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "INT": 1,
       "MANA": 8,
       "AGE": 15
@@ -32427,7 +32427,7 @@
       "MANA": 13,
       "WIS": 1,
       "INT": 1,
-      "MANA_REGEN": 2
+      "MANA_REGEN": 2.5
     },
     "classes": [
       "MAGE"
@@ -32761,7 +32761,7 @@
     "level": 38,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 8,
       "ABSORB_ZAP": 1,
       "ABSORB_MAGIC": 1
@@ -32788,7 +32788,7 @@
     "level": 38,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 7
     },
     "classes": [
@@ -33121,7 +33121,7 @@
     "level": 166,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 5,
+      "MANA_REGEN": 5.5,
       "INT": 1,
       "WIS": 1,
       "MANA": 4
@@ -33193,7 +33193,7 @@
     "level": 166,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 5,
+      "MANA_REGEN": 5.5,
       "MANA": 8,
       "WIS": 1,
       "SNEAK": -1
@@ -33243,7 +33243,7 @@
     "level": 166,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "LUCK": 1
     },
     "classes": [
@@ -33268,7 +33268,7 @@
     "level": 166,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 5,
+      "MANA_REGEN": 5.5,
       "MANA": 12
     },
     "classes": [
@@ -33347,7 +33347,7 @@
       "MAGE_CAST_LEVEL": 1,
       "MANA": 22,
       "AGE": 17,
-      "MANA_REGEN": 0
+      "MANA_REGEN": 0.5
     },
     "classes": [
       "MAGE"
@@ -33371,7 +33371,7 @@
     "level": 166,
     "stats": {
       "MAGE_CAST_LEVEL": 1,
-      "MANA_REGEN": 5,
+      "MANA_REGEN": 5.5,
       "MANA": 14
     },
     "classes": [
@@ -33728,7 +33728,7 @@
     "level": 179,
     "stats": {
       "MAGE_CAST_LEVEL": 2,
-      "MANA_REGEN": 5,
+      "MANA_REGEN": 5.5,
       "MANA": 14,
       "CHR": 3
     },
@@ -33805,7 +33805,7 @@
     "level": 96,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 1,
+      "MANA_REGEN": 1.5,
       "MANA": 7
     },
     "classes": [
@@ -33880,7 +33880,7 @@
     "level": 111,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "WIS": -1,
       "CHR": -1,
       "ARMOR": -1
@@ -33960,7 +33960,7 @@
     "level": 121,
     "stats": {
       "NECR_CAST_LEVEL": 2,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 5,
       "HITROLL": 2
     },
@@ -34012,7 +34012,7 @@
     "level": 126,
     "stats": {
       "NECR_CAST_LEVEL": 2,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "INT": 1,
       "MANA": 3
     },
@@ -34040,7 +34040,7 @@
       "NECR_CAST_LEVEL": 1,
       "MANA": 10,
       "CHR": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "CON": -1,
       "HITROLL": -1
     },
@@ -34270,7 +34270,7 @@
     "level": 145,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "CHR": 1
     },
     "classes": [
@@ -34340,7 +34340,7 @@
     "level": 154,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 9
     },
     "classes": [
@@ -34542,7 +34542,7 @@
     "level": 4,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 0
+      "MANA_REGEN": 0.5
     },
     "classes": [
       "NECRO"
@@ -34667,7 +34667,7 @@
     "level": 18,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "MANA": 2
     },
     "classes": [
@@ -34738,7 +34738,7 @@
     "level": 11,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 0
+      "MANA_REGEN": 0.5
     },
     "classes": [
       "NECRO"
@@ -34913,7 +34913,7 @@
     "level": 13,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 0
+      "MANA_REGEN": 0.5
     },
     "classes": [
       "NECRO"
@@ -35083,7 +35083,7 @@
     "level": 15,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 1,
+      "MANA_REGEN": 1.5,
       "MANA": 3
     },
     "classes": [
@@ -35164,7 +35164,7 @@
     "level": 15,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "MANA": 3
     },
     "classes": [
@@ -35344,7 +35344,7 @@
     "level": 16,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "MANA": 4
     },
     "classes": [
@@ -35369,7 +35369,7 @@
     "level": 17,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 1,
+      "MANA_REGEN": 1.5,
       "MANA": 5
     },
     "classes": [
@@ -35396,7 +35396,7 @@
       "NECR_CAST_LEVEL": 1,
       "INT": 1,
       "WIS": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "MANA": 5
     },
     "classes": [
@@ -35421,7 +35421,7 @@
     "level": 17,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "MANA": 5
     },
     "classes": [
@@ -35469,7 +35469,7 @@
     "level": 18,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "MANA": 5
     },
     "classes": [
@@ -35494,7 +35494,7 @@
     "level": 18,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 0,
+      "MANA_REGEN": 0.5,
       "MANA": 4
     },
     "classes": [
@@ -35724,7 +35724,7 @@
     "level": 20,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "MANA": 8
     },
     "classes": [
@@ -35775,7 +35775,7 @@
     "stats": {
       "NECR_CAST_LEVEL": 1,
       "MANA": 3,
-      "MANA_REGEN": 1
+      "MANA_REGEN": 1.5
     },
     "classes": [
       "NECRO"
@@ -35886,7 +35886,7 @@
     "stats": {
       "NECR_CAST_LEVEL": 1,
       "ALIGNMENT": -1,
-      "MANA_REGEN": 1,
+      "MANA_REGEN": 1.5,
       "MANA": 5
     },
     "classes": [
@@ -35937,7 +35937,7 @@
     "level": 22,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 1,
+      "MANA_REGEN": 1.5,
       "MANA": 6,
       "CON": 1
     },
@@ -35963,7 +35963,7 @@
     "level": 22,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "MANA": 8
     },
     "classes": [
@@ -36069,7 +36069,7 @@
     "level": 25,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 1,
+      "MANA_REGEN": 1.5,
       "INT": 1,
       "WIS": 1,
       "MANA": 4
@@ -36096,7 +36096,7 @@
     "level": 25,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 1,
+      "MANA_REGEN": 1.5,
       "INT": 1,
       "MANA": 6
     },
@@ -36367,7 +36367,7 @@
     "level": 26,
     "stats": {
       "NECR_CAST_LEVEL": 2,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "MANA": 5,
       "INT": 1,
       "WIS": 1
@@ -36394,7 +36394,7 @@
     "level": 26,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "MANA": 7
     },
     "classes": [
@@ -36422,7 +36422,7 @@
       "INT": 1,
       "WIS": 1,
       "MANA": 11,
-      "MANA_REGEN": 0
+      "MANA_REGEN": 0.5
     },
     "classes": [
       "NECRO"
@@ -36446,7 +36446,7 @@
       "INT": 1,
       "WIS": 1,
       "MANA": 11,
-      "MANA_REGEN": 0
+      "MANA_REGEN": 0.5
     },
     "classes": [
       "NECRO"
@@ -36538,7 +36538,7 @@
     "stats": {
       "NECR_CAST_LEVEL": 1,
       "MANA": 3,
-      "MANA_REGEN": 1,
+      "MANA_REGEN": 1.5,
       "INT": 1,
       "CAST_ABILITY": 2
     },
@@ -36589,7 +36589,7 @@
     "level": 28,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "INT": 1
     },
     "classes": [
@@ -36739,7 +36739,7 @@
     "level": 29,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 1,
+      "MANA_REGEN": 1.5,
       "MANA": 3
     },
     "classes": [
@@ -36837,7 +36837,7 @@
     "level": 29,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "DEX": -1
     },
     "classes": [
@@ -36862,7 +36862,7 @@
     "level": 29,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 2
+      "MANA_REGEN": 2.5
     },
     "classes": [
       "NECRO"
@@ -36931,7 +36931,7 @@
     "level": 113,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "INT": 1,
       "WIS": 1,
       "MANA": 5
@@ -37063,7 +37063,7 @@
     "stats": {
       "NECR_CAST_LEVEL": 1,
       "WIS": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "MANA": 4
     },
     "classes": [
@@ -37165,7 +37165,7 @@
     "level": 127,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "MANA": 4
     },
     "classes": [
@@ -37190,7 +37190,7 @@
     "level": 127,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "MANA": 4
     },
     "classes": [
@@ -37242,7 +37242,7 @@
     "level": 127,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "MANA": 4
     },
     "classes": [
@@ -37267,7 +37267,7 @@
     "level": 128,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 3
+      "MANA_REGEN": 3.5
     },
     "classes": [
       "NECRO"
@@ -37319,7 +37319,7 @@
       "INT": 1,
       "WIS": 1,
       "MANA": 14,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "HITROLL": 10
     },
     "classes": [
@@ -37371,7 +37371,7 @@
       "ALIGNMENT": -1,
       "HIDE": 2,
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 1
+      "MANA_REGEN": 1.5
     },
     "classes": [
       "NECRO"
@@ -37395,7 +37395,7 @@
     "level": 32,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "WIS": 1,
       "MANA": 4,
       "SAVING_BREATH": -10
@@ -37422,7 +37422,7 @@
     "level": 32,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "HP_REGEN": 1
     },
     "classes": [
@@ -37447,7 +37447,7 @@
     "level": 32,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "HIDE": 1
     },
     "classes": [
@@ -37496,7 +37496,7 @@
     "level": 129,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "HIT_POINTS": 5
     },
     "classes": [
@@ -37695,7 +37695,7 @@
     "level": 133,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "MANA": 10
     },
     "classes": [
@@ -37720,7 +37720,7 @@
     "level": 134,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "MANA": 6
     },
     "classes": [
@@ -37869,7 +37869,7 @@
     "level": 33,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "ALIGNMENT": -5
     },
     "classes": [
@@ -37894,7 +37894,7 @@
     "level": 33,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "INT": 1,
       "WIS": 1,
       "MANA": 12,
@@ -37922,7 +37922,7 @@
     "level": 33,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 8
     },
     "classes": [
@@ -37975,7 +37975,7 @@
       "NECR_CAST_LEVEL": 1,
       "INT": 1,
       "WIS": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 8,
       "CLER_CAST_LEVEL": -1
     },
@@ -38102,7 +38102,7 @@
     "totalLevel": 0,
     "level": 34,
     "stats": {
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "INT": 1,
       "DEX": -1,
       "NECR_CAST_LEVEL": 1,
@@ -38130,7 +38130,7 @@
     "level": 34,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "WIS": 1,
       "INT": 1
     },
@@ -38184,7 +38184,7 @@
       "NECR_CAST_LEVEL": 1,
       "CON": 1,
       "MANA": 2,
-      "MANA_REGEN": 0
+      "MANA_REGEN": 0.5
     },
     "classes": [
       "NECRO"
@@ -38209,7 +38209,7 @@
     "stats": {
       "NECR_CAST_LEVEL": 1,
       "DAMROLL": 1,
-      "MANA_REGEN": 0
+      "MANA_REGEN": 0.5
     },
     "classes": [
       "NECRO"
@@ -38231,7 +38231,7 @@
     "stats": {
       "NECR_CAST_LEVEL": 1,
       "CHR": 1,
-      "MANA_REGEN": 2,
+      "MANA_REGEN": 2.5,
       "DEX": -1
     },
     "classes": [
@@ -38255,7 +38255,7 @@
       "NECR_CAST_LEVEL": 1,
       "WIS": 1,
       "MANA": 14,
-      "MANA_REGEN": 3
+      "MANA_REGEN": 3.5
     },
     "classes": [
       "NECRO"
@@ -38279,7 +38279,7 @@
     "level": 144,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "MANA": 9
     },
     "classes": [
@@ -38435,7 +38435,7 @@
       "NECR_CAST_LEVEL": 1,
       "INT": 1,
       "WIS": 1,
-      "MANA_REGEN": 3,
+      "MANA_REGEN": 3.5,
       "MANA": 11
     },
     "classes": [
@@ -38485,7 +38485,7 @@
     "level": 148,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "HIT_POINTS": 12
     },
     "classes": [
@@ -38765,7 +38765,7 @@
     "level": 151,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "WIS": 1,
       "HIT_POINTS": 2
     },
@@ -38994,7 +38994,7 @@
     "level": 156,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 8
     },
     "classes": [
@@ -39044,7 +39044,7 @@
     "level": 156,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 10,
       "SAVING_ZAP": -5
     },
@@ -39548,7 +39548,7 @@
     "level": 160,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 10,
       "CON": 1
     },
@@ -39597,7 +39597,7 @@
     "level": 160,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 5,
+      "MANA_REGEN": 5.5,
       "MANA": 12
     },
     "classes": [
@@ -39749,7 +39749,7 @@
     "level": 164,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 5,
+      "MANA_REGEN": 5.5,
       "MANA": 15,
       "CHR": -1
     },
@@ -39802,7 +39802,7 @@
       "NECR_CAST_LEVEL": 1,
       "INT": 1,
       "CON": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 4,
       "THIEF_SKILL_LEVEL": -1
     },
@@ -39828,7 +39828,7 @@
     "level": 38,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "MANA": 17,
       "INT": 1,
       "WIS": 1,
@@ -39853,7 +39853,7 @@
     "level": 38,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 4,
+      "MANA_REGEN": 4.5,
       "ABSORB_ICE": 2,
       "MANA": 5
     },
@@ -40058,7 +40058,7 @@
     "level": 165,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 5,
+      "MANA_REGEN": 5.5,
       "MANA": 6
     },
     "classes": [
@@ -40110,7 +40110,7 @@
       "NECR_CAST_LEVEL": 1,
       "INT": 1,
       "WIS": 1,
-      "MANA_REGEN": 5,
+      "MANA_REGEN": 5.5,
       "MANA": 3
     },
     "classes": [
@@ -40161,7 +40161,7 @@
     "level": 165,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 5,
+      "MANA_REGEN": 5.5,
       "MANA": 14
     },
     "classes": [
@@ -40261,7 +40261,7 @@
     "level": 166,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 5,
+      "MANA_REGEN": 5.5,
       "MANA": 7,
       "INT": 1
     },
@@ -40284,7 +40284,7 @@
     "level": 166,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 5,
+      "MANA_REGEN": 5.5,
       "MANA": 15,
       "INT": 1,
       "WIS": 1,
@@ -40419,7 +40419,7 @@
       "NECR_CAST_LEVEL": 2,
       "INT": 1,
       "WIS": 1,
-      "MANA_REGEN": 5,
+      "MANA_REGEN": 5.5,
       "MANA": 15
     },
     "classes": [
@@ -40525,7 +40525,7 @@
     "stats": {
       "NECR_CAST_LEVEL": 1,
       "DAMROLL": 3,
-      "MANA_REGEN": 0
+      "MANA_REGEN": 0.5
     },
     "classes": [
       "NECRO"
@@ -40740,7 +40740,7 @@
     "level": 178,
     "stats": {
       "NECR_CAST_LEVEL": 1,
-      "MANA_REGEN": 5,
+      "MANA_REGEN": 5.5,
       "MANA": 17
     },
     "classes": [

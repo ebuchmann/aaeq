@@ -155,7 +155,7 @@ const parseThiefFile = (filePath: string): Record<string, any>[] => {
         const [statKey, statValue] = stat.split(' by ')
         if (statKey && statValue) {
           const cleanValue = statValue.replace('minus', '').trim()
-          equipmentItem.stats[statKey.trim()] = parseInt(cleanValue, 10) * (statValue.includes('minus') ? -1 : 1)
+          equipmentItem.stats[statKey.trim()] = parseFloat(cleanValue) * (statValue.includes('minus') ? -1 : 1)
         }
       })
 
