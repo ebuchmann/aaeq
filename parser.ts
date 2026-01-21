@@ -159,10 +159,10 @@ const parseThiefFile = (filePath: string): Record<string, any>[] => {
         }
       })
 
-      const dropSourceMatch = stats.filter((stat) => /^(quest reward|mob|room|container)/i.test(stat))
+      const dropSourceMatch = stats.filter((stat) => /^(quest reward|mob|room|container|shop|built)/i.test(stat))
       if (dropSourceMatch.length > 0) {
         equipmentItem.dropSources = dropSourceMatch
-          .flatMap((source) => source.match(/(?:quest reward|mob|room|container).*/gi))
+          .flatMap((source) => source.match(/(?:quest reward|mob|room|container|shop|built).*/gi))
           .map((source) => source.trim())
           .filter((source) => source.length > 0)
       }
