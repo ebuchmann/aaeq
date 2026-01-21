@@ -4,7 +4,7 @@ type FilterAtoms = {
   search: string
   stats: string[]
   worn: string[]
-  classes: string[]
+  flags: string[]
   minClassLevel: number
   maxClassLevel: number
   minTotalLevel: number
@@ -15,7 +15,7 @@ export const filtersAtom = atom<FilterAtoms>({
   search: '',
   stats: [],
   worn: [],
-  classes: [],
+  flags: [],
   minClassLevel: 0,
   maxClassLevel: 0,
   minTotalLevel: 0,

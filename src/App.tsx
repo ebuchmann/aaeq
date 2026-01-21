@@ -15,7 +15,6 @@ import { Search } from './components/Search'
 import { filtersAtom } from './state/filters'
 import { atom, useAtomValue } from 'jotai'
 import { FilterStats } from './components/FilterStats'
-import { FilterClasses } from './components/FilterClasses'
 import { FilterWorn } from './components/FilterWorn'
 import { Button } from './components/ui/button'
 import { ArrowUpDown } from 'lucide-react'
@@ -23,6 +22,7 @@ import { paginationAtom } from './state/pagination'
 import { Fragment } from 'react/jsx-runtime'
 import { settingsAtom } from './state/settings'
 import { FilterLevel } from './components/FilterLevel'
+import { FilterAlignment } from './components/FilterAlignment'
 
 type Stats = {
   INT?: number
@@ -178,6 +178,18 @@ const columns = [
   }),
   columnHelper.accessor('flags', {
     header: 'Flags',
+    cell: (info) => info.getValue()?.join(', '),
+    filterFn: (row, columnId, value: string[]) => {
+      if (value.length === 0) return true
+      return value.every((alignment) => {
+        const rowFlags = row.getValue<string[]>(columnId) || []
+
+        if (alignment === 'GOOD') return !rowFlags.includes('ANTI_GOOD')
+        if (alignment === 'NEUTRAL') return !rowFlags.includes('ANTI_NEUTRAL')
+        if (alignment === 'EVIL') return !rowFlags.includes('ANTI_EVIL')
+        return true
+      })
+    },
   }),
   columnHelper.accessor('stats', {
     id: 'stats',
@@ -201,8 +213,8 @@ const columnFilterAtom = atom((get) => {
   return [
     { id: 'name', value: get(filtersAtom).search },
     { id: 'stats', value: get(filtersAtom).stats },
-    { id: 'classes', value: get(filtersAtom).classes },
     { id: 'worn', value: get(filtersAtom).worn },
+    { id: 'flags', value: get(filtersAtom).flags },
   ]
 })
 
@@ -245,7 +257,7 @@ function App() {
       <div className="flex-dir-col flex gap-4">
         <Search />
         <FilterStats />
-        <FilterClasses />
+        <FilterAlignment />
         <FilterWorn />
         <FilterLevel />
       </div>

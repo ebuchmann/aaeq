@@ -5,31 +5,31 @@ import { Popover } from '@radix-ui/react-popover'
 import { PopoverContent, PopoverTrigger } from './ui/popover'
 import { Label } from './ui/label'
 
-const classList = ['MAGE', 'CLERIC', 'THIEF', 'WARRIOR', 'DRUID', 'NECR']
+const alignmentList = ['GOOD', 'NEUTRAL', 'EVIL']
 
-export const FilterClasses = () => {
+export const FilterAlignment = () => {
   const setFilters = useSetAtom(filtersAtom)
-  const { classes } = useAtomValue(filtersAtom)
+  const { flags } = useAtomValue(filtersAtom)
 
   return (
     <Popover>
-      <PopoverTrigger>Classes</PopoverTrigger>
+      <PopoverTrigger>Alignment</PopoverTrigger>
       <PopoverContent className="flex flex-col gap-2">
-        {classList.map((cls) => (
+        {alignmentList.map((cls) => (
           <div className="flex items-center space-x-2" key={cls}>
             <Label htmlFor={cls}>
               <Checkbox
                 id={cls}
-                defaultChecked={classes.includes(cls)}
+                defaultChecked={flags.includes(cls)}
                 onCheckedChange={(event) =>
                   event
                     ? setFilters((prev) => ({
                         ...prev,
-                        classes: [...prev.classes, cls],
+                        flags: [...prev.flags, cls],
                       }))
                     : setFilters((prev) => ({
                         ...prev,
-                        classes: prev.classes.filter((s) => s !== cls),
+                        flags: prev.flags.filter((s) => s !== cls),
                       }))
                 }
               />

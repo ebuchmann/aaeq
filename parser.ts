@@ -137,7 +137,7 @@ const parseThiefFile = (filePath: string): Record<string, any>[] => {
       }
 
       if (flags) {
-        equipmentItem.flags = flags.split(',').map((flag) => flag.trim())
+        equipmentItem.flags = flags.split(' ').map((flag) => flag.trim())
       }
 
       if (weight) {
