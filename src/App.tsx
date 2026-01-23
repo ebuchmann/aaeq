@@ -294,12 +294,19 @@ function App() {
 }
 
 const renderSubComponent = ({ row }: { row: Row<EquipmentData> }) => {
+  const handleCopy = (source: string) => {
+    const text = `${row.original.name} - ${source}`
+    navigator.clipboard.writeText(text)
+  }
+
   return (
     <div className="flex flex-col gap-2 pl-4">
       {row.original.dropSources?.map((source) => (
-        <div key={source}>
-          {source}
-          <br />
+        <div key={source} className="flex items-center gap-2">
+          <span>{source}</span>
+          <Button size="sm" onClick={() => handleCopy(source)}>
+            Copy
+          </Button>
         </div>
       ))}
     </div>

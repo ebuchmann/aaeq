@@ -6,9 +6,8 @@ import { Label } from './ui/label'
 
 const statsList = [
   'DAMROLL',
-  'THIEF_SKILL_LEVEL',
-  'CAST_ABILITY',
   'HITROLL',
+  'CAST_ABILITY',
   'ARMOR',
   'PARRY',
   'DODGE',
@@ -20,6 +19,7 @@ const statsList = [
   'MOV_REGEN',
   'CLER_CAST_LEVEL',
   'DRUID_CAST_LEVEL',
+  'THIEF_SKILL_LEVEL',
   'MAGE_CAST_LEVEL',
   'NECR_CAST_LEVEL',
   'WARR_SKILL_LEVEL',
