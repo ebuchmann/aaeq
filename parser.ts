@@ -129,7 +129,7 @@ const parseThiefFile = (filePath: string): Record<string, any>[] => {
       }
 
       if (classes) {
-        equipmentItem.classes = classes.split(',').map((cls) => cls.trim())
+        equipmentItem.classes = classes.split(' ').map((cls) => cls.trim())
       }
 
       if (worn) {

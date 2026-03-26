@@ -153,7 +153,7 @@ const columns = [
     filterFn: (row, columnId, value: string[]) => {
       if (value.length === 0) return true
 
-      return value.every((worn) => !!row.getValue<string[]>(columnId)?.includes(worn))
+      return value.some((worn) => !!row.getValue<string[]>(columnId)?.includes(worn))
     },
   }),
   columnHelper.accessor('name', {
@@ -178,7 +178,12 @@ const columns = [
   }),
   columnHelper.accessor('flags', {
     header: 'Flags',
-    cell: (info) => info.getValue()?.join(', '),
+    cell: ({ getValue }) => {
+      const settings = useAtomValue(settingsAtom)
+      const flags = getValue<string[]>() || []
+      const filteredFlags = flags.filter((flag) => !settings.flagFilters?.includes(flag))
+      return filteredFlags.join(', ')
+    },
     filterFn: (row, columnId, value: string[]) => {
       if (value.length === 0) return true
       return value.every((alignment) => {
