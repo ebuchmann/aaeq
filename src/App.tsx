@@ -308,7 +308,9 @@ function App() {
               {row.getIsExpanded() && (
                 <TableRow>
                   {/* 2nd row is a custom 1 cell row */}
-                  <TableCell colSpan={row.getVisibleCells().length}>{renderSubComponent({ row })}</TableCell>
+                  <TableCell colSpan={row.getVisibleCells().length}>
+                    <RenderSubComponent row={row} />
+                  </TableCell>
                 </TableRow>
               )}
             </Fragment>
@@ -319,10 +321,47 @@ function App() {
   )
 }
 
-const renderSubComponent = ({ row }: { row: Row<EquipmentData> }) => {
+function RenderSubComponent({ row }: { row: Row<EquipmentData> }) {
+  const filters = useAtomValue(filtersAtom).stats
+  const settings = useAtomValue(settingsAtom)
+
+  const formatStatsForCopy = (stats: EquipmentData['stats']) => {
+    return Object.entries(stats ?? {})
+      .sort(([keyA]) => {
+        if (filters.includes(keyA)) return -1
+        return 0
+      })
+      .map(([key, value]) => {
+        const shortKey = settings.shortNames ? abbreviations[key] || key : key
+
+        if (typeof value === 'number') {
+          const sign = value > 0 ? '+' : value < 0 ? '-' : ''
+          return `${shortKey} ${sign}${Math.abs(value)}`
+        }
+
+        return `${shortKey} ${value}`
+      })
+      .join(', ')
+  }
+
   const handleCopy = (source: string) => {
     const text = `${row.original.name} - ${source}`
-    navigator.clipboard.writeText(text)
+    void navigator.clipboard.writeText(text)
+  }
+
+  const handleCopyAllDetails = () => {
+    const statsText = formatStatsForCopy(row.original.stats) || 'None'
+    const dropSources = row.original.dropSources?.length ? row.original.dropSources.join(', ') : 'Unknown'
+    const detailParts = [
+      `Name: ${row.original.name}`,
+      ...(row.original.classLevel > 0 ? [`Class Level: ${row.original.classLevel}`] : []),
+      ...(row.original.totalLevel > 0 ? [`Total Level: ${row.original.totalLevel}`] : []),
+      `Stats: ${statsText}`,
+      `Found: ${dropSources}`,
+    ]
+    const text = detailParts.join(', ')
+
+    void navigator.clipboard.writeText(text)
   }
 
   return (
@@ -331,7 +370,10 @@ const renderSubComponent = ({ row }: { row: Row<EquipmentData> }) => {
         <div key={source} className="flex items-center gap-2">
           <span>{source}</span>
           <Button size="sm" onClick={() => handleCopy(source)}>
-            Copy
+            Copy Drop Source
+          </Button>
+          <Button size="sm" onClick={handleCopyAllDetails}>
+            Copy All Details
           </Button>
         </div>
       ))}
