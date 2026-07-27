@@ -17,7 +17,7 @@ import { atom, useAtomValue } from 'jotai'
 import { FilterStats } from './components/FilterStats'
 import { FilterWorn } from './components/FilterWorn'
 import { Button } from './components/ui/button'
-import { ArrowUpDown } from 'lucide-react'
+import { ArrowUpDown, ChevronDown, ChevronRight } from 'lucide-react'
 import { paginationAtom } from './state/pagination'
 import { Fragment } from 'react/jsx-runtime'
 import { settingsAtom } from './state/settings'
@@ -131,6 +131,27 @@ function formatObjectToString(obj: Stats): string {
 
 const columnHelper = createColumnHelper<EquipmentData>()
 const columns = [
+  columnHelper.display({
+    id: 'expander',
+    header: () => null,
+    cell: ({ row }) => {
+      if (!row.getCanExpand()) return null
+
+      return (
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={row.getToggleExpandedHandler()}
+          aria-label="Show drop location"
+          aria-expanded={row.getIsExpanded()}
+          title="Show drop location"
+          className="h-8 w-8 p-0"
+        >
+          {row.getIsExpanded() ? <ChevronDown className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
+        </Button>
+      )
+    },
+  }),
   columnHelper.accessor('classes', {
     header: 'Class',
     cell: ({ getValue }) =>
@@ -279,7 +300,7 @@ function App() {
         <TableBody>
           {getRowModel().rows.map((row) => (
             <Fragment key={row.id}>
-              <TableRow className="cursor-pointer" onClick={row.getToggleExpandedHandler()}>
+              <TableRow>
                 {row.getVisibleCells().map((cell) => (
                   <TableCell key={cell.id}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</TableCell>
                 ))}
