@@ -6,7 +6,10 @@ export const Route = createRootRoute({
     <>
       <div className="flex gap-2 p-2">
         <Link to="/" className="[&.active]:font-bold">
-          Equipment
+          Armor
+        </Link>{' '}
+        <Link to="/weapons" className="[&.active]:font-bold">
+          Weapons
         </Link>{' '}
         <Link to="/about" className="[&.active]:font-bold">
           Stats

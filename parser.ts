@@ -1,9 +1,105 @@
+/// <reference types="node" />
+
 import * as fs from 'fs'
 import * as path from 'path'
 
 const filePath = path.resolve(__dirname, 'Equipment_Log.txt')
 
 let equipmentLog: string = ''
+
+type ParsedDamage = {
+  dice: number
+  sides: number
+}
+
+type ParsedEquipmentMetadata = {
+  damage?: ParsedDamage
+  wieldStrength?: number
+  speed?: string
+  damageTypes?: string[]
+  ac?: number
+}
+
+// Add more recognized values here as new speed phrases are encountered.
+const KNOWN_SPEED_VALUES = ['slowest', 'very slow', 'slow', 'fast', 'very fast', 'fastest', 'average'] as const
+
+const isKnownSpeed = (value: string): boolean => {
+  const normalizedValue = value.trim().toLowerCase()
+  return KNOWN_SPEED_VALUES.includes(normalizedValue as (typeof KNOWN_SPEED_VALUES)[number])
+}
+
+const parseDamageMetadata = (text: string): ParsedDamage | undefined => {
+  const damageMatch = text.match(/Damage:\s*(?<dice>\d+)d(?<sides>\d+)/i)
+
+  if (!damageMatch?.groups) {
+    return undefined
+  }
+
+  return {
+    dice: parseInt(damageMatch.groups.dice, 10),
+    sides: parseInt(damageMatch.groups.sides, 10),
+  }
+}
+
+const parseWieldStrength = (text: string): number | undefined => {
+  const wieldStrengthMatch = text.match(/(?<strength>\d+)\s+wield\s+strength/i)
+
+  if (!wieldStrengthMatch?.groups?.strength) {
+    return undefined
+  }
+
+  return parseInt(wieldStrengthMatch.groups.strength, 10)
+}
+
+const parseSpeed = (text: string): string | undefined => {
+  const speedMatch = text.match(/Speed:\s*(?<speed>[A-Za-z-]+(?:\s+[A-Za-z-]+)*)/i)
+
+  if (!speedMatch?.groups?.speed) {
+    return undefined
+  }
+
+  const speedValue = speedMatch.groups.speed.trim()
+  return isKnownSpeed(speedValue) ? speedValue : undefined
+}
+
+const parseDamageType = (text: string): string[] | undefined => {
+  const damageTypeMatch = text.match(/Damage Type:\s*(?<damageTypes>.+?)(?=(?:\s*,?\s*\d+\s+wield\s+strength\b)|$)/i)
+
+  if (!damageTypeMatch?.groups?.damageTypes) {
+    return undefined
+  }
+
+  return damageTypeMatch.groups.damageTypes
+    .split(/\s+/)
+    .map((value) => value.replace(/^[,;:.]+|[,;:.]+$/g, '').trim())
+    .filter(Boolean)
+}
+
+const parseAC = (text: string): number | undefined => {
+  const acMatch = text.match(/AC:\s*(?<ac>-?\d+)/i)
+  if (!acMatch?.groups?.ac) {
+    return undefined
+  }
+
+  const ac = parseInt(acMatch.groups.ac, 10)
+  return Number.isNaN(ac) ? undefined : ac
+}
+
+const parseEquipmentTextMetadata = (text: string): ParsedEquipmentMetadata => {
+  const damage = parseDamageMetadata(text)
+  const wieldStrength = parseWieldStrength(text)
+  const speed = parseSpeed(text)
+  const damageTypes = parseDamageType(text)
+  const ac = parseAC(text)
+
+  return {
+    damage,
+    wieldStrength,
+    speed,
+    damageTypes,
+    ac,
+  }
+}
 
 const parseEquipmentLog = (log: string): Record<string, any>[] => {
   const lines = log.split('\n')
@@ -22,25 +118,22 @@ const parseEquipmentLog = (log: string): Record<string, any>[] => {
         stats: {},
       }
 
-      const damageMatch = line.match(/Damage:\s*(?<damage>\d+d\d+)/i)
-      if (damageMatch && damageMatch.groups) {
-        equipmentItem.damage = damageMatch.groups.damage
+      const parsedMetadata = parseEquipmentTextMetadata(line)
+
+      if (parsedMetadata.damage) {
+        equipmentItem.damage = parsedMetadata.damage
       }
 
-      const speedMatch = line.match(/Speed:\s*(?<speed>\w+(?:\s+\w+)?)/i)
-      if (speedMatch && speedMatch.groups) {
-        equipmentItem.speed = speedMatch.groups.speed.trim()
+      if (parsedMetadata.speed) {
+        equipmentItem.speed = parsedMetadata.speed
       }
 
-      const damageTypeMatch = line.match(/Damage Type:\s*(?<damageTypes>[\w\s]+?),/i)
-      if (damageTypeMatch && damageTypeMatch.groups) {
-        const damageTypes = damageTypeMatch.groups.damageTypes.split(' ').map((type) => type.trim())
-        equipmentItem.damageTypes = damageTypes
+      if (parsedMetadata.damageTypes && parsedMetadata.damageTypes.length > 0) {
+        equipmentItem.damageTypes = parsedMetadata.damageTypes
       }
 
-      const wieldStrengthMatch = line.match(/(?<wieldStrength>\d+)\s+wield\s+strength/i)
-      if (wieldStrengthMatch && wieldStrengthMatch.groups) {
-        equipmentItem.wieldStrength = parseInt(wieldStrengthMatch.groups.wieldStrength, 10)
+      if (typeof parsedMetadata.wieldStrength === 'number') {
+        equipmentItem.wieldStrength = parsedMetadata.wieldStrength
       }
 
       const wornMatch = line.match(
@@ -69,9 +162,8 @@ const parseEquipmentLog = (log: string): Record<string, any>[] => {
         equipmentItem.weight = weight
       }
 
-      const acMatch = line.match(/AC:\s*(?<ac>\d+)/i)
-      if (acMatch && acMatch.groups) {
-        equipmentItem.ac = parseInt(acMatch.groups.ac, 10)
+      if (typeof parsedMetadata.ac === 'number') {
+        equipmentItem.ac = parsedMetadata.ac
       }
 
       const flagsMatch = line.match(/(?<flags>FLOATING|ARTIFACT|GLOW|RARE|JUNK|QUEST_ITEM)/g)
@@ -105,7 +197,7 @@ const parseEquipmentLog = (log: string): Record<string, any>[] => {
   return equipmentData
 }
 
-const equipmentData = [] // parseEquipmentLog(equipmentLog)
+const equipmentData: Record<string, any>[] = [] // parseEquipmentLog(equipmentLog)
 
 const outputFilePath = path.resolve(__dirname, 'src', 'data', 'equipment.json')
 
@@ -129,15 +221,37 @@ const parseThiefFile = (filePath: string): Record<string, any>[] => {
       }
 
       if (classes) {
-        equipmentItem.classes = classes.split(' ').map((cls) => cls.trim())
+        equipmentItem.classes = classes.split(' ').map((cls: string) => cls.trim())
+      }
+
+      const parsedMetadata = parseEquipmentTextMetadata(stats.join(' '))
+
+      if (parsedMetadata.damage) {
+        equipmentItem.damage = parsedMetadata.damage
+      }
+
+      if (parsedMetadata.speed) {
+        equipmentItem.speed = parsedMetadata.speed
+      }
+
+      if (parsedMetadata.damageTypes && parsedMetadata.damageTypes.length > 0) {
+        equipmentItem.damageTypes = parsedMetadata.damageTypes
+      }
+
+      if (typeof parsedMetadata.wieldStrength === 'number') {
+        equipmentItem.wieldStrength = parsedMetadata.wieldStrength
+      }
+
+      if (typeof parsedMetadata.ac === 'number') {
+        equipmentItem.ac = parsedMetadata.ac
       }
 
       if (worn) {
-        equipmentItem.worn = worn.split(',').map((slot) => slot.trim())
+        equipmentItem.worn = worn.split(',').map((slot: string) => slot.trim())
       }
 
       if (flags) {
-        equipmentItem.flags = flags.split(' ').map((flag) => flag.trim())
+        equipmentItem.flags = flags.split(' ').map((flag: string) => flag.trim())
       }
 
       if (weight) {
@@ -148,7 +262,10 @@ const parseThiefFile = (filePath: string): Record<string, any>[] => {
       }
 
       if (ac) {
-        equipmentItem.ac = parseInt(ac, 10)
+        const parsedAC = parseAC(ac)
+        if (typeof parsedAC === 'number') {
+          equipmentItem.ac = parsedAC
+        }
       }
 
       stats.forEach((stat) => {
@@ -198,7 +315,7 @@ try {
   console.error('Error writing the JSON file:', error)
 }
 
-export { equipmentLog, equipmentData }
+export { equipmentLog, equipmentData, parseEquipmentTextMetadata, parseDamageMetadata, parseWieldStrength }
 
 // try {
 //   equipmentLog = fs.readFileSync(filePath, 'utf-8')

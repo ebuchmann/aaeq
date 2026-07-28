@@ -1,6 +1,7 @@
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from './components/ui/table'
-import EquipmentData from './data/equipment.json'
+import equipmentData from './data/equipment.json'
 import {
+  ColumnDef,
   createColumnHelper,
   flexRender,
   getCoreRowModel,
@@ -19,7 +20,7 @@ import { FilterWorn } from './components/FilterWorn'
 import { Button } from './components/ui/button'
 import { ArrowUpDown, ChevronDown, ChevronRight } from 'lucide-react'
 import { paginationAtom } from './state/pagination'
-import { Fragment } from 'react/jsx-runtime'
+import { Fragment, useCallback, useMemo } from 'react'
 import { settingsAtom } from './state/settings'
 import { FilterLevel } from './components/FilterLevel'
 import { FilterAlignment } from './components/FilterAlignment'
@@ -56,8 +57,11 @@ type Stats = {
   DODGE?: number
 }
 
-type EquipmentData = {
-  damage?: string
+export type EquipmentData = {
+  damage?: {
+    dice: number
+    sides: number
+  }
   speed?: string
   wieldStrength?: number
   location?: string[]
@@ -77,7 +81,7 @@ type EquipmentData = {
   dropSources?: string[]
 }
 
-const abbreviations: Record<string, string> = {
+export const abbreviations: Record<string, string> = {
   CLER_CAST_LEVEL: 'CCL',
   DRUID_CAST_LEVEL: 'DCL',
   THIEF_SKILL_LEVEL: 'TSL',
@@ -98,142 +102,12 @@ const abbreviations: Record<string, string> = {
   ABSORB_MAGIC: 'AMAG',
 }
 
-function formatObjectToString(obj: Stats): string {
-  const filters = useAtomValue(filtersAtom).stats
-  const settings = useAtomValue(settingsAtom)
-
-  return Object.entries(obj)
-    .sort(([keyA]) => {
-      if (filters.includes(keyA)) return -1
-      return 0
-    })
-    .map(([key, value]) => {
-      const shortKey = settings.shortNames ? abbreviations[key] || key : key
-      const isFiltered = filters.includes(key)
-      const noGreenKeys = [
-        abbreviations.CLER_CAST_LEVEL,
-        abbreviations.DRUID_CAST_LEVEL,
-        abbreviations.THIEF_SKILL_LEVEL,
-        abbreviations.MAGE_CAST_LEVEL,
-        abbreviations.NECR_CAST_LEVEL,
-        abbreviations.WARR_SKILL_LEVEL,
-      ]
-      const color = isFiltered && !noGreenKeys.includes(shortKey) ? 'lime' : 'inherit'
-
-      if (typeof value === 'number') {
-        const sign = value > 0 ? '+' : value < 0 ? '-' : ''
-        return `<span style="color: ${color}">${shortKey} ${sign}${Math.abs(value)}</span>`
-      }
-      return `<span style="color: ${color}">${shortKey} ${value}</span>`
-    })
-    .join(', ')
+const shouldIncludeEquipment = (item: EquipmentData) => {
+  return !item.worn?.some((value) => {
+    const normalizedValue = value.replace(/_/g, '-').toUpperCase()
+    return normalizedValue.includes('1-WIELD') || normalizedValue.includes('2-WIELD')
+  })
 }
-
-const columnHelper = createColumnHelper<EquipmentData>()
-const columns = [
-  columnHelper.display({
-    id: 'expander',
-    header: () => null,
-    cell: ({ row }) => {
-      if (!row.getCanExpand()) return null
-
-      return (
-        <Button
-          variant="ghost"
-          size="icon"
-          onClick={row.getToggleExpandedHandler()}
-          aria-label="Show drop location"
-          aria-expanded={row.getIsExpanded()}
-          title="Show drop location"
-          className="h-8 w-8 p-0"
-        >
-          {row.getIsExpanded() ? <ChevronDown className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
-        </Button>
-      )
-    },
-  }),
-  columnHelper.accessor('classes', {
-    header: 'Class',
-    cell: ({ getValue }) =>
-      getValue()
-        .map((cls) => cls[0])
-        ?.join(', '),
-    filterFn: (row, columnId, value: string[]) => {
-      if (value.length === 0) return true
-
-      return value.every((cls) => !!row.getValue<string[]>(columnId)?.includes(cls))
-    },
-  }),
-  columnHelper.accessor('weight', {
-    header: 'Wt',
-    cell: ({ getValue }) => <div className="text-right">{getValue()}</div>,
-  }),
-  columnHelper.accessor('worn', {
-    header: 'Worn',
-    cell: (info) => info.getValue()?.join(', '),
-    filterFn: (row, columnId, value: string[]) => {
-      if (value.length === 0) return true
-
-      return value.some((worn) => !!row.getValue<string[]>(columnId)?.includes(worn))
-    },
-  }),
-  columnHelper.accessor('name', {
-    header: 'Name',
-    filterFn: 'includesString',
-  }),
-  columnHelper.accessor('level', {
-    header: ({ column }) => {
-      return (
-        <Button variant="ghost" onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}>
-          Lv
-          <ArrowUpDown />
-        </Button>
-      )
-    },
-    cell: ({ row }) => (
-      <pre className="text-right">
-        {String(row.original.classLevel).padStart(2, ' ')}
-        {String(row.original.totalLevel).padStart(5, ' ')}
-      </pre>
-    ),
-  }),
-  columnHelper.accessor('flags', {
-    header: 'Flags',
-    cell: ({ getValue }) => {
-      const settings = useAtomValue(settingsAtom)
-      const flags = getValue<string[]>() || []
-      const filteredFlags = flags.filter((flag) => !settings.flagFilters?.includes(flag))
-      return filteredFlags.join(', ')
-    },
-    filterFn: (row, columnId, value: string[]) => {
-      if (value.length === 0) return true
-      return value.every((alignment) => {
-        const rowFlags = row.getValue<string[]>(columnId) || []
-
-        if (alignment === 'GOOD') return !rowFlags.includes('ANTI_GOOD')
-        if (alignment === 'NEUTRAL') return !rowFlags.includes('ANTI_NEUTRAL')
-        if (alignment === 'EVIL') return !rowFlags.includes('ANTI_EVIL')
-        return true
-      })
-    },
-  }),
-  columnHelper.accessor('stats', {
-    id: 'stats',
-    cell: (info) => (
-      <div
-        dangerouslySetInnerHTML={{
-          __html: formatObjectToString(info.getValue()),
-        }}
-      />
-    ),
-    header: 'Stats',
-    filterFn: (row, columnId, value: string[]) => {
-      if (value.length === 0) return true
-
-      return value.every((stat) => !!row.getValue(columnId)?.hasOwnProperty(stat))
-    },
-  }),
-]
 
 const columnFilterAtom = atom((get) => {
   return [
@@ -244,13 +118,188 @@ const columnFilterAtom = atom((get) => {
   ]
 })
 
+export function useEquipmentColumns(options?: { includeWeaponColumns?: boolean }) {
+  const filters = useAtomValue(filtersAtom).stats
+  const settings = useAtomValue(settingsAtom)
+  const columnHelper = useMemo(() => createColumnHelper<EquipmentData>(), [])
+
+  const formatObjectToString = useCallback(
+    (obj: Stats): string => {
+      return Object.entries(obj)
+        .sort(([keyA]) => {
+          if (filters.includes(keyA)) return -1
+          return 0
+        })
+        .map(([key, value]) => {
+          const shortKey = settings.shortNames ? abbreviations[key] || key : key
+          const isFiltered = filters.includes(key)
+          const noGreenKeys = [
+            abbreviations.CLER_CAST_LEVEL,
+            abbreviations.DRUID_CAST_LEVEL,
+            abbreviations.THIEF_SKILL_LEVEL,
+            abbreviations.MAGE_CAST_LEVEL,
+            abbreviations.NECR_CAST_LEVEL,
+            abbreviations.WARR_SKILL_LEVEL,
+          ]
+          const color = isFiltered && !noGreenKeys.includes(shortKey) ? 'lime' : 'inherit'
+
+          if (typeof value === 'number') {
+            const sign = value > 0 ? '+' : value < 0 ? '-' : ''
+            return `<span style="color: ${color}">${shortKey} ${sign}${Math.abs(value)}</span>`
+          }
+          return `<span style="color: ${color}">${shortKey} ${value}</span>`
+        })
+        .join(', ')
+    },
+    [filters, settings]
+  )
+
+  return useMemo<ColumnDef<EquipmentData, any>[]>(() => {
+    const columns: ColumnDef<EquipmentData, any>[] = [
+      columnHelper.display({
+        id: 'expander',
+        header: () => null,
+        cell: ({ row }) => {
+          if (!row.getCanExpand()) return null
+
+          return (
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={row.getToggleExpandedHandler()}
+              aria-label="Show drop location"
+              aria-expanded={row.getIsExpanded()}
+              title="Show drop location"
+              className="h-8 w-8 p-0"
+            >
+              {row.getIsExpanded() ? <ChevronDown className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
+            </Button>
+          )
+        },
+      }),
+      columnHelper.accessor('classes', {
+        header: 'Class',
+        cell: ({ getValue }) =>
+          getValue()
+            .map((cls: string) => cls[0])
+            ?.join(', '),
+        filterFn: (row, columnId, value: string[]) => {
+          if (value.length === 0) return true
+
+          return value.every((cls) => !!row.getValue<string[]>(columnId)?.includes(cls))
+        },
+      }),
+      columnHelper.accessor('weight', {
+        header: 'Wt',
+        cell: ({ getValue }) => <div className="text-right">{getValue()}</div>,
+      }),
+      columnHelper.accessor('ac', {
+        header: 'AC',
+        cell: ({ getValue }) => <div className="text-right">{getValue() ?? '—'}</div>,
+      }),
+      columnHelper.accessor('worn', {
+        header: 'Worn',
+        cell: (info) => info.getValue()?.join(', '),
+        filterFn: (row, columnId, value: string[]) => {
+          if (value.length === 0) return true
+
+          return value.some((worn) => !!row.getValue<string[]>(columnId)?.includes(worn))
+        },
+      }),
+    ]
+
+    if (options?.includeWeaponColumns) {
+      columns.push(
+        columnHelper.accessor('wieldStrength', {
+          header: 'Wield Strength',
+          cell: ({ getValue }) => <div className="text-right">{getValue()}</div>,
+        }),
+        columnHelper.accessor('damage', {
+          header: 'Damage',
+          cell: ({ getValue }) => {
+            const damage = getValue<EquipmentData['damage']>()
+            if (!damage) return '—'
+            return `${damage.dice}d${damage.sides}`
+          },
+        }),
+        columnHelper.accessor('speed', {
+          header: 'Speed',
+          cell: ({ getValue }) => getValue() || '—',
+        })
+      )
+    }
+
+    columns.push(
+      columnHelper.accessor('name', {
+        header: 'Name',
+        filterFn: 'includesString',
+      }),
+      columnHelper.accessor('level', {
+        header: ({ column }) => {
+          return (
+            <Button variant="ghost" onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}>
+              Lv
+              <ArrowUpDown />
+            </Button>
+          )
+        },
+        cell: ({ row }) => (
+          <pre className="text-right">
+            {String(row.original.classLevel).padStart(2, ' ')}
+            {String(row.original.totalLevel).padStart(5, ' ')}
+          </pre>
+        ),
+      }),
+      columnHelper.accessor('flags', {
+        header: 'Flags',
+        cell: ({ getValue }) => {
+          const flags = getValue<string[]>() || []
+          const filteredFlags = flags.filter((flag) => !settings.flagFilters?.includes(flag))
+          return filteredFlags.join(', ')
+        },
+        filterFn: (row, columnId, value: string[]) => {
+          if (value.length === 0) return true
+          return value.every((alignment) => {
+            const rowFlags = row.getValue<string[]>(columnId) || []
+
+            if (alignment === 'GOOD') return !rowFlags.includes('ANTI_GOOD')
+            if (alignment === 'NEUTRAL') return !rowFlags.includes('ANTI_NEUTRAL')
+            if (alignment === 'EVIL') return !rowFlags.includes('ANTI_EVIL')
+            return true
+          })
+        },
+      }),
+      columnHelper.accessor('stats', {
+        id: 'stats',
+        cell: (info) => (
+          <div
+            dangerouslySetInnerHTML={{
+              __html: formatObjectToString(info.getValue()),
+            }}
+          />
+        ),
+        header: 'Stats',
+        filterFn: (row, columnId, value: string[]) => {
+          if (value.length === 0) return true
+
+          return value.every((stat) => !!row.getValue(columnId)?.hasOwnProperty(stat))
+        },
+      })
+    )
+
+    return columns
+  }, [columnHelper, formatObjectToString, options?.includeWeaponColumns, settings.flagFilters])
+}
+
 function App() {
   const columnFilters = useAtomValue(columnFilterAtom)
   const pagination = useAtomValue(paginationAtom)
   const filters = useAtomValue(filtersAtom)
+  const columns = useEquipmentColumns()
+  const visibleEquipmentData = useMemo(() => (equipmentData as EquipmentData[]).filter(shouldIncludeEquipment), [])
 
   const tableInstance = useReactTable<EquipmentData>({
-    data: EquipmentData,
+    data: visibleEquipmentData,
     columns,
     getCoreRowModel: getCoreRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
@@ -307,7 +356,6 @@ function App() {
               </TableRow>
               {row.getIsExpanded() && (
                 <TableRow>
-                  {/* 2nd row is a custom 1 cell row */}
                   <TableCell colSpan={row.getVisibleCells().length}>
                     <RenderSubComponent row={row} />
                   </TableCell>
@@ -321,7 +369,7 @@ function App() {
   )
 }
 
-function RenderSubComponent({ row }: { row: Row<EquipmentData> }) {
+export function RenderSubComponent({ row }: { row: Row<EquipmentData> }) {
   const filters = useAtomValue(filtersAtom).stats
   const settings = useAtomValue(settingsAtom)
 
