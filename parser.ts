@@ -28,6 +28,13 @@ const isKnownSpeed = (value: string): boolean => {
   return KNOWN_SPEED_VALUES.includes(normalizedValue as (typeof KNOWN_SPEED_VALUES)[number])
 }
 
+const getKnownSpeedPattern = (): string => {
+  return KNOWN_SPEED_VALUES.slice()
+    .sort((a, b) => b.length - a.length)
+    .map((value) => value.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&'))
+    .join('|')
+}
+
 const parseDamageMetadata = (text: string): ParsedDamage | undefined => {
   const damageMatch = text.match(/Damage:\s*(?<dice>\d+)d(?<sides>\d+)/i)
 
@@ -52,14 +59,14 @@ const parseWieldStrength = (text: string): number | undefined => {
 }
 
 const parseSpeed = (text: string): string | undefined => {
-  const speedMatch = text.match(/Speed:\s*(?<speed>[A-Za-z-]+(?:\s+[A-Za-z-]+)*)/i)
+  const speedPattern = getKnownSpeedPattern()
+  const speedMatch = text.match(new RegExp(`Speed:\\s*(?<speed>${speedPattern})\\b`, 'i'))
 
   if (!speedMatch?.groups?.speed) {
     return undefined
   }
 
-  const speedValue = speedMatch.groups.speed.trim()
-  return isKnownSpeed(speedValue) ? speedValue : undefined
+  return speedMatch.groups.speed.trim().toLowerCase()
 }
 
 const parseDamageType = (text: string): string[] | undefined => {

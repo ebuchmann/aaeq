@@ -18,6 +18,7 @@
       "dice": 3,
       "sides": 20
     },
+    "speed": "average",
     "damageTypes": [
       "slash"
     ],
@@ -805,6 +806,7 @@
       "dice": 6,
       "sides": 7
     },
+    "speed": "average",
     "damageTypes": [
       "pound"
     ],
@@ -1168,6 +1170,7 @@
       "dice": 1,
       "sides": 60
     },
+    "speed": "very slow",
     "damageTypes": [
       "pound"
     ],
@@ -1231,6 +1234,7 @@
       "dice": 5,
       "sides": 8
     },
+    "speed": "very slow",
     "damageTypes": [
       "nonorm",
       "stab"
@@ -1388,6 +1392,7 @@
       "dice": 3,
       "sides": 9
     },
+    "speed": "average",
     "damageTypes": [
       "whip"
     ],
@@ -1551,6 +1556,7 @@
       "dice": 4,
       "sides": 4
     },
+    "speed": "average",
     "damageTypes": [
       "pound"
     ],
@@ -1956,6 +1962,7 @@
       "dice": 3,
       "sides": 11
     },
+    "speed": "average",
     "damageTypes": [
       "fire",
       "pound"
@@ -2231,6 +2238,7 @@
       "dice": 4,
       "sides": 5
     },
+    "speed": "average",
     "damageTypes": [
       "nonorm",
       "pound"
@@ -2319,6 +2327,7 @@
       "dice": 5,
       "sides": 8
     },
+    "speed": "average",
     "damageTypes": [
       "pound"
     ],
@@ -3231,6 +3240,7 @@
       "dice": 5,
       "sides": 11
     },
+    "speed": "fast",
     "damageTypes": [
       "flail"
     ],
@@ -5504,6 +5514,7 @@
       "dice": 5,
       "sides": 10
     },
+    "speed": "slow",
     "wieldStrength": 14,
     "worn": [
       "1-WIELD"
@@ -7080,6 +7091,7 @@
       "dice": 4,
       "sides": 11
     },
+    "speed": "average",
     "damageTypes": [
       "nonorm",
       "slice"
@@ -9072,6 +9084,7 @@
       "dice": 4,
       "sides": 10
     },
+    "speed": "average",
     "damageTypes": [
       "magic",
       "whip"
@@ -9303,6 +9316,7 @@
       "dice": 6,
       "sides": 6
     },
+    "speed": "average",
     "damageTypes": [
       "fire",
       "ice",
@@ -9997,6 +10011,7 @@
       "dice": 3,
       "sides": 11
     },
+    "speed": "average",
     "damageTypes": [
       "pound"
     ],
@@ -10617,6 +10632,7 @@
       "dice": 6,
       "sides": 10
     },
+    "speed": "slow",
     "damageTypes": [
       "magic",
       "stab"
@@ -10918,6 +10934,7 @@
       "dice": 5,
       "sides": 8
     },
+    "speed": "fast",
     "damageTypes": [
       "pound"
     ],
@@ -11545,6 +11562,7 @@
       "dice": 4,
       "sides": 11
     },
+    "speed": "average",
     "damageTypes": [
       "pound"
     ],
@@ -11788,6 +11806,7 @@
       "dice": 3,
       "sides": 6
     },
+    "speed": "slowest",
     "damageTypes": [
       "pound"
     ],
@@ -14251,6 +14270,7 @@
       "dice": 6,
       "sides": 6
     },
+    "speed": "slow",
     "damageTypes": [
       "pound"
     ],
@@ -14508,6 +14528,7 @@
       "dice": 5,
       "sides": 8
     },
+    "speed": "fast",
     "damageTypes": [
       "pound"
     ],
@@ -14540,6 +14561,7 @@
       "dice": 5,
       "sides": 10
     },
+    "speed": "fast",
     "damageTypes": [
       "pound"
     ],
@@ -16693,6 +16715,7 @@
       "dice": 7,
       "sides": 7
     },
+    "speed": "average",
     "damageTypes": [
       "stab"
     ],
@@ -16727,6 +16750,7 @@
       "dice": 4,
       "sides": 9
     },
+    "speed": "average",
     "damageTypes": [
       "stab"
     ],
@@ -16882,6 +16906,7 @@
       "dice": 3,
       "sides": 9
     },
+    "speed": "fastest",
     "damageTypes": [
       "slash"
     ],
@@ -16972,6 +16997,7 @@
       "dice": 10,
       "sides": 5
     },
+    "speed": "slow",
     "damageTypes": [
       "pierce"
     ],
@@ -17009,6 +17035,7 @@
       "dice": 5,
       "sides": 13
     },
+    "speed": "very slow",
     "damageTypes": [
       "nonorm",
       "pierce"
@@ -18231,6 +18258,7 @@
       "dice": 3,
       "sides": 8
     },
+    "speed": "average",
     "damageTypes": [
       "stab"
     ],
@@ -18344,6 +18372,7 @@
       "dice": 4,
       "sides": 10
     },
+    "speed": "slow",
     "damageTypes": [
       "stab"
     ],
@@ -18485,6 +18514,7 @@
       "dice": 3,
       "sides": 15
     },
+    "speed": "slow",
     "damageTypes": [
       "toxic",
       "stab"
@@ -18547,6 +18577,7 @@
       "dice": 5,
       "sides": 7
     },
+    "speed": "slow",
     "damageTypes": [
       "magic",
       "stab"
@@ -18631,6 +18662,7 @@
       "dice": 1,
       "sides": 10
     },
+    "speed": "very fast",
     "damageTypes": [
       "toxic",
       "slash"
@@ -18742,6 +18774,7 @@
       "dice": 2,
       "sides": 6
     },
+    "speed": "average",
     "damageTypes": [
       "toxic",
       "stab"
@@ -18777,6 +18810,7 @@
       "dice": 4,
       "sides": 12
     },
+    "speed": "very slow",
     "damageTypes": [
       "nonorm",
       "stab"
@@ -18837,6 +18871,7 @@
       "dice": 5,
       "sides": 10
     },
+    "speed": "very slow",
     "damageTypes": [
       "stab"
     ],
@@ -18975,6 +19010,7 @@
       "dice": 5,
       "sides": 5
     },
+    "speed": "average",
     "damageTypes": [
       "nonorm",
       "stab"
@@ -19092,6 +19128,7 @@
       "dice": 3,
       "sides": 12
     },
+    "speed": "average",
     "damageTypes": [
       "zapping",
       "pierce"
@@ -19228,6 +19265,7 @@
       "dice": 4,
       "sides": 5
     },
+    "speed": "slow",
     "damageTypes": [
       "pierce"
     ],
@@ -19260,6 +19298,7 @@
       "dice": 6,
       "sides": 4
     },
+    "speed": "fast",
     "damageTypes": [
       "stab"
     ],
@@ -19369,6 +19408,7 @@
       "dice": 4,
       "sides": 7
     },
+    "speed": "average",
     "damageTypes": [
       "nonorm",
       "pierce"
@@ -19456,6 +19496,7 @@
       "dice": 4,
       "sides": 9
     },
+    "speed": "fast",
     "damageTypes": [
       "stab"
     ],
@@ -19520,6 +19561,7 @@
       "dice": 4,
       "sides": 9
     },
+    "speed": "average",
     "damageTypes": [
       "ice",
       "stab"
@@ -19768,6 +19810,7 @@
       "dice": 5,
       "sides": 4
     },
+    "speed": "slow",
     "damageTypes": [
       "stab"
     ],
@@ -19802,6 +19845,7 @@
       "dice": 6,
       "sides": 6
     },
+    "speed": "average",
     "damageTypes": [
       "breath",
       "stab"
@@ -19836,6 +19880,7 @@
       "dice": 5,
       "sides": 8
     },
+    "speed": "slow",
     "damageTypes": [
       "toxic",
       "stab"
@@ -19874,6 +19919,7 @@
       "dice": 4,
       "sides": 12
     },
+    "speed": "slowest",
     "damageTypes": [
       "nonorm",
       "stab"
@@ -19961,6 +20007,7 @@
       "dice": 4,
       "sides": 4
     },
+    "speed": "average",
     "damageTypes": [
       "slash"
     ],
@@ -20076,6 +20123,7 @@
       "dice": 4,
       "sides": 4
     },
+    "speed": "slow",
     "damageTypes": [
       "toxic",
       "pierce"
@@ -20191,6 +20239,7 @@
       "dice": 3,
       "sides": 16
     },
+    "speed": "average",
     "damageTypes": [
       "pierce"
     ],
@@ -20275,6 +20324,7 @@
       "dice": 7,
       "sides": 8
     },
+    "speed": "slowest",
     "damageTypes": [
       "ice",
       "pierce"
@@ -20361,6 +20411,7 @@
       "dice": 4,
       "sides": 14
     },
+    "speed": "slow",
     "damageTypes": [
       "stab"
     ],
@@ -20523,6 +20574,7 @@
       "dice": 4,
       "sides": 5
     },
+    "speed": "average",
     "wieldStrength": 10,
     "worn": [
       "1-WIELD"
@@ -20553,6 +20605,7 @@
       "dice": 4,
       "sides": 11
     },
+    "speed": "slowest",
     "damageTypes": [
       "pierce"
     ],
@@ -20747,6 +20800,7 @@
       "dice": 6,
       "sides": 8
     },
+    "speed": "slow",
     "damageTypes": [
       "ice",
       "stab"
@@ -20803,6 +20857,7 @@
       "dice": 10,
       "sides": 3
     },
+    "speed": "slow",
     "damageTypes": [
       "nonorm",
       "pierce"
@@ -20839,6 +20894,7 @@
       "dice": 3,
       "sides": 12
     },
+    "speed": "average",
     "damageTypes": [
       "pierce"
     ],
@@ -20872,6 +20928,7 @@
       "dice": 3,
       "sides": 11
     },
+    "speed": "average",
     "damageTypes": [
       "stab"
     ],
@@ -21160,6 +21217,7 @@
       "dice": 5,
       "sides": 6
     },
+    "speed": "very fast",
     "damageTypes": [
       "breath",
       "magic",
@@ -21196,6 +21254,7 @@
       "dice": 4,
       "sides": 8
     },
+    "speed": "fast",
     "damageTypes": [
       "pierce"
     ],
@@ -21229,6 +21288,7 @@
       "dice": 2,
       "sides": 10
     },
+    "speed": "average",
     "damageTypes": [
       "stab"
     ],
@@ -21288,6 +21348,7 @@
       "dice": 4,
       "sides": 16
     },
+    "speed": "average",
     "damageTypes": [
       "slash"
     ],
@@ -21323,6 +21384,7 @@
       "dice": 3,
       "sides": 18
     },
+    "speed": "slow",
     "damageTypes": [
       "stab"
     ],
@@ -21359,6 +21421,7 @@
       "dice": 6,
       "sides": 6
     },
+    "speed": "slow",
     "damageTypes": [
       "nonorm",
       "stab"
@@ -21393,6 +21456,7 @@
       "dice": 6,
       "sides": 11
     },
+    "speed": "very slow",
     "damageTypes": [
       "stab"
     ],
@@ -21733,6 +21797,7 @@
       "dice": 2,
       "sides": 2
     },
+    "speed": "average",
     "wieldStrength": 11,
     "worn": [
       "1-WIELD"
@@ -21762,6 +21827,7 @@
       "dice": 6,
       "sides": 8
     },
+    "speed": "average",
     "damageTypes": [
       "stab"
     ],
@@ -21826,6 +21892,7 @@
       "dice": 5,
       "sides": 7
     },
+    "speed": "average",
     "damageTypes": [
       "nonorm",
       "stab"
@@ -21863,6 +21930,7 @@
       "dice": 5,
       "sides": 9
     },
+    "speed": "very slow",
     "damageTypes": [
       "nonorm",
       "pierce"
@@ -22106,6 +22174,7 @@
       "dice": 3,
       "sides": 16
     },
+    "speed": "fast",
     "damageTypes": [
       "pierce"
     ],
@@ -23793,6 +23862,7 @@
       "dice": 2,
       "sides": 15
     },
+    "speed": "very fast",
     "damageTypes": [
       "nonorm",
       "slash"
@@ -23832,6 +23902,7 @@
       "dice": 7,
       "sides": 10
     },
+    "speed": "slowest",
     "wieldStrength": 31,
     "worn": [
       "1-WIELD"
@@ -23866,6 +23937,7 @@
       "dice": 4,
       "sides": 18
     },
+    "speed": "very slow",
     "damageTypes": [
       "slash"
     ],
@@ -24325,6 +24397,7 @@
       "dice": 8,
       "sides": 6
     },
+    "speed": "slow",
     "damageTypes": [
       "pierce"
     ],
@@ -24772,6 +24845,7 @@
       "dice": 10,
       "sides": 6
     },
+    "speed": "very slow",
     "damageTypes": [
       "nonorm",
       "stab"
@@ -25342,6 +25416,7 @@
       "dice": 7,
       "sides": 10
     },
+    "speed": "slowest",
     "damageTypes": [
       "nonorm",
       "stab"
@@ -25924,6 +25999,7 @@
       "dice": 9,
       "sides": 12
     },
+    "speed": "slowest",
     "damageTypes": [
       "nonorm",
       "stab"
@@ -25963,6 +26039,7 @@
       "dice": 9,
       "sides": 7
     },
+    "speed": "slow",
     "damageTypes": [
       "stab"
     ],
@@ -27006,6 +27083,7 @@
       "dice": 9,
       "sides": 9
     },
+    "speed": "slowest",
     "damageTypes": [
       "fire",
       "stab"
@@ -27072,6 +27150,7 @@
       "dice": 9,
       "sides": 12
     },
+    "speed": "very slow",
     "damageTypes": [
       "nonorm",
       "stab"
@@ -27370,6 +27449,7 @@
       "dice": 8,
       "sides": 10
     },
+    "speed": "slowest",
     "damageTypes": [
       "fire",
       "stab"
@@ -27461,6 +27541,7 @@
       "dice": 8,
       "sides": 8
     },
+    "speed": "slowest",
     "damageTypes": [
       "toxic",
       "stab"
@@ -29696,6 +29777,7 @@
       "dice": 3,
       "sides": 9
     },
+    "speed": "average",
     "damageTypes": [
       "nonorm",
       "pound"
@@ -29782,6 +29864,7 @@
       "dice": 1,
       "sides": 30
     },
+    "speed": "slow",
     "damageTypes": [
       "magic",
       "pound"
@@ -29976,6 +30059,7 @@
       "dice": 3,
       "sides": 6
     },
+    "speed": "average",
     "damageTypes": [
       "pound"
     ],
@@ -30228,6 +30312,7 @@
       "dice": 1,
       "sides": 40
     },
+    "speed": "average",
     "damageTypes": [
       "magic",
       "zap"
@@ -30884,6 +30969,7 @@
       "dice": 4,
       "sides": 5
     },
+    "speed": "average",
     "damageTypes": [
       "nonorm",
       "pound"
@@ -30938,6 +31024,7 @@
       "dice": 6,
       "sides": 6
     },
+    "speed": "average",
     "damageTypes": [
       "pound"
     ],
@@ -31610,6 +31697,7 @@
       "dice": 5,
       "sides": 5
     },
+    "speed": "slow",
     "damageTypes": [
       "pound"
     ],
@@ -31810,6 +31898,7 @@
       "dice": 4,
       "sides": 9
     },
+    "speed": "average",
     "damageTypes": [
       "pound"
     ],
@@ -32131,6 +32220,7 @@
       "dice": 5,
       "sides": 8
     },
+    "speed": "average",
     "wieldStrength": 11,
     "worn": [
       "1-WIELD"
@@ -34025,6 +34115,7 @@
       "dice": 5,
       "sides": 6
     },
+    "speed": "average",
     "damageTypes": [
       "nonorm",
       "whip"
@@ -35679,6 +35770,7 @@
       "dice": 2,
       "sides": 17
     },
+    "speed": "fastest",
     "damageTypes": [
       "fire",
       "ice",
@@ -36387,6 +36479,7 @@
       "dice": 4,
       "sides": 10
     },
+    "speed": "slow",
     "damageTypes": [
       "nonorm",
       "crush"
@@ -39300,6 +39393,7 @@
       "dice": 4,
       "sides": 8
     },
+    "speed": "average",
     "damageTypes": [
       "pound"
     ],
@@ -39698,6 +39792,7 @@
       "dice": 5,
       "sides": 7
     },
+    "speed": "fast",
     "damageTypes": [
       "slash"
     ],
@@ -39883,6 +39978,7 @@
       "dice": 3,
       "sides": 10
     },
+    "speed": "average",
     "damageTypes": [
       "fire",
       "slash"
@@ -39999,6 +40095,7 @@
       "dice": 4,
       "sides": 8
     },
+    "speed": "average",
     "damageTypes": [
       "magic",
       "slice"
@@ -40463,6 +40560,7 @@
       "dice": 6,
       "sides": 6
     },
+    "speed": "average",
     "damageTypes": [
       "pound"
     ],
@@ -41056,6 +41154,7 @@
       "dice": 4,
       "sides": 10
     },
+    "speed": "slow",
     "damageTypes": [
       "acidic",
       "slice"
@@ -41122,6 +41221,7 @@
       "dice": 5,
       "sides": 8
     },
+    "speed": "average",
     "wieldStrength": 11,
     "worn": [
       "1-WIELD"
@@ -41289,6 +41389,7 @@
       "dice": 4,
       "sides": 9
     },
+    "speed": "average",
     "damageTypes": [
       "pound"
     ],
@@ -41401,6 +41502,7 @@
       "dice": 5,
       "sides": 8
     },
+    "speed": "fast",
     "damageTypes": [
       "pound"
     ],
@@ -41564,6 +41666,7 @@
       "dice": 5,
       "sides": 8
     },
+    "speed": "average",
     "damageTypes": [
       "pound"
     ],
@@ -41598,6 +41701,7 @@
       "dice": 2,
       "sides": 32
     },
+    "speed": "slow",
     "wieldStrength": 17,
     "worn": [
       "2_WIELD"
@@ -42851,6 +42955,7 @@
       "dice": 5,
       "sides": 10
     },
+    "speed": "fast",
     "damageTypes": [
       "pierce"
     ],
@@ -43146,6 +43251,7 @@
       "dice": 5,
       "sides": 5
     },
+    "speed": "slow",
     "damageTypes": [
       "toxic",
       "stab"
@@ -43211,6 +43317,7 @@
       "dice": 6,
       "sides": 6
     },
+    "speed": "slow",
     "damageTypes": [
       "nonorm",
       "pound"
@@ -43563,6 +43670,7 @@
       "dice": 6,
       "sides": 8
     },
+    "speed": "average",
     "damageTypes": [
       "stab"
     ],
@@ -44514,6 +44622,7 @@
       "dice": 1,
       "sides": 45
     },
+    "speed": "slow",
     "damageTypes": [
       "toxic",
       "pound"
@@ -45375,6 +45484,7 @@
       "dice": 5,
       "sides": 6
     },
+    "speed": "fast",
     "damageTypes": [
       "slice"
     ],
@@ -45657,6 +45767,7 @@
       "dice": 5,
       "sides": 10
     },
+    "speed": "average",
     "damageTypes": [
       "fire",
       "crush"
@@ -46238,6 +46349,7 @@
       "dice": 2,
       "sides": 15
     },
+    "speed": "fast",
     "damageTypes": [
       "slash"
     ],
@@ -46269,6 +46381,7 @@
       "dice": 5,
       "sides": 5
     },
+    "speed": "fast",
     "damageTypes": [
       "slice"
     ],
@@ -46613,6 +46726,7 @@
       "dice": 1,
       "sides": 25
     },
+    "speed": "fast",
     "damageTypes": [
       "grapple"
     ],
@@ -46947,6 +47061,7 @@
       "dice": 7,
       "sides": 9
     },
+    "speed": "slowest",
     "damageTypes": [
       "zapping",
       "chop"
@@ -47141,6 +47256,7 @@
       "dice": 8,
       "sides": 9
     },
+    "speed": "slowest",
     "damageTypes": [
       "acidic",
       "whip"
@@ -47174,6 +47290,7 @@
       "dice": 3,
       "sides": 8
     },
+    "speed": "average",
     "damageTypes": [
       "chop"
     ],
@@ -47209,6 +47326,7 @@
       "dice": 4,
       "sides": 10
     },
+    "speed": "average",
     "damageTypes": [
       "crush"
     ],
@@ -47402,6 +47520,7 @@
       "dice": 3,
       "sides": 15
     },
+    "speed": "slow",
     "damageTypes": [
       "zapping",
       "chop"
@@ -47438,6 +47557,7 @@
       "dice": 3,
       "sides": 10
     },
+    "speed": "average",
     "damageTypes": [
       "acidic",
       "crush"
@@ -47475,6 +47595,7 @@
       "dice": 3,
       "sides": 20
     },
+    "speed": "average",
     "damageTypes": [
       "slash"
     ],
@@ -47509,6 +47630,7 @@
       "dice": 5,
       "sides": 6
     },
+    "speed": "average",
     "damageTypes": [
       "slash"
     ],
@@ -47543,6 +47665,7 @@
       "dice": 3,
       "sides": 14
     },
+    "speed": "average",
     "damageTypes": [
       "magic",
       "chop"
@@ -47624,6 +47747,7 @@
       "dice": 4,
       "sides": 8
     },
+    "speed": "slow",
     "damageTypes": [
       "crush"
     ],
@@ -47682,6 +47806,7 @@
       "dice": 4,
       "sides": 17
     },
+    "speed": "very slow",
     "damageTypes": [
       "chop"
     ],
@@ -47716,6 +47841,7 @@
       "dice": 2,
       "sides": 20
     },
+    "speed": "very fast",
     "damageTypes": [
       "ice",
       "crush"
@@ -47782,6 +47908,7 @@
       "dice": 3,
       "sides": 18
     },
+    "speed": "very slow",
     "damageTypes": [
       "ice",
       "nonorm",
@@ -47818,6 +47945,7 @@
       "dice": 4,
       "sides": 10
     },
+    "speed": "average",
     "damageTypes": [
       "nonorm",
       "slash"
@@ -48037,6 +48165,7 @@
       "dice": 2,
       "sides": 22
     },
+    "speed": "average",
     "damageTypes": [
       "toxic",
       "hack"
@@ -48071,6 +48200,7 @@
       "dice": 3,
       "sides": 15
     },
+    "speed": "average",
     "damageTypes": [
       "chop"
     ],
@@ -48250,6 +48380,7 @@
       "dice": 6,
       "sides": 6
     },
+    "speed": "average",
     "damageTypes": [
       "nonorm",
       "slice"
@@ -48285,6 +48416,7 @@
       "dice": 5,
       "sides": 8
     },
+    "speed": "average",
     "damageTypes": [
       "slash"
     ],
@@ -48408,6 +48540,7 @@
       "dice": 6,
       "sides": 9
     },
+    "speed": "slow",
     "damageTypes": [
       "pierce"
     ],
@@ -48442,6 +48575,7 @@
       "dice": 8,
       "sides": 9
     },
+    "speed": "slow",
     "damageTypes": [
       "slash"
     ],
@@ -48504,6 +48638,7 @@
       "dice": 7,
       "sides": 11
     },
+    "speed": "slowest",
     "damageTypes": [
       "stab"
     ],
@@ -48568,6 +48703,7 @@
       "dice": 4,
       "sides": 18
     },
+    "speed": "slowest",
     "damageTypes": [
       "acidic",
       "crush"
@@ -48606,6 +48742,7 @@
       "dice": 4,
       "sides": 20
     },
+    "speed": "very slow",
     "damageTypes": [
       "zapping",
       "crush"
@@ -48666,6 +48803,7 @@
       "dice": 4,
       "sides": 11
     },
+    "speed": "average",
     "damageTypes": [
       "slash"
     ],
@@ -48730,6 +48868,7 @@
       "dice": 3,
       "sides": 20
     },
+    "speed": "slowest",
     "damageTypes": [
       "breath",
       "slice"
@@ -48797,6 +48936,7 @@
       "dice": 4,
       "sides": 8
     },
+    "speed": "fast",
     "damageTypes": [
       "punch"
     ],
@@ -48832,6 +48972,7 @@
       "dice": 3,
       "sides": 15
     },
+    "speed": "very fast",
     "damageTypes": [
       "fire",
       "chop"
@@ -48897,6 +49038,7 @@
       "dice": 10,
       "sides": 8
     },
+    "speed": "very slow",
     "damageTypes": [
       "fire",
       "crush"
@@ -48933,6 +49075,7 @@
       "dice": 10,
       "sides": 8
     },
+    "speed": "very slow",
     "damageTypes": [
       "ice",
       "crush"
@@ -48969,6 +49112,7 @@
       "dice": 10,
       "sides": 8
     },
+    "speed": "very slow",
     "damageTypes": [
       "zapping",
       "crush"
@@ -49124,6 +49268,7 @@
       "dice": 4,
       "sides": 22
     },
+    "speed": "slowest",
     "wieldStrength": 29,
     "worn": [
       "2_WIELD"
@@ -49158,6 +49303,7 @@
       "dice": 4,
       "sides": 22
     },
+    "speed": "slowest",
     "wieldStrength": 29,
     "worn": [
       "2_WIELD"
@@ -49236,6 +49382,7 @@
       "dice": 10,
       "sides": 10
     },
+    "speed": "very slow",
     "damageTypes": [
       "pierce"
     ],
@@ -49371,6 +49518,7 @@
       "dice": 4,
       "sides": 10
     },
+    "speed": "average",
     "damageTypes": [
       "crush"
     ],
@@ -49603,6 +49751,7 @@
       "dice": 3,
       "sides": 25
     },
+    "speed": "slow",
     "damageTypes": [
       "pound"
     ],
@@ -49687,6 +49836,7 @@
       "dice": 5,
       "sides": 8
     },
+    "speed": "fast",
     "damageTypes": [
       "slice"
     ],
@@ -49722,6 +49872,7 @@
       "dice": 5,
       "sides": 7
     },
+    "speed": "fast",
     "damageTypes": [
       "nonorm",
       "slice"
@@ -49900,6 +50051,7 @@
       "dice": 4,
       "sides": 17
     },
+    "speed": "very slow",
     "damageTypes": [
       "pound"
     ],
@@ -50265,6 +50417,7 @@
       "dice": 6,
       "sides": 8
     },
+    "speed": "average",
     "damageTypes": [
       "nonorm",
       "slice"
@@ -50306,6 +50459,7 @@
       "dice": 9,
       "sides": 5
     },
+    "speed": "fastest",
     "damageTypes": [
       "slash"
     ],
@@ -50377,6 +50531,7 @@
       "dice": 8,
       "sides": 10
     },
+    "speed": "very slow",
     "damageTypes": [
       "nonorm",
       "flail"
@@ -50414,6 +50569,7 @@
       "dice": 5,
       "sides": 5
     },
+    "speed": "fast",
     "damageTypes": [
       "magic",
       "slice"
@@ -50450,6 +50606,7 @@
       "dice": 3,
       "sides": 20
     },
+    "speed": "average",
     "damageTypes": [
       "magic",
       "zap"
@@ -50544,6 +50701,7 @@
       "dice": 6,
       "sides": 7
     },
+    "speed": "fast",
     "damageTypes": [
       "nonorm",
       "slice"
@@ -50931,6 +51089,7 @@
       "dice": 10,
       "sides": 10
     },
+    "speed": "very slow",
     "damageTypes": [
       "nonorm",
       "slash"
@@ -51163,6 +51322,7 @@
       "dice": 5,
       "sides": 8
     },
+    "speed": "average",
     "damageTypes": [
       "slash"
     ],
@@ -51197,6 +51357,7 @@
       "dice": 1,
       "sides": 45
     },
+    "speed": "average",
     "damageTypes": [
       "slash"
     ],
@@ -51731,6 +51892,7 @@
       "dice": 7,
       "sides": 11
     },
+    "speed": "slowest",
     "damageTypes": [
       "nonorm",
       "hack"
@@ -51767,6 +51929,7 @@
       "dice": 5,
       "sides": 10
     },
+    "speed": "very fast",
     "damageTypes": [
       "nonorm",
       "slash"
@@ -51892,6 +52055,7 @@
       "dice": 9,
       "sides": 5
     },
+    "speed": "very fast",
     "damageTypes": [
       "slash"
     ],
@@ -52968,6 +53132,7 @@
       "dice": 6,
       "sides": 7
     },
+    "speed": "slow",
     "damageTypes": [
       "stab"
     ],
@@ -52998,6 +53163,7 @@
       "dice": 6,
       "sides": 6
     },
+    "speed": "average",
     "damageTypes": [
       "slice"
     ],
@@ -53031,6 +53197,7 @@
       "dice": 2,
       "sides": 10
     },
+    "speed": "fast",
     "damageTypes": [
       "slice"
     ],
@@ -53114,6 +53281,7 @@
       "dice": 7,
       "sides": 9
     },
+    "speed": "very slow",
     "damageTypes": [
       "zapping",
       "crush"
@@ -53411,6 +53579,7 @@
       "dice": 8,
       "sides": 8
     },
+    "speed": "slow",
     "damageTypes": [
       "chop"
     ],
@@ -53556,6 +53725,7 @@
       "dice": 8,
       "sides": 10
     },
+    "speed": "very slow",
     "damageTypes": [
       "nonorm",
       "pound"
@@ -54106,6 +54276,7 @@
       "dice": 7,
       "sides": 7
     },
+    "speed": "fastest",
     "damageTypes": [
       "crush"
     ],
@@ -54416,6 +54587,7 @@
       "dice": 7,
       "sides": 6
     },
+    "speed": "very fast",
     "damageTypes": [
       "nonorm",
       "slice"
@@ -55980,6 +56152,7 @@
       "dice": 6,
       "sides": 6
     },
+    "speed": "slow",
     "damageTypes": [
       "nonorm",
       "crush"
@@ -56014,6 +56187,7 @@
       "dice": 5,
       "sides": 11
     },
+    "speed": "very slow",
     "damageTypes": [
       "chop"
     ],
@@ -56104,6 +56278,7 @@
       "dice": 8,
       "sides": 10
     },
+    "speed": "slowest",
     "damageTypes": [
       "nonorm",
       "crush"
@@ -56140,6 +56315,7 @@
       "dice": 4,
       "sides": 11
     },
+    "speed": "average",
     "damageTypes": [
       "nonorm",
       "slice"
@@ -56891,6 +57067,7 @@
       "dice": 9,
       "sides": 11
     },
+    "speed": "very slow",
     "damageTypes": [
       "fire",
       "slice"
@@ -56925,6 +57102,7 @@
       "dice": 7,
       "sides": 10
     },
+    "speed": "very slow",
     "damageTypes": [
       "whip"
     ],
@@ -57076,6 +57254,7 @@
       "dice": 9,
       "sides": 13
     },
+    "speed": "slowest",
     "damageTypes": [
       "nonorm",
       "slash"
@@ -57115,6 +57294,7 @@
       "dice": 10,
       "sides": 10
     },
+    "speed": "slowest",
     "damageTypes": [
       "nonorm",
       "slash"
@@ -57154,6 +57334,7 @@
       "dice": 9,
       "sides": 12
     },
+    "speed": "slowest",
     "damageTypes": [
       "crush"
     ],
@@ -57191,6 +57372,7 @@
       "dice": 9,
       "sides": 11
     },
+    "speed": "slowest",
     "damageTypes": [
       "nonorm",
       "crush"
@@ -57229,6 +57411,7 @@
       "dice": 10,
       "sides": 9
     },
+    "speed": "slowest",
     "damageTypes": [
       "breath",
       "crush"

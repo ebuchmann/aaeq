@@ -155,6 +155,7 @@ export function useEquipmentColumns(options?: { includeWeaponColumns?: boolean }
   )
 
   return useMemo<ColumnDef<EquipmentData, any>[]>(() => {
+    const includeWeaponColumns = options?.includeWeaponColumns ?? false
     const columns: ColumnDef<EquipmentData, any>[] = [
       columnHelper.display({
         id: 'expander',
@@ -193,10 +194,14 @@ export function useEquipmentColumns(options?: { includeWeaponColumns?: boolean }
         header: 'Wt',
         cell: ({ getValue }) => <div className="text-right">{getValue()}</div>,
       }),
-      columnHelper.accessor('ac', {
-        header: 'AC',
-        cell: ({ getValue }) => <div className="text-right">{getValue() ?? '—'}</div>,
-      }),
+      ...(!includeWeaponColumns
+        ? [
+            columnHelper.accessor('ac', {
+              header: 'AC',
+              cell: ({ getValue }) => <div className="text-right">{getValue() ?? '—'}</div>,
+            }),
+          ]
+        : []),
       columnHelper.accessor('worn', {
         header: 'Worn',
         cell: (info) => info.getValue()?.join(', '),
@@ -219,12 +224,28 @@ export function useEquipmentColumns(options?: { includeWeaponColumns?: boolean }
           cell: ({ getValue }) => {
             const damage = getValue<EquipmentData['damage']>()
             if (!damage) return '—'
-            return `${damage.dice}d${damage.sides}`
+
+            const min = damage.dice
+            const max = damage.dice * damage.sides
+
+            return (
+              <div className="flex flex-col">
+                <span>{`${damage.dice}d${damage.sides}`}</span>
+                <span className="text-muted-foreground text-xs">{`${min}-${max}`}</span>
+              </div>
+            )
           },
         }),
         columnHelper.accessor('speed', {
           header: 'Speed',
           cell: ({ getValue }) => getValue() || '—',
+        }),
+        columnHelper.accessor('damageTypes', {
+          header: 'Damage Types',
+          cell: ({ getValue }) => {
+            const damageTypes = getValue<string[]>() || []
+            return damageTypes.length ? damageTypes.join(', ') : '—'
+          },
         })
       )
     }
